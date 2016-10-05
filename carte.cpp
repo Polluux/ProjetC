@@ -4,22 +4,29 @@ using namespace std;
 
 Carte::Carte() : QWidget()
 {
-    layout = new QGridLayout;
+    m_layout = new QGridLayout;
 
     for(int i=0; i<10; ++i)
     {
         for(int j=0; j<10; ++j)
         {
-            cases = new Case("", this, i, j);
-            cases->setMinimumSize(20,40);
-            tabCase.push_back(cases);
-            layout->addWidget(cases,i,j);
+            m_cases = new Case("", this, i, j, "#1ABFD1");
+            m_cases->setMinimumSize(20,40);
+            m_tabCase.push_back(m_cases);
+            m_layout->addWidget(m_cases,i,j);
 
-            QObject::connect(cases, SIGNAL(clicked()), this, SLOT(afficherCoordonnees()));
+            QObject::connect(m_cases, SIGNAL(clicked()), this, SLOT(afficherCoordonnees()));
         }
     }
 
-    this->setLayout(layout);
+    this->setLayout(m_layout);
+
+    this->show();
+}
+
+void Carte::ajouterBateau(/*Esc3nard *b*/)
+{
+    Esc3nard *b = new Esc3nard(2,2, true, this);
 }
 
 void Carte::afficherCoordonnees()

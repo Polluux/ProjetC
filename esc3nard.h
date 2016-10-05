@@ -2,8 +2,8 @@
 #define ESC3NARD_H
 
 #include "bateau.h"
+#include "carte.h"
 
-class Carte;
 class Esc3nard : public Bateau
 {
     public:

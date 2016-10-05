@@ -7,7 +7,7 @@
 #include <QApplication>
 
 #include "case.h"
-#include "esc3nard.h"
+//#include "esc3nard.h"
 
 class Carte : public QWidget
 {

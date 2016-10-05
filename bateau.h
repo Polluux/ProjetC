@@ -2,8 +2,8 @@
 #define BATEAU_H
 
 #include "case.h"
+#include "carte.h"
 
-class Carte;
 class Bateau
 {
     public:

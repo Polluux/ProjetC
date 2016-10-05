@@ -6,7 +6,7 @@
 class Croi1nard : public Bateau
 {
     public:
-        Croi1nard(int x, int y, bool horizontal);
+        Croi1nard(int x, int y, bool horizontal, Carte *parent);
 };
 
 #endif // CROI1NARD_H

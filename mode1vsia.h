@@ -10,6 +10,15 @@ public:
     void AbstractMemberFunction();
     void getMode();
 
+    void initialiserJoueurs();
+    void initialiserCartes();
+    void lancer();
+    void arreter();
+    void checkFinis();
+    void debutTour();
+    void finTour();
+    void pret();
+
     ~Mode1vsIA();
 };
 

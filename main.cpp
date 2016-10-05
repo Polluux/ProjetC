@@ -2,15 +2,13 @@
 #include <QPushButton>
 #include <QGridLayout>
 
-#include "carte.h"
+#include "partie.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    Carte carte;
-
-    carte.show();
+    new Partie();
 
     return app.exec();
 }

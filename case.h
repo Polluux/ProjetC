@@ -7,15 +7,17 @@
 class Case : public QPushButton
 {
     public:
-        Case(const QString& str, QWidget* parent, int x, int y);
-        bool getTouche();
-        void toucher();
+        Case(const QString& str, QWidget* parent, int x, int y, QString color);
+        //bool getTouche();
+        int toucher(int dx, int dy);
+        int getX();
+        int getY();
         void toString();
 
     private:
-        bool touche;
-        int abs;
-        int ord;
+        bool m_touche;
+        int m_abs;
+        int m_ord;
 };
 
 #endif // CASE_H

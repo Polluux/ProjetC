@@ -7,7 +7,8 @@ class Mode1vs1 : public CompMode
 {
 public:
     Mode1vs1();
-    virtual void getMode();
+    void AbstractMemberFunction();
+    void getMode();
 
     ~Mode1vs1();
 };

@@ -14,4 +14,6 @@ void Mode1vs1::getMode(){
     cout << "Je suis le mode 1vs1" << endl;
 }
 
+void Mode1vs1::AbstractMemberFunction(){}
+
 Mode1vs1::~Mode1vs1(){}

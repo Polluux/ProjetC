@@ -2,7 +2,49 @@
 
 using namespace std;
 
-Bateau::Bateau(int x, int y, bool horizontal, int t, Carte *parent)
+Bateau::Bateau(int taille){
+    x_ = 0;
+    y_ = 0;
+    horizontal_ = false;
+    taille_ = taille;
+    pvActuels_ = taille;
+}
+
+void Bateau::AbstractMemberFunction();
+
+bool Bateau::Action(){
+    --pvActuels_;
+    return true;
+}
+
+void Bateau::setX(int x){
+    x_ = x;
+}
+void Bateau::setY(int y){
+    y_ = y;
+}
+void Bateau::setHorizontal(bool a){
+    horizontal_ = a;
+}
+int Bateau::getX(){
+    return x_;
+}
+int Bateau::getY(){
+    return y_;
+}
+bool Bateau::getHorizontal(){
+    return horizontal_;
+}
+int Bateau::getTaille(){
+    return taille_;
+}
+
+
+
+
+
+
+/*Bateau::Bateau(int x, int y, bool horizontal, int t, Carte *parent)
 {
     m_horizontal = horizontal;
     m_taille = t;
@@ -15,7 +57,7 @@ Bateau::Bateau(int x, int y, bool horizontal, int t, Carte *parent)
         else
             m_tabCases.push_back(new Case("", m_parent, x, y+i, "green"));
     }
-}
+}*/
 
 /*
  * 0 : dans l'eau
@@ -23,7 +65,7 @@ Bateau::Bateau(int x, int y, bool horizontal, int t, Carte *parent)
  * 2 : touche un élément pour la première fois
  * 3 : bateau coulé
  * */
-int Bateau::toucher(int dx, int dy)
+/*int Bateau::toucher(int dx, int dy)
 {
     int cpt = 0;
     int res = 0;
@@ -51,4 +93,4 @@ int Bateau::toucher(int dx, int dy)
     {
         return res;
     }
-}
+}*/

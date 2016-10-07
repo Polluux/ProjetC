@@ -1,20 +1,25 @@
 #ifndef BATEAU_H
 #define BATEAU_H
 
-#include "case.h"
-#include "carte.h"
+#include "contenu.h"
 
-class Bateau
+class Bateau : public Contenu
 {
     public:
-        Bateau(int x, int y, bool horizontal, int t, Carte *parent);
-        int toucher(int dx, int dy);
+        Bateau(int taille);
+        void AbstractMemberFunction();
+        bool Action();
+
+        void setX(int x);
+        void setY(int y);
+        void setHorizontal(bool a);
+        int getX();
+        int getY();
+        bool getHorizontal();
+        int getTaille();
 
     private:
-        int m_taille;
-        bool m_horizontal;
-        std::vector<Case*> m_tabCases;
-        Carte *m_parent;
+        int pvActuels_;
 };
 
 #endif // BATEAU_H

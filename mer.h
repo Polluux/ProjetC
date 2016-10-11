@@ -1,12 +1,12 @@
-#ifndef BATEAU_H
-#define BATEAU_H
+#ifndef MER_H
+#define MER_H
 
 #include "contenu.h"
 
-class Bateau : public Contenu
+class Mer : public Contenu
 {
     public:
-        Bateau(int taille);
+        Mer();
         //void AbstractMemberFunction();
         bool Action();
 
@@ -17,12 +17,9 @@ class Bateau : public Contenu
         int getY();
         bool getHorizontal();
         int getTaille();
-        int getPvActuels();
 
-        ~Bateau();
+        ~Mer();
 
-    private:
-        int pvActuels_;
 };
 
-#endif // BATEAU_H
+#endif // MER_H

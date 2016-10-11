@@ -1,19 +1,21 @@
 #include "case.h"
+#include "contenu.h"
+#include "mer.h"
 
 using namespace std;
 
-Case::Case(const QString& str, QWidget* parent, int x, int y, QString color) : QPushButton(str, parent)
+Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
 {
     hit_ = false;
     x_ = x;
     y_ = y;
-    this->setStyleSheet("background-color:"+ color +";");
+    setContent(new Mer());
 }
 
 bool Case::clic(){
-    if(hit){
+    if(hit_){
         cout << "Cette case à déjà été cliquée\n";
-        return false
+        return false;
     }else{
         cout << "Clic de la case en (" << x_  << ", " << y_<< ")" << endl;
         hit_ = true;
@@ -56,4 +58,15 @@ void Case::toString()
 {
     cout << "case en (" << x_  << ", " << y_<< ")" << endl;
 }
+
+shared_ptr<Contenu> Case::getContent(){
+    return content_;
+}
+
+
+void Case::setContent(Contenu *c){
+    content_ = shared_ptr<Contenu> (c);
+}
+
+Case::~Case(){}
 

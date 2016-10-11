@@ -10,7 +10,7 @@ Carte::Carte() : QWidget()
     {
         for(int j=0; j<10; ++j)
         {
-            m_cases = new Case("", this, i, j, "#1ABFD1");
+            m_cases = new Case(this, i, j);
             m_cases->setMinimumSize(20,40);
             m_tabCase.push_back(m_cases);
             m_layout->addWidget(m_cases,i,j);
@@ -26,7 +26,7 @@ Carte::Carte() : QWidget()
 
 void Carte::ajouterBateau(/*Esc3nard *b*/)
 {
-    Esc3nard *b = new Esc3nard(2,2, true, this);
+    //Esc3nard *b = new Esc3nard(2,2, true, this);
 }
 
 void Carte::afficherCoordonnees()

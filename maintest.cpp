@@ -5,11 +5,17 @@
 #include "mode1vsia.h"
 #include "core.h"
 
+#include <QApplication>
+#include <QPushButton>
+#include <QGridLayout>
+
+#include "partie.h"
+
 #include <memory>
 
 using namespace std;
 
-int main(){
+int main(int argc, char *argv[]){
     Core myCore;
     if(myCore.start()){
         cout << "Initialisé" << endl;
@@ -24,7 +30,16 @@ int main(){
         cout << "NULL" << endl;
     }
 
+
+    /*QApplication app(argc, argv);
+
+    new Partie();
+
+    return app.exec();*/
+
     return 0;
 }
+
+
 
 

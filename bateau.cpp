@@ -2,15 +2,13 @@
 
 using namespace std;
 
-Bateau::Bateau(int taille){
+Bateau::Bateau(int taille): Contenu(){
     x_ = 0;
     y_ = 0;
     horizontal_ = false;
     taille_ = taille;
     pvActuels_ = taille;
 }
-
-void Bateau::AbstractMemberFunction();
 
 bool Bateau::Action(){
     --pvActuels_;
@@ -39,6 +37,12 @@ int Bateau::getTaille(){
     return taille_;
 }
 
+int Bateau::getPvActuels(){
+    return pvActuels_;
+}
+
+
+Bateau::~Bateau(){}
 
 
 

@@ -5,10 +5,10 @@ HEADERS += \
     bateau.h \
     carte.h \
     case.h \
-    fenetre.h \
     partie.h \
     contenu.h \
-    compmode.h
+    compmode.h \
+    mer.h
 
 SOURCES += \
     mode1vs1.cpp \
@@ -18,11 +18,10 @@ SOURCES += \
     bateau.cpp \
     carte.cpp \
     case.cpp \
-    fenetre.cpp \
-    main.cpp \
     partie.cpp \
     contenu.cpp \
-    compmode.cpp
+    compmode.cpp \
+    mer.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
 QT += widgets

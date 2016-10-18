@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
     Core myCore;
     if(myCore.start()){
         cout << "Initialisé" << endl;
+        myCore.afficher();
     }else{
         cout << "NULL" << endl;
     }
@@ -28,11 +29,10 @@ int main(int argc, char *argv[]){
     myCore.changeMode(new Mode1vs1());
     if(myCore.start()){
         cout << "Initialisé" << endl;
+        myCore.afficher();
     }else{
         cout << "NULL" << endl;
     }
-
-    myCore.afficher();
 
     return app.exec();
 }

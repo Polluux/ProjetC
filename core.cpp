@@ -15,6 +15,7 @@ Core::Core()
     affichage_ = shared_ptr<Affichage> (new Affichage);
     affichage_->addContent(&*team1_->getCarte(),0,0);
     affichage_->addContent(&*team2_->getCarte(),0,1);
+    affichage_->setWindowTitle("Bataille navale !!");
 }
 
 void Core::changeMode(CompMode *mode){

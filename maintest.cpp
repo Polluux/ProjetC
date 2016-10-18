@@ -9,13 +9,15 @@
 #include <QPushButton>
 #include <QGridLayout>
 
-#include "partie.h"
 
 #include <memory>
 
 using namespace std;
 
 int main(int argc, char *argv[]){
+    QApplication app(argc, argv);
+
+
     Core myCore;
     if(myCore.start()){
         cout << "Initialisé" << endl;
@@ -30,14 +32,9 @@ int main(int argc, char *argv[]){
         cout << "NULL" << endl;
     }
 
+    myCore.afficher();
 
-    /*QApplication app(argc, argv);
-
-    new Partie();
-
-    return app.exec();*/
-
-    return 0;
+    return app.exec();
 }
 
 

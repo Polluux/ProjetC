@@ -7,7 +7,7 @@
 #include <QApplication>
 
 #include "case.h"
-//#include "esc3nard.h"
+#include "bateau.h"
 
 class Carte : public QWidget
 {
@@ -15,13 +15,14 @@ class Carte : public QWidget
 
     public:
         Carte();
-        void ajouterBateau(/*Esc3nard *b*/);
+        void ajouterBateau(Bateau b);
+        void enleverBateau(Bateau b);
+        void afficherCarte();
 
     public slots :
         void afficherCoordonnees();
 
     private:
-        Case *m_cases;
         QGridLayout *m_layout;
         std::vector<Case*> m_tabCase;
 };

@@ -20,7 +20,6 @@ bool Case::clic(){
     }else{
         cout << "Clic de la case en (" << x_  << ", " << y_<< ")" << endl;
         hit_ = true;
-        cout << content_ << endl;
         return content_->action(this); // A changer par la suite, en rendant le résultat de contenu.action();
     }
 }
@@ -28,27 +27,6 @@ bool Case::clic(){
 bool Case::isEmpty(){
     return content_->isEmpty();
 }
-
-/*
- * 0 : dans l'eau
- * 1 : touche un élément déjà touché
- * 2 : touche un élément pour la première fois
- * */
-/*int Case::toucher(int dx, int dy)
-{
-    if((m_abs == dx) && (m_abs == dy))
-    {
-        if(m_touche)
-            return 1;
-        else
-        {
-            m_touche = true;
-            return 2;
-        }
-    }
-    else
-        return 0;
-}*/
 
 int Case::getX()
 {

@@ -3,6 +3,7 @@
 
 #include "contenu.h"
 #include "case.h"
+#include "observer.h"
 
 class Bateau : public Contenu
 {
@@ -21,6 +22,8 @@ class Bateau : public Contenu
         int getPvActuels();
         bool isEmpty();
         bool estCoule();
+        bool estEgal(Bateau *b);
+
 
         ~Bateau();
 

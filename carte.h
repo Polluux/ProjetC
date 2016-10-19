@@ -20,12 +20,12 @@ class Carte : public QWidget
         void afficherCarte();
 
     public slots :
-        void afficherCoordonnees();
+        void actionBouton();
 
     private:
         QGridLayout *m_layout;
         std::vector<Case*> m_tabCase;
-        std::vector<Bateau> tabBateaux_;
+        std::vector<Bateau*> tabBateaux_;
 };
 
 #endif // CARTE_H

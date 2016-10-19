@@ -25,6 +25,7 @@ class IAffichage : public QWidget
 
         virtual ~IAffichage();
 
+    // interface avec attribut ??
     protected:
         shared_ptr<Core> core_;
 };

@@ -15,7 +15,7 @@ class Carte : public QWidget
 
     public:
         Carte();
-        void ajouterBateau(Bateau b);
+        bool ajouterBateau(Bateau *b);
         void enleverBateau(Bateau b);
         void afficherCarte();
 
@@ -25,6 +25,7 @@ class Carte : public QWidget
     private:
         QGridLayout *m_layout;
         std::vector<Case*> m_tabCase;
+        std::vector<Bateau> tabBateaux_;
 };
 
 #endif // CARTE_H

@@ -9,7 +9,9 @@ HEADERS += \
     compmode.h \
     mer.h \
     team.h \
-    affichage.h
+    affichage.h \
+    iaffichage.h \
+    affichagejeu.h
 
 SOURCES += \
     mode1vs1.cpp \
@@ -23,7 +25,9 @@ SOURCES += \
     compmode.cpp \
     mer.cpp \
     team.cpp \
-    affichage.cpp
+    affichage.cpp \
+    iaffichage.cpp \
+    affichagejeu.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
 QT += widgets

@@ -6,11 +6,11 @@
 #include <memory>
 
 #include "team.h"
-#include "affichage.h"
+#include "iaffichage.h"
 
 using namespace std;
 
-
+class AffichageJeu;
 
 class Core
 {
@@ -19,14 +19,19 @@ public:
     void changeMode(CompMode *mode);
     bool start();
     void afficher();
+    shared_ptr<Team> getTeam1();
+    shared_ptr<Team> getTeam2();
+
+    void changeAffichageToJeu();
 
     ~Core();
 
-private:
+protected:
     shared_ptr<CompMode> mode2_;
     shared_ptr<Team> team1_;
     shared_ptr<Team> team2_;
-    shared_ptr<Affichage> affichage_;
+    shared_ptr<IAffichage> affichageActif_;
+    shared_ptr<AffichageJeu> affJeu_;
 };
 
 #endif // CORE_H

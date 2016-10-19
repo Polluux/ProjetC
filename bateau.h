@@ -8,7 +8,7 @@ class Bateau : public Contenu
     public:
         Bateau(int taille);
         //void AbstractMemberFunction();
-        bool Action();
+        bool action();
 
         void setX(int x);
         void setY(int y);
@@ -18,6 +18,7 @@ class Bateau : public Contenu
         bool getHorizontal();
         int getTaille();
         int getPvActuels();
+        bool isEmpty();
 
         ~Bateau();
 

@@ -1,4 +1,5 @@
 #include "bateau.h"
+#include <iostream>
 
 using namespace std;
 
@@ -10,9 +11,14 @@ Bateau::Bateau(int taille): Contenu(){
     pvActuels_ = taille;
 }
 
-bool Bateau::Action(){
+bool Bateau::action(){
+    cout << "coucou" << endl;
     --pvActuels_;
     return true;
+}
+
+bool Bateau::isEmpty(){
+    return false;
 }
 
 void Bateau::setX(int x){

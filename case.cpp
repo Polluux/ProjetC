@@ -10,7 +10,7 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
     x_ = x;
     y_ = y;
     setContent(new Mer());
-    this->setStyleSheet("background-color:blue;");
+    this->setStyleSheet("background-color:grey;");
 }
 
 bool Case::clic(){
@@ -21,7 +21,7 @@ bool Case::clic(){
         cout << "Clic de la case en (" << x_  << ", " << y_<< ")" << endl;
         hit_ = true;
         cout << content_ << endl;
-        return content_->action(); // A changer par la suite, en rendant le résultat de contenu.action();
+        return content_->action(this); // A changer par la suite, en rendant le résultat de contenu.action();
     }
 }
 
@@ -72,7 +72,6 @@ shared_ptr<Contenu> Case::getContent(){
 
 void Case::setContent(Contenu *c){
     content_ = shared_ptr<Contenu> (c);
-    this->setStyleSheet("background-color:grey;");
 }
 
 Case::~Case(){}

@@ -16,7 +16,7 @@ class Carte : public QWidget
     public:
         Carte();
         bool ajouterBateau(Bateau *b);
-        void enleverBateau(Bateau b);
+        void enleverBateau(Bateau *b);
         void afficherCarte();
 
     public slots :

@@ -2,13 +2,14 @@
 #define BATEAU_H
 
 #include "contenu.h"
+#include "case.h"
 
 class Bateau : public Contenu
 {
     public:
         Bateau(int taille);
         //void AbstractMemberFunction();
-        bool action();
+        bool action(Case *c);
 
         void setX(int x);
         void setY(int y);
@@ -19,6 +20,7 @@ class Bateau : public Contenu
         int getTaille();
         int getPvActuels();
         bool isEmpty();
+        bool estCoule();
 
         ~Bateau();
 

@@ -2,13 +2,14 @@
 #define MER_H
 
 #include "contenu.h"
+#include "case.h"
 
 class Mer : public Contenu
 {
     public:
         Mer();
         //void AbstractMemberFunction();
-        bool action();
+        bool action(Case *c);
 
         void setX(int x);
         void setY(int y);

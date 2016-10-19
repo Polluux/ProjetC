@@ -1,6 +1,8 @@
 #ifndef CONTENU_H
 #define CONTENU_H
 
+class Case;
+
 class Contenu
 {
 
@@ -14,7 +16,7 @@ protected:
 public:
     Contenu();
     //virtual void AbstractMemberFunction() = 0; //toAbstract
-    virtual bool action() = 0;
+    virtual bool action(Case *c) = 0;
 
     virtual void setX(int x) = 0;
     virtual void setY(int y) = 0;

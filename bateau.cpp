@@ -11,14 +11,19 @@ Bateau::Bateau(int taille): Contenu(){
     pvActuels_ = taille;
 }
 
-bool Bateau::action(){
+bool Bateau::action(Case *c){
     cout << "coucou" << endl;
+    c->setStyleSheet("background-color:red;");
     --pvActuels_;
     return true;
 }
 
 bool Bateau::isEmpty(){
     return false;
+}
+
+bool Bateau::estCoule(){
+    return pvActuels_ == 0;
 }
 
 void Bateau::setX(int x){

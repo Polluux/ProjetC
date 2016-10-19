@@ -14,7 +14,7 @@ protected:
 public:
     Contenu();
     //virtual void AbstractMemberFunction() = 0; //toAbstract
-    virtual bool Action() = 0;
+    virtual bool action() = 0;
 
     virtual void setX(int x) = 0;
     virtual void setY(int y) = 0;
@@ -23,6 +23,7 @@ public:
     virtual int getY() = 0;
     virtual bool getHorizontal() = 0;
     virtual int getTaille() = 0;
+    virtual bool isEmpty()=0;
 
     virtual ~Contenu();
 };

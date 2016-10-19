@@ -24,13 +24,51 @@ Carte::Carte() : QWidget()
     }
 
     this->setLayout(m_layout);
-
-    //this->show();
 }
 
-void Carte::ajouterBateau(Bateau b)
+bool Carte::ajouterBateau(Bateau *b)
 {
-    //Esc3nard *b = new Esc3nard(2,2, true, this);
+    int x = b->getX();
+    int y = b->getY();
+    int taille = b->getTaille();
+    bool h = b->getHorizontal();
+
+    bool err = false;
+    if(h){
+        if(y+taille > 9){
+            err = true;
+        }
+    }else{
+        if(x+taille > 9){
+            err = true;
+        }
+    }
+
+    if(!err){
+        for(int i = 0; i<taille; ++i){
+            if(h){
+                if(!(m_tabCase[(x*10+(y+i))]->isEmpty())){
+                    err = true;
+                }
+            }else{
+                if(!(m_tabCase[((x+i)*10+y)]->isEmpty())){
+                    err = true;
+                }
+            }
+        }
+        if(!err){
+            for(int i = 0; i<taille; ++i){
+                if(h){
+                    m_tabCase[(x*10+(y+i))]->setContent(b);
+                }else{
+                    m_tabCase[((x+i)*10+y)]->setContent(b);
+                }
+            }
+
+            tabBateaux_.push_back(*b);
+        }
+    }
+    return !err;
 }
 
 void Carte::enleverBateau(Bateau b){
@@ -43,5 +81,5 @@ void Carte::afficherCoordonnees()
 
     Case *bouton = dynamic_cast<Case*>(emetteur);
 
-    bouton->toString();
+    bouton->clic();
 }

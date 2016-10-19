@@ -8,7 +8,7 @@ class Mer : public Contenu
     public:
         Mer();
         //void AbstractMemberFunction();
-        bool Action();
+        bool action();
 
         void setX(int x);
         void setY(int y);
@@ -17,6 +17,7 @@ class Mer : public Contenu
         int getY();
         bool getHorizontal();
         int getTaille();
+        bool isEmpty();
 
         ~Mer();
 

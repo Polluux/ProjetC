@@ -1,4 +1,6 @@
 #include "mer.h"
+#include <iostream>
+
 using namespace std;
 
 Mer::Mer(): Contenu(){
@@ -8,8 +10,13 @@ Mer::Mer(): Contenu(){
     taille_ = 1;
 }
 
-bool Mer::Action(){
+bool Mer::action(){
+    cout << "Dans l'eau" << endl;
     return false;
+}
+
+bool Mer::isEmpty(){
+    return true;
 }
 
 void Mer::setX(int x){

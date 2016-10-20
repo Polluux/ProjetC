@@ -10,6 +10,7 @@
 
 using namespace std;
 
+class AffichageMenu;
 class AffichageJeu;
 
 class Core
@@ -23,6 +24,7 @@ public:
     shared_ptr<Team> getTeam2();
 
     void changeAffichageToJeu();
+    void changeAffichageToMenu();
 
     ~Core();
 
@@ -32,6 +34,7 @@ protected:
     shared_ptr<Team> team2_;
     shared_ptr<IAffichage> affichageActif_;
     shared_ptr<AffichageJeu> affJeu_;
+    shared_ptr<AffichageMenu> affMen_;
 };
 
 #endif // CORE_H

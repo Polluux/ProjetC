@@ -2,6 +2,7 @@
 #include <cstddef>
 #include "iaffichage.h"
 #include "affichagejeu.h"
+#include "affichagemenu.h"
 #include <memory>
 #include <iostream>
 
@@ -11,7 +12,9 @@ Core::Core()
 {
     mode2_ = (nullptr);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
-    changeAffichageToJeu();
+    affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
+    affichageActif_ = affMen_;
+    //changeAffichageToMenu();
 
     team1_ = shared_ptr<Team>(new Team());
     team2_ = shared_ptr<Team>(new Team());
@@ -22,7 +25,13 @@ void Core::changeMode(CompMode *mode){
 }
 
 void Core::changeAffichageToJeu(){
+    affichageActif_->hide();
     affichageActif_ = affJeu_;
+}
+
+void Core::changeAffichageToMenu(){
+    affichageActif_->hide();
+    affichageActif_ = affMen_;
 }
 
 bool Core::start(){

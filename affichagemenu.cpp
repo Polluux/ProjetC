@@ -9,15 +9,19 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
     bLayout_ = new QVBoxLayout;
 
     QLabel *label = new QLabel;
-    label->setText("Game");
-    label->setAlignment(Qt::AlignCenter);
+    QPixmap pic("fonts/Title.jpg");
+    label->setPixmap(pic.scaled ( 500, 100, Qt::KeepAspectRatio));
     gLayout_->addWidget(label,0,0,1,3);
 
 
-    QPushButton *boutonQuitter = new QPushButton("Quitter");
     QPushButton *boutonMode1vs1 = new QPushButton("Mode Joueur\n contre Joueur");
     QObject::connect(boutonMode1vs1, SIGNAL(clicked()), this, SLOT(clicMode1vs1()));
+    boutonMode1vs1->setStyleSheet("background-color:gray;outline: none;color:black;");
     QPushButton *boutonMode1vsIA = new QPushButton("Mode Joueur\n contre IA");
+    boutonMode1vsIA->setStyleSheet("background-color:gray;outline: none");
+    boutonMode1vsIA->setEnabled(false);
+    QPushButton *boutonQuitter = new QPushButton("Quitter");
+    boutonQuitter->setStyleSheet("background-color:gray;outline: none;color:black;");
     //QWidget::connect(boutonQuitter, SIGNAL(clicked()), &app, SLOT(quit()));
     gLayout_->addWidget(boutonMode1vs1,1,1); // Ajout du bouton
     gLayout_->addWidget(boutonMode1vsIA,2,1); // Ajout du bouton
@@ -27,6 +31,7 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
 
     this->setMinimumWidth(200);
     this->setWindowTitle("Menu");
+    this->setStyleSheet("background-color:black;");
     this->setLayout(gLayout_);
 
 }

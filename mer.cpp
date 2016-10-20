@@ -12,7 +12,7 @@ Mer::Mer(): Contenu(){
 
 bool Mer::action(Case *c){
     cout << "Dans l'eau" << endl;
-    c->setStyleSheet("background-color:blue;");
+    c->setStyleSheet("background-color:blue;outline: none");
     return false;
 }
 

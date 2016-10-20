@@ -18,18 +18,18 @@ int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 
 
-    Core myCore;
-    if(myCore.start()){
+    Core *myCore = new Core(nullptr);
+    if(myCore->start()){
         cout << "Initialisé" << endl;
-        myCore.afficher();
+        myCore->afficher();
     }else{
         cout << "NULL" << endl;
     }
 
-    myCore.changeMode(new Mode1vs1());
-    if(myCore.start()){
+    myCore->changeMode(new Mode1vs1());
+    if(myCore->start()){
         cout << "Initialisé" << endl;
-        myCore.afficher();
+        myCore->afficher();
     }else{
         cout << "NULL" << endl;
     }

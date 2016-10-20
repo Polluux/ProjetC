@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Mode1vsIA::Mode1vsIA()
+Mode1vsIA::Mode1vsIA() : CompMode()
 {
 }
 
@@ -21,7 +21,5 @@ void Mode1vsIA::checkFinis(){}
 void Mode1vsIA::debutTour(){}
 void Mode1vsIA::finTour(){}
 void Mode1vsIA::pret(){}
-
-void Mode1vsIA::AbstractMemberFunction(){}
 
 Mode1vsIA::~Mode1vsIA(){}

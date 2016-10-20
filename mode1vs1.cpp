@@ -5,7 +5,7 @@
 using namespace std;
 
 
-Mode1vs1::Mode1vs1()
+Mode1vs1::Mode1vs1() : CompMode()
 {
 
 }
@@ -22,7 +22,5 @@ void Mode1vs1::checkFinis(){}
 void Mode1vs1::debutTour(){}
 void Mode1vs1::finTour(){}
 void Mode1vs1::pret(){}
-
-void Mode1vs1::AbstractMemberFunction(){}
 
 Mode1vs1::~Mode1vs1(){}

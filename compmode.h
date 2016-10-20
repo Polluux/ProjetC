@@ -5,17 +5,16 @@ class CompMode
 {
 public:
     CompMode();
-    virtual void AbstractMemberFunction() = 0; //toAbstract
-    virtual void getMode();
 
-    virtual void initialiserJoueurs();
-    virtual void initialiserCartes();
-    virtual void lancer();
-    virtual void arreter();
-    virtual void checkFinis();
-    virtual void debutTour();
-    virtual void finTour();
-    virtual void pret();
+        virtual void getMode() = 0;
+        virtual void initialiserJoueurs() = 0;
+        virtual void initialiserCartes() = 0;
+        virtual void lancer() = 0;
+        virtual void arreter() = 0;
+        virtual void checkFinis() = 0;
+        virtual void debutTour() = 0;
+        virtual void finTour() = 0;
+        virtual void pret() = 0;
 
     virtual ~CompMode();
 };

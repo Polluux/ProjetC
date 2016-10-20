@@ -8,9 +8,9 @@
 
 using namespace std;
 
-Core::Core()
+Core::Core(CompMode* c)
 {
-    mode2_ = (nullptr);
+    mode_ = shared_ptr<CompMode> (c);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
     affichageActif_ = affMen_;
@@ -21,7 +21,7 @@ Core::Core()
 }
 
 void Core::changeMode(CompMode *mode){
-    mode2_ = shared_ptr<CompMode> (mode);
+    mode_ = shared_ptr<CompMode> (mode);
 }
 
 void Core::changeAffichageToJeu(){
@@ -35,7 +35,7 @@ void Core::changeAffichageToMenu(){
 }
 
 bool Core::start(){
-    if(mode2_ != nullptr){
+    if(mode_ != nullptr){
         return true;
     }else{
         return false;

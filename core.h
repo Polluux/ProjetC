@@ -16,7 +16,7 @@ class AffichageJeu;
 class Core
 {
 public:
-    Core();
+    Core(CompMode* c);
     void changeMode(CompMode *mode);
     bool start();
     void afficher();
@@ -29,7 +29,7 @@ public:
     ~Core();
 
 protected:
-    shared_ptr<CompMode> mode2_;
+    shared_ptr<CompMode> mode_;
     shared_ptr<Team> team1_;
     shared_ptr<Team> team2_;
     shared_ptr<IAffichage> affichageActif_;

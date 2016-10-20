@@ -11,6 +11,7 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
     QLabel *label = new QLabel;
     QPixmap pic("fonts/Title.jpg");
     label->setPixmap(pic.scaled ( 500, 100, Qt::KeepAspectRatio));
+    label->setAlignment(Qt::AlignHCenter);
     gLayout_->addWidget(label,0,0,1,3);
 
 
@@ -43,10 +44,11 @@ void AffichageMenu::afficher(){
 void AffichageMenu::clicMode1vs1(){
     cout << "test" << endl;
     core_->changeMode(new Mode1vs1());
-    core_->changeAffichageToJeu();
-    core_->afficher();
+    changeToInitialisation();
 }
 
 void AffichageMenu::changeToMenu(){}
-void AffichageMenu::changeToInitialisation(){}
+void AffichageMenu::changeToInitialisation(){
+    core_->changeAffichageToInit();
+}
 void AffichageMenu::changeToJeu(){}

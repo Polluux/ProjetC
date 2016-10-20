@@ -13,7 +13,7 @@ Bateau::Bateau(int taille): Contenu(){
 
 bool Bateau::action(Case *c){
     cout << "Touché" << endl;
-    c->setStyleSheet("background-color:red;");
+    c->setStyleSheet("background-color:red;outline: none");
     --pvActuels_;
     return true;
 }

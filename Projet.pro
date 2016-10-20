@@ -9,7 +9,6 @@ HEADERS += \
     compmode.h \
     mer.h \
     team.h \
-    affichage.h \
     iaffichage.h \
     affichagejeu.h \
     affichagemenu.h
@@ -26,7 +25,6 @@ SOURCES += \
     compmode.cpp \
     mer.cpp \
     team.cpp \
-    affichage.cpp \
     iaffichage.cpp \
     affichagejeu.cpp \
     affichagemenu.cpp

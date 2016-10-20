@@ -5,9 +5,36 @@ using namespace std;
 
 Carte::Carte() : QWidget()
 {
-    m_layout = new QGridLayout;
-    m_layout->setHorizontalSpacing(0);
-    m_layout->setVerticalSpacing(0);
+    QGridLayout *fenetre = new QGridLayout;
+
+    QGridLayout *lettre_h = new QGridLayout;
+    lettre_h->addWidget(new QLabel("    A"), 0, 0);
+    lettre_h->addWidget(new QLabel("    B "), 0, 1);
+    lettre_h->addWidget(new QLabel("    C "), 0, 2);
+    lettre_h->addWidget(new QLabel("    D "), 0, 3);
+    lettre_h->addWidget(new QLabel("    E "), 0, 4);
+    lettre_h->addWidget(new QLabel("    F "), 0, 5);
+    lettre_h->addWidget(new QLabel("    G "), 0, 6);
+    lettre_h->addWidget(new QLabel("    H "), 0, 7);
+    lettre_h->addWidget(new QLabel("    I "), 0, 8);
+    lettre_h->addWidget(new QLabel("    J "), 0, 9);
+
+    QGridLayout *chiffre_v = new QGridLayout;
+    chiffre_v->addWidget(new QLabel("0"), 0, 0);
+    chiffre_v->addWidget(new QLabel("1"), 1, 0);
+    chiffre_v->addWidget(new QLabel("2"), 2, 0);
+    chiffre_v->addWidget(new QLabel("3"), 3, 0);
+    chiffre_v->addWidget(new QLabel("4"), 4, 0);
+    chiffre_v->addWidget(new QLabel("5"), 5, 0);
+    chiffre_v->addWidget(new QLabel("6"), 6, 0);
+    chiffre_v->addWidget(new QLabel("7"), 7, 0);
+    chiffre_v->addWidget(new QLabel("8"), 8, 0);
+    chiffre_v->addWidget(new QLabel("9"), 9, 0);
+
+    QGridLayout *grille = new QGridLayout;
+    grille->setHorizontalSpacing(0);
+    grille->setVerticalSpacing(0);
+
     Case* m_cases;
 
     for(int i=0; i<10; ++i)
@@ -18,13 +45,17 @@ Carte::Carte() : QWidget()
             m_cases->setMinimumSize(40,40);
             m_cases->setMaximumSize(40,40);
             m_tabCase.push_back(m_cases);
-            m_layout->addWidget(m_cases,i,j);
+            grille->addWidget(m_cases,i,j);
 
             QObject::connect(m_cases, SIGNAL(clicked()), this, SLOT(actionBouton()));
         }
     }
 
-    this->setLayout(m_layout);
+    fenetre->addLayout(lettre_h, 0, 1);
+    fenetre->addLayout(chiffre_v, 1, 0);
+    fenetre->addLayout(grille, 1, 1);
+
+    this->setLayout(fenetre);
 }
 
 bool Carte::ajouterBateau(Bateau *b)
@@ -121,9 +152,9 @@ void Carte::enleverBateau(Bateau *b){
 
     for(int i = 0; i<taille; ++i){
         if(h){
-            m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:purple;");
+            m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:purple; outline:none;");
         }else{
-            m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:purple;");
+            m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:purple; outline:none;");
         }
     }
 

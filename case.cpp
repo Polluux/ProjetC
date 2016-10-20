@@ -10,7 +10,7 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
     x_ = x;
     y_ = y;
     setContent(new Mer());
-    this->setStyleSheet("background-color:grey;outline: none");
+    this->setStyleSheet("background-color:grey;");
 
 }
 

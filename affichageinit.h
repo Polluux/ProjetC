@@ -23,9 +23,13 @@ class AffichageInit : public  IAffichage
         void changeToJeu();
 
     protected:
+        void updateElements();
+
+    protected:
         QGridLayout *gLayoutCentral_;
         QGridLayout *gLayoutGauche_;
-        QVBoxLayout *bLayoutDroite_;
+        QGridLayout *gLayoutDroite_;
+        shared_ptr<Core> core_;
 };
 
 

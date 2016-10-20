@@ -13,12 +13,8 @@ Core::Core()
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     changeAffichageToJeu();
 
-
-
-    Team* t1 = new Team();
-    Team* t2 = new Team();
-    team1_ = shared_ptr<Team>(t1);
-    team2_ = shared_ptr<Team>(t2);
+    team1_ = shared_ptr<Team>(new Team());
+    team2_ = shared_ptr<Team>(new Team());
 }
 
 void Core::changeMode(CompMode *mode){

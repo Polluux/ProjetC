@@ -11,6 +11,7 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
     y_ = y;
     setContent(new Mer());
     this->setStyleSheet("background-color:grey;");
+
 }
 
 bool Case::clic(){

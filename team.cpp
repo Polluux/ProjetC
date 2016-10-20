@@ -9,12 +9,13 @@ Team::Team()
     b->setY(3);
 
     Bateau *b1 = new Bateau(3);
-    b->setHorizontal(true);
-    b->setX(3);
-    b->setY(2);
+    b1->setHorizontal(true);
+    b1->setX(7);
+    b1->setY(7);
 
     c->ajouterBateau(b);
     c->ajouterBateau(b1);
+
 }
 
 shared_ptr<Carte> Team::getCarte(){

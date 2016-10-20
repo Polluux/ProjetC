@@ -1,4 +1,5 @@
 #include "carte.h"
+#include <string>
 
 using namespace std;
 
@@ -33,19 +34,21 @@ bool Carte::ajouterBateau(Bateau *b)
     int taille = b->getTaille();
     bool h = b->getHorizontal();
 
+    //cout << "BATEAU : [" << x << ":" << y << "]" << endl;
+
     // pour gérer les cas de dépassements de zone
     bool err = false;
     // si le bateau est horizontal
     if(h){
         // et que sa taille + sa coordonée sur la colonne dépasse 9 ==> erreur
-        if(y+taille > 9){
+        if(y+taille-1 > 9){
             err = true;
         }
     }
     // idem si le bateau est vertical
     else{
         // et que sa taille + sa coordonnée sur la ligne dépasse 9
-        if(x+taille > 9){
+        if(x+taille-1 > 9){
             err = true;
         }
     }
@@ -84,6 +87,19 @@ bool Carte::ajouterBateau(Bateau *b)
             tabBateaux_.push_back(b);
         }
     }
+
+    /*string res = "";
+    int i = 0;
+    for(Case* c : m_tabCase){
+        if(i%10 == 0)res+="\n";
+        if(c->isEmpty()){
+            res+="0 ";
+        }else{
+            res+="1 ";
+        }
+        ++i;
+    }
+    cout << res << endl;*/
 
     // on retourne un booléen pour savoir si le bateau a été placé ou non
     return !err;

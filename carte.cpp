@@ -5,7 +5,7 @@ using namespace std;
 
 Carte::Carte() : QWidget()
 {
-    m_layout = new QGridLayout;
+    QGridLayout *m_layout = new QGridLayout;
     m_layout->setHorizontalSpacing(0);
     m_layout->setVerticalSpacing(0);
     Case* m_cases;

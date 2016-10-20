@@ -10,13 +10,17 @@
 
 using namespace std;
 
-class AffichageMenu;
 class AffichageJeu;
 
 class Core
 {
 public:
-    Core();
+    // le pattern Strategy permet de prendre en paramètre la stratégie à prendre
+    // ici le mode de jeu (1Vs1 ou IA)
+    Core(CompMode*);
+
+    void afficherMode();
+
     void changeMode(CompMode *mode);
     bool start();
     void afficher();
@@ -24,17 +28,15 @@ public:
     shared_ptr<Team> getTeam2();
 
     void changeAffichageToJeu();
-    void changeAffichageToMenu();
 
     ~Core();
 
 protected:
-    shared_ptr<CompMode> mode2_;
+    shared_ptr<CompMode> mode_;
     shared_ptr<Team> team1_;
     shared_ptr<Team> team2_;
     shared_ptr<IAffichage> affichageActif_;
     shared_ptr<AffichageJeu> affJeu_;
-    shared_ptr<AffichageMenu> affMen_;
 };
 
 #endif // CORE_H

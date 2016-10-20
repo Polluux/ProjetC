@@ -23,7 +23,6 @@ class Carte : public QWidget
         void actionBouton();
 
     private:
-        QGridLayout *m_layout;
         std::vector<Case*> m_tabCase;
         std::vector<Bateau*> tabBateaux_;
 };

@@ -22,6 +22,5 @@ void Mode1vsIA::debutTour(){}
 void Mode1vsIA::finTour(){}
 void Mode1vsIA::pret(){}
 
-void Mode1vsIA::AbstractMemberFunction(){}
 
 Mode1vsIA::~Mode1vsIA(){}

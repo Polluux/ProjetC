@@ -23,6 +23,4 @@ void Mode1vs1::debutTour(){}
 void Mode1vs1::finTour(){}
 void Mode1vs1::pret(){}
 
-void Mode1vs1::AbstractMemberFunction(){}
-
 Mode1vs1::~Mode1vs1(){}

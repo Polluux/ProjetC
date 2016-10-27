@@ -1,6 +1,8 @@
 #ifndef MER_H
 #define MER_H
 
+#include <iostream>
+
 #include "contenu.h"
 #include "case.h"
 
@@ -8,7 +10,6 @@ class Mer : public Contenu
 {
     public:
         Mer();
-        //void AbstractMemberFunction();
         bool action(Case *c);
 
         void setX(int x);

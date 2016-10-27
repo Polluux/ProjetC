@@ -1,10 +1,13 @@
 #ifndef COMPMODE_H
 #define COMPMODE_H
 
+#include <iostream>
+#include <string>
+
 class CompMode
 {
-public:
-    CompMode();
+    public:
+        CompMode();
 
         virtual void getMode() = 0;
         virtual void initialiserJoueurs() = 0;
@@ -16,7 +19,7 @@ public:
         virtual void finTour() = 0;
         virtual void pret() = 0;
 
-    virtual ~CompMode();
+        virtual ~CompMode();
 };
 
 #endif // COMPMODE_H

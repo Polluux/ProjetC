@@ -1,11 +1,9 @@
 #include "core.h"
-#include <cstddef>
+
 #include "iaffichage.h"
 #include "affichagejeu.h"
 #include "affichagemenu.h"
 #include "affichageinit.h"
-#include <memory>
-#include <iostream>
 
 using namespace std;
 
@@ -14,7 +12,7 @@ Core::Core(CompMode* c)
     mode_ = shared_ptr<CompMode> (c);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
-    affIni_ = shared_ptr<AffichageInit> (new AffichageInit(this));
+    affIni_ = shared_ptr<AffichageInit> (new AffichageInit(this, "Joueur 1"));
     affichageActif_ = affMen_;
 
     team1_ = shared_ptr<Team>(new Team());

@@ -1,8 +1,10 @@
 #include "team.h"
 
+using namespace std;
+
 Team::Team()
 {
-    Carte* c = new Carte();
+    CarteJeu* c = new CarteJeu();
     carte_ = shared_ptr<Carte> (c);
     Bateau *b = new Bateau(3);
     b->setX(2);

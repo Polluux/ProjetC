@@ -1,5 +1,7 @@
 #include "contenu.h"
 
+using namespace std;
+
 Contenu::Contenu(){}
 
 /*bool Contenu::Action(){}

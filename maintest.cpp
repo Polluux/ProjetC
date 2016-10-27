@@ -1,16 +1,14 @@
 #include <iostream>
 #include <string>
+#include <QApplication>
+#include <QPushButton>
+#include <QGridLayout>
+#include <memory>
+
 #include "compmode.h"
 #include "mode1vs1.h"
 #include "mode1vsia.h"
 #include "core.h"
-
-#include <QApplication>
-#include <QPushButton>
-#include <QGridLayout>
-
-
-#include <memory>
 
 using namespace std;
 

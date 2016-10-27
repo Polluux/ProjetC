@@ -1,6 +1,4 @@
 #include "case.h"
-#include "contenu.h"
-#include "mer.h"
 
 using namespace std;
 

@@ -5,14 +5,13 @@
 #include <QGridLayout>
 #include <QApplication>
 #include <iostream>
+#include <memory>
 
 #include "iaffichage.h"
 #include "core.h"
-#include <memory>
 
 class AffichageJeu : public  IAffichage
 {
-
     Q_OBJECT
 
     public:
@@ -29,7 +28,6 @@ class AffichageJeu : public  IAffichage
         void updateElements();
 
         QGridLayout *layout_;
-        //shared_ptr<Core> core_;
 };
 
 #endif // AFFICHAGEJEU_H

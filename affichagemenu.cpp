@@ -1,6 +1,6 @@
 #include "affichagemenu.h"
-#include "QLabel"
-#include "mode1vs1.h"
+
+using namespace std;
 
 AffichageMenu::AffichageMenu(Core* c) : IAffichage()
 {
@@ -42,7 +42,6 @@ void AffichageMenu::afficher(){
 }
 
 void AffichageMenu::clicMode1vs1(){
-    cout << "test" << endl;
     core_->changeMode(new Mode1vs1());
     changeToInitialisation();
 }

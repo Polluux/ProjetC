@@ -12,7 +12,9 @@ HEADERS += \
     iaffichage.h \
     affichagejeu.h \
     affichagemenu.h \
-    affichageinit.h
+    affichageinit.h \
+    carteinit.h \
+    cartejeu.h
 
 SOURCES += \
     mode1vs1.cpp \
@@ -29,7 +31,9 @@ SOURCES += \
     iaffichage.cpp \
     affichagejeu.cpp \
     affichagemenu.cpp \
-    affichageinit.cpp
+    affichageinit.cpp \
+    carteinit.cpp \
+    cartejeu.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
 QT += widgets

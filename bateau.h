@@ -1,9 +1,10 @@
 #ifndef BATEAU_H
 #define BATEAU_H
 
+#include <iostream>
+
 #include "contenu.h"
 #include "case.h"
-#include "observer.h"
 
 class Bateau : public Contenu
 {

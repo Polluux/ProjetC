@@ -5,10 +5,12 @@
 #include <QGridLayout>
 #include <QApplication>
 #include <iostream>
+#include <memory>
+#include <QLabel>
 
 #include "iaffichage.h"
 #include "core.h"
-#include <memory>
+#include "mode1vs1.h"
 
 class AffichageMenu : public  IAffichage
 {

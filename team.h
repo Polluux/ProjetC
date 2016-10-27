@@ -1,17 +1,18 @@
 #ifndef TEAM_H
 #define TEAM_H
 
-#include "carte.h"
 #include <memory>
+
+#include "cartejeu.h"
 
 class Team
 {
     public:
         Team();
-        shared_ptr<Carte> getCarte();
+        std::shared_ptr<Carte> getCarte();
 
     private:
-        shared_ptr<Carte> carte_;
+        std::shared_ptr<Carte> carte_;
         //Joueur joueur_;
 };
 

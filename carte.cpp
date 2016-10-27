@@ -1,5 +1,4 @@
 #include "carte.h"
-#include <string>
 
 using namespace std;
 
@@ -119,19 +118,6 @@ bool Carte::ajouterBateau(Bateau *b)
         }
     }
 
-    /*string res = "";
-    int i = 0;
-    for(Case* c : m_tabCase){
-        if(i%10 == 0)res+="\n";
-        if(c->isEmpty()){
-            res+="0 ";
-        }else{
-            res+="1 ";
-        }
-        ++i;
-    }
-    cout << res << endl;*/
-
     // on retourne un booléen pour savoir si le bateau a été placé ou non
     return !err;
 }
@@ -159,21 +145,4 @@ void Carte::enleverBateau(Bateau *b){
     }
 
     tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
-}
-
-void Carte::actionBouton()
-{
-    QObject *emetteur = sender();
-
-    Case *bouton = dynamic_cast<Case*>(emetteur);
-
-    bool res = bouton->clic();
-    //Passage de main au joueur suivant si false sinon ... on continue
-
-    for(Bateau *b : tabBateaux_){
-        if(b->estCoule()){
-            enleverBateau(b);
-            cout << "Bateau coulé !" << endl;
-        }
-    }
 }

@@ -1,5 +1,4 @@
 #include "bateau.h"
-#include <iostream>
 
 using namespace std;
 

@@ -4,11 +4,8 @@
 #include <QApplication>
 #include <QWidget>
 #include <iostream>
-
 #include <memory>
 #include <iostream>
-
-using namespace std;
 
 class Core;
 
@@ -25,9 +22,8 @@ class IAffichage : public QWidget
 
         virtual ~IAffichage();
 
-    // interface avec attribut ??
     protected:
-        shared_ptr<Core> core_;
+        std::shared_ptr<Core> core_;
 };
 
 #endif // IAFFICHAGE_H

@@ -6,6 +6,7 @@
 #include <iostream>
 #include <QApplication>
 #include <QLabel>
+#include <string>
 
 #include "case.h"
 #include "bateau.h"
@@ -21,9 +22,9 @@ class Carte : public QWidget
         void afficherCarte();
 
     public slots :
-        void actionBouton();
+        virtual void actionBouton() = 0;
 
-    private:
+    protected:
         std::vector<Case*> m_tabCase;
         std::vector<Bateau*> tabBateaux_;
 };

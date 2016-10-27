@@ -21,7 +21,8 @@ class AffichageMenu : public  IAffichage
         void afficher();
 
         void changeToMenu();
-        void changeToInitialisation();
+        virtual void changeToInitialisationJ1();
+        virtual void changeToInitialisationJ2();
         void changeToJeu();
 
     public slots :

@@ -19,7 +19,8 @@ class AffichageJeu : public  IAffichage
         void afficher();
 
         void changeToMenu();
-        void changeToInitialisation();
+        virtual void changeToInitialisationJ1();
+        virtual void changeToInitialisationJ2();
         void changeToJeu();
 
         void addContent(QWidget* c,int x, int y);

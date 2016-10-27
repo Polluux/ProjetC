@@ -43,11 +43,12 @@ void AffichageMenu::afficher(){
 
 void AffichageMenu::clicMode1vs1(){
     core_->changeMode(new Mode1vs1());
-    changeToInitialisation();
+    changeToInitialisationJ1();
 }
 
 void AffichageMenu::changeToMenu(){}
-void AffichageMenu::changeToInitialisation(){
-    core_->changeAffichageToInit();
+void AffichageMenu::changeToInitialisationJ1(){
+    core_->changeAffichageToInitJ1();
 }
+void AffichageMenu::changeToInitialisationJ2(){}
 void AffichageMenu::changeToJeu(){}

@@ -3,7 +3,8 @@
 #include "iaffichage.h"
 #include "affichagejeu.h"
 #include "affichagemenu.h"
-#include "affichageinit.h"
+#include "affichageinitj1.h"
+#include "affichageinitj2.h"
 
 using namespace std;
 
@@ -12,7 +13,8 @@ Core::Core(CompMode* c)
     mode_ = shared_ptr<CompMode> (c);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
-    affIni_ = shared_ptr<AffichageInit> (new AffichageInit(this, "Joueur 1"));
+    affIniJ1_ = shared_ptr<AffichageInitJ1> (new AffichageInitJ1(this));
+    affIniJ2_ = shared_ptr<AffichageInitJ2> (new AffichageInitJ2(this));
     affichageActif_ = affMen_;
 
     team1_ = shared_ptr<Team>(new Team());
@@ -35,9 +37,15 @@ void Core::changeAffichageToMenu(){
     affichageActif_->afficher();
 }
 
-void Core::changeAffichageToInit(){
+void Core::changeAffichageToInitJ1(){
     affichageActif_->hide();
-    affichageActif_ = affIni_;
+    affichageActif_ = affIniJ1_;
+    affichageActif_->afficher();
+}
+
+void Core::changeAffichageToInitJ2(){
+    affichageActif_->hide();
+    affichageActif_ = affIniJ2_;
     affichageActif_->afficher();
 }
 

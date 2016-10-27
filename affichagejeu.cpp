@@ -28,5 +28,6 @@ void AffichageJeu::addContent(QWidget* c, int x, int y){
 }
 
 void AffichageJeu::changeToMenu(){}
-void AffichageJeu::changeToInitialisation(){}
+void AffichageJeu::changeToInitialisationJ1(){}
+void AffichageJeu::changeToInitialisationJ2(){}
 void AffichageJeu::changeToJeu(){}

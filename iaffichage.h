@@ -17,7 +17,8 @@ class IAffichage : public QWidget
         IAffichage();
         virtual void afficher()=0;
         virtual void changeToMenu()=0;
-        virtual void changeToInitialisation()=0;
+        virtual void changeToInitialisationJ1()=0;
+        virtual void changeToInitialisationJ2()=0;
         virtual void changeToJeu()=0;
 
         virtual ~IAffichage();

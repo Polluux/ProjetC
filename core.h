@@ -11,7 +11,8 @@
 
 class AffichageMenu;
 class AffichageJeu;
-class AffichageInit;
+class AffichageInitJ1;
+class AffichageInitJ2;
 
 class Core
 {
@@ -25,7 +26,8 @@ class Core
 
         void changeAffichageToJeu();
         void changeAffichageToMenu();
-        void changeAffichageToInit();
+        void changeAffichageToInitJ1();
+        void changeAffichageToInitJ2();
 
         ~Core();
 
@@ -36,7 +38,8 @@ class Core
         std::shared_ptr<IAffichage> affichageActif_;
         std::shared_ptr<AffichageJeu> affJeu_;
         std::shared_ptr<AffichageMenu> affMen_;
-        std::shared_ptr<AffichageInit> affIni_;
+        std::shared_ptr<AffichageInitJ1> affIniJ1_;
+        std::shared_ptr<AffichageInitJ2> affIniJ2_;
 };
 
 #endif // CORE_H

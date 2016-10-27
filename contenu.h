@@ -19,7 +19,6 @@ class Contenu
         virtual bool isEmpty()=0;
 
         virtual ~Contenu();
-
     protected:
         int x_;
         int y_;

@@ -17,8 +17,8 @@ void AffichageInitJ2::updateElements(){
     gLayoutGauche_ = new QGridLayout;
     gLayoutDroite_ = new QGridLayout;
 
-    Carte *c = new CarteInit();
-    gLayoutGauche_->addWidget(c,0,0);
+    carteInit_ = new CarteInit();
+    gLayoutGauche_->addWidget(carteInit_,0,0);
 
 
     QLabel *p = new QLabel;
@@ -28,15 +28,15 @@ void AffichageInitJ2::updateElements(){
     gLayoutGauche_->addWidget(p,1,0);
 
 
-    QLineEdit *pseudo = new QLineEdit(QString::fromStdString("Joueur 2"));
-    pseudo->setMaximumSize(200,75);
-    pseudo->setMinimumSize(200,75);
-    QFont fontP = pseudo->font();
+    pseudo_ = new QLineEdit(QString::fromStdString("Joueur 2"));
+    pseudo_->setMaximumSize(200,75);
+    pseudo_->setMinimumSize(200,75);
+    QFont fontP = pseudo_->font();
     fontP.setPointSize(18);
-    pseudo->setFont(fontP);
-    pseudo->setAlignment(Qt::AlignCenter);
+    pseudo_->setFont(fontP);
+    pseudo_->setAlignment(Qt::AlignCenter);
 
-    gLayoutDroite_->addWidget(pseudo,0,3,1,6,Qt::AlignTop);
+    gLayoutDroite_->addWidget(pseudo_,0,3,1,6,Qt::AlignTop);
 
     b4_ = new QRadioButton("x1");
     b4_->setChecked(true);
@@ -125,7 +125,9 @@ void AffichageInitJ2::clicBouton(){
                   && b2_->text().toStdString() == "x0"
                   && b1_->text().toStdString() == "x0";
 
-    if(!allPlaced)
+    if(pseudo_->text() == "")
+        QMessageBox::warning(this, "Erreur pseudo","Veuillez entrer un pseudo !");
+    else if(!allPlaced)
     {
         QMessageBox::warning(this, "Ce n'est pas encore l'heure de jouer", "Il reste encore des bateaux à placer !");
 //        b4_->setText("x0");

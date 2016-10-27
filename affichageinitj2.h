@@ -39,10 +39,12 @@ class AffichageInitJ2 : public IAffichage
         QGridLayout *gLayoutGauche_;
         QGridLayout *gLayoutDroite_;
         std::shared_ptr<Core> core_;
+        Carte *carteInit_;
         QRadioButton *b1_;
         QRadioButton *b2_;
         QRadioButton *b3_;
         QRadioButton *b4_;
+        QLineEdit *pseudo_;
 };
 
 #endif // AFFICHAGEINITJ2_H

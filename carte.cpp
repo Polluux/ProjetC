@@ -64,8 +64,6 @@ bool Carte::ajouterBateau(Bateau *b)
     int taille = b->getTaille();
     bool h = b->getHorizontal();
 
-    //cout << "BATEAU : [" << x << ":" << y << "]" << endl;
-
     // pour gérer les cas de dépassements de zone
     bool err = false;
     // si le bateau est horizontal

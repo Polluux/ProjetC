@@ -10,7 +10,6 @@ class Bateau : public Contenu
 {
     public:
         Bateau(int taille);
-        //void AbstractMemberFunction();
         bool action(Case *c);
 
         void setX(int x);

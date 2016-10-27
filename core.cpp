@@ -39,6 +39,7 @@ void Core::changeAffichageToMenu(){
 
 void Core::changeAffichageToInitJ1(){
     affichageActif_->hide();
+    affIniJ1_->b4IsChecked();
     affichageActif_ = affIniJ1_;
     affichageActif_->afficher();
 }

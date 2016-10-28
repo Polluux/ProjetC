@@ -39,7 +39,7 @@ void Core::changeAffichageToMenu(){
 
 void Core::changeAffichageToInitJ1(){
     affichageActif_->hide();
-    affIniJ1_->b4IsChecked();
+    //affIniJ1_->b4IsChecked();
     affichageActif_ = affIniJ1_;
     affichageActif_->afficher();
 }
@@ -69,5 +69,32 @@ shared_ptr<Team> Core::getTeam1(){
 shared_ptr<Team> Core::getTeam2(){
     return team2_;
 }
+
+//void Core::initialiser(){
+//    bool b4J1 = affIniJ1_->b4IsChecked();
+//    bool b3J1 = affIniJ1_->b4IsChecked();
+//    bool b2J1 = affIniJ1_->b4IsChecked();
+//    bool b1J1 = affIniJ1_->b4IsChecked();
+
+//    string nbB4J1 = affIniJ1_->nbRestantB4();
+//    string nbB3J1 = affIniJ1_->nbRestantB3();
+//    string nbB2J1 = affIniJ1_->nbRestantB2();
+//    string nbB1J1 = affIniJ1_->nbRestantB1();
+
+//    bool b4J2 = affIniJ2_->b4IsChecked();
+//    bool b3J2 = affIniJ2_->b4IsChecked();
+//    bool b2J2 = affIniJ2_->b4IsChecked();
+//    bool b1J2 = affIniJ2_->b4IsChecked();
+
+//    while(nbB4J1 != "x0" && nbB3J1 != "x0" && nbB2J1 != "x0" && nbB1J1 != "x0"){
+//        if(b3J1)
+//            team1_->getCarteInit()->ajouterBateau(new Bateau(3));
+//    }
+
+//}
+
+//void Core::jouer(){
+
+//}
 
 Core::~Core(){}

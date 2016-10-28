@@ -10,7 +10,6 @@ class Mode1vs1 : public CompMode
 {
     public:
         Mode1vs1();
-        void AbstractMemberFunction();
         void getMode();
 
         void initialiserJoueurs();

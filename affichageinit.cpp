@@ -58,16 +58,16 @@ void AffichageInit::updateElements(string nomJoueur, string txtBt){
     QPixmap canard("fonts/canard.jpg");
     QPixmap caneton("fonts/caneton.jpg");
 
-    labelCygne->setPixmap(cygne.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCygne2->setPixmap(cygne.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCygne3->setPixmap(cygne.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCygne4->setPixmap(cygne.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelOie->setPixmap(oie.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelOie2->setPixmap(oie.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelOie3->setPixmap(oie.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCanard->setPixmap(canard.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCanard2->setPixmap(canard.scaled ( 100, 100, Qt::KeepAspectRatio));
-    labelCaneton->setPixmap(caneton.scaled ( 100, 100, Qt::KeepAspectRatio));
+    labelCygne->setPixmap(cygne.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCygne2->setPixmap(cygne.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCygne3->setPixmap(cygne.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCygne4->setPixmap(cygne.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelOie->setPixmap(oie.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelOie2->setPixmap(oie.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelOie3->setPixmap(oie.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCanard->setPixmap(canard.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCanard2->setPixmap(canard.scaled ( 90, 90, Qt::KeepAspectRatio));
+    labelCaneton->setPixmap(caneton.scaled ( 90, 90, Qt::KeepAspectRatio));
 
     gLayoutDroite_->addWidget(b4_,1,0);
     gLayoutDroite_->addWidget(labelCygne,1,2);
@@ -87,18 +87,15 @@ void AffichageInit::updateElements(string nomJoueur, string txtBt){
     gLayoutDroite_->addWidget(b1_,4,0);
     gLayoutDroite_->addWidget(labelCaneton,4,2);
 
-    /* sur le coté mettre chaque "bateau" (image) avec un RadioButton
-     * cocher le bateau que l'on veut placer
-     * après l'avoir placé, désactiver le radioButton
-     */
-
     horizontal_ = new QCheckBox("horizontal ?");
     gLayoutDroite_->addWidget(horizontal_,5,0);
+
+    reset_ = new QPushButton("Reset");
+    gLayoutDroite_->addWidget(reset_,5,3);
 
     boutonSuivant_ = new QPushButton(QString::fromStdString(txtBt));
     boutonSuivant_->setMaximumSize(200,75);
     boutonSuivant_->setMinimumSize(200,75);
-//    QObject::connect(boutonJeu, SIGNAL(clicked()), this, SLOT(clicBouton()));
     QFont fontB = boutonSuivant_->font();
     fontB.setPointSize(13);
     boutonSuivant_->setFont(fontB);
@@ -107,47 +104,47 @@ void AffichageInit::updateElements(string nomJoueur, string txtBt){
 
     gLayoutCentral_->addLayout(gLayoutGauche_,0,0);
     gLayoutCentral_->addLayout(gLayoutDroite_,0,1);
-
-//    this->setMinimumSize(200,200);
-//    this->setWindowTitle("Initialisation");
-//    this->setLayout(gLayoutCentral_);
 }
 
 bool AffichageInit::hChecked(){
     return horizontal_->isChecked();
 }
 
-bool AffichageInit::b4IsChecked(){
-    return b4_->isChecked();
+QRadioButton* AffichageInit::getBateauSelect(){
+    if(b4_->isChecked())
+        return b4_;
+    else if(b3_->isChecked())
+        return b3_;
+    else if(b2_->isChecked())
+        return b2_;
+    else
+        return b1_;
 }
 
-bool AffichageInit::b3IsChecked(){
-    return b3_->isChecked();
+QRadioButton* AffichageInit::getB4(){
+    return b4_;
 }
 
-bool AffichageInit::b2IsChecked(){
-    return b2_->isChecked();
+QRadioButton* AffichageInit::getB3(){
+    return b3_;
 }
 
-bool AffichageInit::b1IsChecked(){
-    return b1_->isChecked();
+QRadioButton* AffichageInit::getB2(){
+    return b2_;
 }
 
-string AffichageInit::nbRestantB4(){
-    return b4_->text().toStdString();
+QRadioButton* AffichageInit::getB1(){
+    return b1_;
 }
 
-string AffichageInit::nbRestantB3(){
-    return b3_->text().toStdString();
+void AffichageInit::resetBouton(){
+    b4_->setText("x1");
+    b3_->setText("x2");
+    b2_->setText("x3");
+    b1_->setText("x4");
+
+    b4_->setEnabled(true);
+    b3_->setEnabled(true);
+    b2_->setEnabled(true);
+    b1_->setEnabled(true);
 }
-
-string AffichageInit::nbRestantB2(){
-    return b2_->text().toStdString();
-}
-
-string AffichageInit::nbRestantB1(){
-    return b1_->text().toStdString();
-}
-
-
-

@@ -25,15 +25,14 @@ class AffichageInit
 
         bool hChecked();
 
-        bool b4IsChecked();
-        bool b3IsChecked();
-        bool b2IsChecked();
-        bool b1IsChecked();
+        QRadioButton* getB4();
+        QRadioButton* getB3();
+        QRadioButton* getB2();
+        QRadioButton* getB1();
 
-        std::string nbRestantB4();
-        std::string nbRestantB3();
-        std::string nbRestantB2();
-        std::string nbRestantB1();
+        QRadioButton* getBateauSelect();
+
+        void resetBouton();
 
     protected:
         QGridLayout *gLayoutCentral_;
@@ -47,6 +46,7 @@ class AffichageInit
         QLineEdit *pseudo_;
         QCheckBox *horizontal_;
         QPushButton *boutonSuivant_;
+        QPushButton *reset_;
 };
 
 #endif // AFFICHAGEINIT_H

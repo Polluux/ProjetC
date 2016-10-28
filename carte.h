@@ -20,6 +20,9 @@ class Carte : public QWidget
         bool ajouterBateau(Bateau *b);
         void enleverBateau(Bateau *b);
         void afficherCarte();
+        std::vector<Bateau*> getTabBateau();
+        std::vector<Case*> getTabCase();
+        void reset();
 
     public slots :
         virtual void actionBouton() = 0;

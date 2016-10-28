@@ -144,3 +144,23 @@ void Carte::enleverBateau(Bateau *b){
 
     tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
 }
+
+vector<Bateau*> Carte::getTabBateau(){
+    return tabBateaux_;
+}
+
+vector<Case*> Carte::getTabCase(){
+    return m_tabCase;
+}
+
+void Carte::reset(){
+    for(Bateau *b : tabBateaux_)
+        enleverBateau(b);
+    for(Case *c : m_tabCase){
+        // pb !! A voir
+        //c->setContent(new Mer());
+        c->setStyleSheet("background-color:grey; outline:none;");
+        cout << c->getContent()->isEmpty() << endl;
+    }
+}
+

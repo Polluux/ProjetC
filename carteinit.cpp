@@ -2,20 +2,16 @@
 
 #include "affichageinit.h"
 
-//#include "affichageinitj1.h"
-//#include "affichageinitj2.h"
 
 using namespace std;
 
-CarteInit::CarteInit(AffichageInit/*J1*/ *a) : Carte()
+CarteInit::CarteInit(AffichageInit *a) : Carte()
 {
-    aff_/*J1_*/ = shared_ptr<AffichageInit/*J1*/>(a);
-}
+    aff_ = shared_ptr<AffichageInit>(a);
 
-//CarteInit::CarteInit(AffichageInitJ2 *a) : Carte()
-//{
-//    affJ2_ = shared_ptr<AffichageInitJ2>(a);
-//}
+//    for(Case* c : m_tabCase)
+//        c->setStyleSheet("background-color:blue;outline: none");
+}
 
 void CarteInit::actionBouton()
 {
@@ -28,22 +24,41 @@ void CarteInit::actionBouton()
 
     int tailleB = 0;
 
-    if(aff_/*J1_*/->b1IsChecked())
-        tailleB = 1;
-    else if(aff_/*J1_*/->b2IsChecked())
-        tailleB = 2;
-    else if(aff_/*J1_*/->b3IsChecked())
-        tailleB = 3;
-    else
+    QRadioButton* bateauSelec = aff_->getBateauSelect();
+
+    if(bateauSelec == aff_->getB4())
         tailleB = 4;
+    else if(bateauSelec == aff_->getB3())
+        tailleB = 3;
+    else if(bateauSelec == aff_->getB2())
+        tailleB = 2;
+    else
+        tailleB = 1;
+
+    string nb = bateauSelec->text().toStdString();
 
     Bateau *b = new Bateau(tailleB);
     b->setX(x);
     b->setY(y);
 
-    if(aff_/*J1_*/->hChecked())
+    if(aff_->hChecked())
         b->setHorizontal(true);
 
-    ajouterBateau(b);
+    if(nb != "x0"){
+        if(nb == "x4")
+            bateauSelec->setText("x3");
+        else if(nb == "x3")
+            bateauSelec->setText("x2");
+        else if(nb == "x2")
+            bateauSelec->setText("x1");
+        else
+        {
+            bateauSelec->setText("x0");
+            bateauSelec->setEnabled(false);
+        }
+
+        ajouterBateau(b);
+    }
 }
+
 

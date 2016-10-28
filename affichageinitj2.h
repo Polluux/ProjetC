@@ -21,6 +21,7 @@ class AffichageInitJ2 : public IAffichage, AffichageInit
 
     public slots:
         void clicBouton();
+        void resetCarteInit();
 
     private:
         std::shared_ptr<Core> core_;

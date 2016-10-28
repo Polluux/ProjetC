@@ -8,10 +8,12 @@ AffichageInitJ1::AffichageInitJ1(Core* c)
 
     updateElements("Joueur 1", "Au tour du Joueur 2");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
+    QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ1::afficher(){
-    this->setMinimumSize(200,200);
+    this->setMinimumSize(1000,580);
+    this->setMaximumSize(1000,580);
     this->setWindowTitle("Initialisation");
     this->setLayout(gLayoutCentral_);
 
@@ -27,15 +29,14 @@ void AffichageInitJ1::clicBouton(){
     if(pseudo_->text() == "")
         QMessageBox::warning(this, "Erreur pseudo","Veuillez entrer un pseudo !");
     else if(!allPlaced)
-    {
         QMessageBox::warning(this, "Ce n'est pas encore l'heure de jouer", "Il reste encore des bateaux à placer !");
-        b4_->setText("x0");
-        b3_->setText("x0");
-        b2_->setText("x0");
-        b1_->setText("x0");
-    }
     else
         changeToInitialisationJ2();
+}
+
+void AffichageInitJ1::resetCarteInit(){
+    carteInit_->reset();
+    resetBouton();
 }
 
 void AffichageInitJ1::changeToMenu(){}

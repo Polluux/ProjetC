@@ -12,8 +12,8 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
 void AffichageJeu::updateElements(){
     shared_ptr<Team> team1 = core_->getTeam1();
     shared_ptr<Team> team2 = core_->getTeam2();
-    layout_->addWidget(&*team1->getCarte(),0,0);
-    layout_->addWidget(&*team2->getCarte(),0,1);
+    layout_->addWidget(&*team1->getCarteInit(),0,0);
+    layout_->addWidget(&*team2->getCarteInit(),0,1);
     this->setLayout(layout_);
     this->setWindowTitle("Jeu !!");
 }

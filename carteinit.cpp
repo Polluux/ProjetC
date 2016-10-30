@@ -8,9 +8,6 @@ using namespace std;
 CarteInit::CarteInit(AffichageInit *a) : Carte()
 {
     aff_ = shared_ptr<AffichageInit>(a);
-
-//    for(Case* c : m_tabCase)
-//        c->setStyleSheet("background-color:blue;outline: none");
 }
 
 void CarteInit::actionBouton()
@@ -44,7 +41,7 @@ void CarteInit::actionBouton()
     if(aff_->hChecked())
         b->setHorizontal(true);
 
-    if(nb != "x0"){
+    if(nb != "x0" && ajouterBateau(b)){
         if(nb == "x4")
             bateauSelec->setText("x3");
         else if(nb == "x3")
@@ -56,8 +53,6 @@ void CarteInit::actionBouton()
             bateauSelec->setText("x0");
             bateauSelec->setEnabled(false);
         }
-
-        ajouterBateau(b);
     }
 }
 

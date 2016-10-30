@@ -8,7 +8,7 @@ AffichageInitJ1::AffichageInitJ1(Core* c)
 
     updateElements("Joueur 1", "Au tour du Joueur 2");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
-    QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
+    //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ1::afficher(){

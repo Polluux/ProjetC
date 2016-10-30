@@ -29,9 +29,6 @@ class Core
         void changeAffichageToInitJ1();
         void changeAffichageToInitJ2();
 
-//        void initialiser();
-//        void jouer();
-
         ~Core();
 
     protected:

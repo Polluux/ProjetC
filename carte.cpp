@@ -64,6 +64,28 @@ bool Carte::ajouterBateau(Bateau *b)
     int taille = b->getTaille();
     bool h = b->getHorizontal();
 
+    QIcon logoCase;
+
+    QPixmap cygne("fonts/cygne.jpg");
+    QPixmap oie("fonts/oie.jpg");
+    QPixmap canard("fonts/canard.jpg");
+    QPixmap caneton("fonts/caneton.jpg");
+
+    switch(taille){
+        case 1:
+            logoCase = QIcon(caneton);
+            break;
+        case 2:
+            logoCase = QIcon(canard);
+            break;
+        case 3:
+            logoCase = QIcon(oie);
+            break;
+        default:
+            logoCase = QIcon(cygne);
+            break;
+    }
+
     // pour gérer les cas de dépassements de zone
     bool err = false;
     // si le bateau est horizontal
@@ -106,8 +128,12 @@ bool Carte::ajouterBateau(Bateau *b)
             for(int i = 0; i<taille; ++i){
                 if(h){
                     m_tabCase[(x*10+(y+i))]->setContent(b);
+                    m_tabCase[(x*10+(y+i))]->setIcon(logoCase);
+                    m_tabCase[(x*10+(y+i))]->setIconSize(QSize(40,40));
                 }else{
                     m_tabCase[((x+i)*10+y)]->setContent(b);
+                    m_tabCase[((x+i)*10+y)]->setIcon(logoCase);
+                    m_tabCase[((x+i)*10+y)]->setIconSize(QSize(40,40));
                 }
             }
 
@@ -157,10 +183,9 @@ void Carte::reset(){
     for(Bateau *b : tabBateaux_)
         enleverBateau(b);
     for(Case *c : m_tabCase){
-        // pb !! A voir
+        // à voir !! PB !!!
         //c->setContent(new Mer());
         c->setStyleSheet("background-color:grey; outline:none;");
-        cout << c->getContent()->isEmpty() << endl;
     }
 }
 

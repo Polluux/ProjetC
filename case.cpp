@@ -48,8 +48,9 @@ shared_ptr<Contenu> Case::getContent(){
 
 void Case::setContent(Contenu *c){
     content_ = shared_ptr<Contenu> (c);
-    this->setStyleSheet("background-color:green; outline:none;");
 }
+
+
 
 Case::~Case(){}
 

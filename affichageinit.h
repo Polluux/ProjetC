@@ -47,6 +47,8 @@ class AffichageInit
         QCheckBox *horizontal_;
         QPushButton *boutonSuivant_;
         QPushButton *reset_;
+        std::shared_ptr<Team> joueur1;
+        std::shared_ptr<Team> joueur2;
 };
 
 #endif // AFFICHAGEINIT_H

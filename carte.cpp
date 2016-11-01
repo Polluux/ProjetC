@@ -55,6 +55,11 @@ Carte::Carte() : QWidget()
     fenetre->addLayout(grille, 1, 1);
 
     this->setLayout(fenetre);
+
+    cygne_ = QPixmap("fonts/cygne.jpg");
+    oie_ = QPixmap("fonts/oie.jpg");
+    canard_ = QPixmap("fonts/canard.jpg");
+    caneton_ = QPixmap("fonts/caneton.jpg");
 }
 
 bool Carte::ajouterBateau(Bateau *b)
@@ -64,25 +69,18 @@ bool Carte::ajouterBateau(Bateau *b)
     int taille = b->getTaille();
     bool h = b->getHorizontal();
 
-    QIcon logoCase;
-
-    QPixmap cygne("fonts/cygne.jpg");
-    QPixmap oie("fonts/oie.jpg");
-    QPixmap canard("fonts/canard.jpg");
-    QPixmap caneton("fonts/caneton.jpg");
-
     switch(taille){
         case 1:
-            logoCase = QIcon(caneton);
+            logoCase_ = QIcon(caneton_);
             break;
         case 2:
-            logoCase = QIcon(canard);
+            logoCase_ = QIcon(canard_);
             break;
         case 3:
-            logoCase = QIcon(oie);
+            logoCase_ = QIcon(oie_);
             break;
         default:
-            logoCase = QIcon(cygne);
+            logoCase_ = QIcon(cygne_);
             break;
     }
 
@@ -128,11 +126,11 @@ bool Carte::ajouterBateau(Bateau *b)
             for(int i = 0; i<taille; ++i){
                 if(h){
                     m_tabCase[(x*10+(y+i))]->setContent(b);
-                    m_tabCase[(x*10+(y+i))]->setIcon(logoCase);
+                    m_tabCase[(x*10+(y+i))]->setIcon(logoCase_);
                     m_tabCase[(x*10+(y+i))]->setIconSize(QSize(40,40));
                 }else{
                     m_tabCase[((x+i)*10+y)]->setContent(b);
-                    m_tabCase[((x+i)*10+y)]->setIcon(logoCase);
+                    m_tabCase[((x+i)*10+y)]->setIcon(logoCase_);
                     m_tabCase[((x+i)*10+y)]->setIconSize(QSize(40,40));
                 }
             }
@@ -153,6 +151,21 @@ void Carte::enleverBateau(Bateau *b){
     bool h = b->getHorizontal();
     int indiceBateau = 0;
 
+    switch(taille){
+        case 1:
+            logoCase_ = QIcon(caneton_);
+            break;
+        case 2:
+            logoCase_ = QIcon(canard_);
+            break;
+        case 3:
+            logoCase_ = QIcon(oie_);
+            break;
+        default:
+            logoCase_ = QIcon(cygne_);
+            break;
+    }
+
     for(unsigned int i=0; i<tabBateaux_.size(); ++i) {
         if(tabBateaux_[i]->estEgal(b))
         {
@@ -162,9 +175,11 @@ void Carte::enleverBateau(Bateau *b){
 
     for(int i = 0; i<taille; ++i){
         if(h){
-            m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:purple; outline:none;");
+            m_tabCase[(x*10+(y+i))]->setIcon(logoCase_);
+            m_tabCase[(x*10+(y+i))]->setIconSize(QSize(40,40));
         }else{
-            m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:purple; outline:none;");
+            m_tabCase[((x+i)*10+y)]->setIcon(logoCase_);
+            m_tabCase[((x+i)*10+y)]->setIconSize(QSize(40,40));
         }
     }
 

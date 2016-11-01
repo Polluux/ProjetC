@@ -29,6 +29,10 @@ class AffichageJeu : public  IAffichage
         void updateElements();
 
         QGridLayout *layout_;
+
+    private:
+        std::shared_ptr<Carte> carteJeuT1_;
+        std::shared_ptr<Carte> carteJeuT2_;
 };
 
 #endif // AFFICHAGEJEU_H

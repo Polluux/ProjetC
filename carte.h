@@ -11,6 +11,8 @@
 #include "case.h"
 #include "bateau.h"
 
+class Team;
+
 class Carte : public QWidget
 {
     Q_OBJECT
@@ -30,6 +32,11 @@ class Carte : public QWidget
     protected:
         std::vector<Case*> m_tabCase;
         std::vector<Bateau*> tabBateaux_;
+        QIcon logoCase_;
+        QPixmap cygne_;
+        QPixmap oie_;
+        QPixmap canard_;
+        QPixmap caneton_;
 };
 
 #endif // CARTE_H

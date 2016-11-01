@@ -4,14 +4,21 @@ using namespace std;
 
 Team::Team()
 {
-    carteJeu_ = shared_ptr<CarteJeu> (new CarteJeu());
-    //carteInit_ = shared_ptr<CarteInit>(new CarteInit(new AffichageInit()));
-}
-
-shared_ptr<Carte> Team::getCarteJeu(){
-    return carteJeu_;
+    pseudo_ = "";
 }
 
 shared_ptr<Carte> Team::getCarteInit(){
     return carteInit_;
+}
+
+void Team::setCarteInit(Carte *c){
+    carteInit_ = shared_ptr<Carte>(c);
+}
+
+string Team::getPseudo(){
+    return pseudo_;
+}
+
+void Team::setPseudo(string p){
+    pseudo_ = p;
 }

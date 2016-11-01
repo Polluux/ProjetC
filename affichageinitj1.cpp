@@ -8,13 +8,14 @@ AffichageInitJ1::AffichageInitJ1(Core* c)
 
     updateElements("Joueur 1", "Au tour du Joueur 2");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
+    joueur1 = core_->getTeam1();
     //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ1::afficher(){
     this->setMinimumSize(1000,580);
     this->setMaximumSize(1000,580);
-    this->setWindowTitle("Initialisation");
+    this->setWindowTitle("Initialisation J1");
     this->setLayout(gLayoutCentral_);
 
     this->show();
@@ -26,12 +27,17 @@ void AffichageInitJ1::clicBouton(){
                   && b2_->text().toStdString() == "x0"
                   && b1_->text().toStdString() == "x0";
 
-    if(pseudo_->text() == "")
-        QMessageBox::warning(this, "Erreur pseudo","Veuillez entrer un pseudo !");
+    if(pseudo_->text().isEmpty())
+        QMessageBox::warning(this, "Erreur pseudo", "Veuillez entrer un pseudo !");
     else if(!allPlaced)
         QMessageBox::warning(this, "Ce n'est pas encore l'heure de jouer", "Il reste encore des bateaux à placer !");
     else
+    {
+        joueur1->setCarteInit(carteInit_);
+        //joueur1->setPseudo(pseudo_->text().toStdString());
+        //cout << joueur1->getPseudo() << endl;
         changeToInitialisationJ2();
+    }
 }
 
 void AffichageInitJ1::resetCarteInit(){

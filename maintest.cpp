@@ -17,12 +17,12 @@ int main(int argc, char *argv[]){
 
 
     Core *myCore = new Core(nullptr);
-    if(myCore->start()){
-        cout << "Initialisé" << endl;
-        myCore->afficher();
-    }else{
-        cout << "NULL" << endl;
-    }
+//    if(myCore->start()){
+//        cout << "Initialisé" << endl;
+//        myCore->afficher();
+//    }else{
+//        cout << "NULL" << endl;
+//    }
 
     myCore->changeMode(new Mode1vs1());
     if(myCore->start()){

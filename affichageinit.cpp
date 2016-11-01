@@ -99,6 +99,7 @@ void AffichageInit::updateElements(string nomJoueur, string txtBt){
     QFont fontB = boutonSuivant_->font();
     fontB.setPointSize(13);
     boutonSuivant_->setFont(fontB);
+    //QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
 
     gLayoutDroite_->addWidget(boutonSuivant_,6,3,1,6,Qt::AlignBottom);
 

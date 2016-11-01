@@ -16,7 +16,8 @@ HEADERS += \
     cartejeu.h \
     affichageinitj1.h \
     affichageinitj2.h \
-    affichageinit.h
+    affichageinit.h \
+    joueur.h
 
 SOURCES += \
     mode1vs1.cpp \
@@ -37,7 +38,8 @@ SOURCES += \
     cartejeu.cpp \
     affichageinitj1.cpp \
     affichageinitj2.cpp \
-    affichageinit.cpp
+    affichageinit.cpp \
+    joueur.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
 QT += widgets

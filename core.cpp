@@ -10,15 +10,15 @@ using namespace std;
 
 Core::Core(CompMode* c)
 {
+    team1_ = shared_ptr<Team>(new Team());
+    team2_ = shared_ptr<Team>(new Team());
+
     mode_ = shared_ptr<CompMode> (c);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
     affIniJ1_ = shared_ptr<AffichageInitJ1> (new AffichageInitJ1(this));
     affIniJ2_ = shared_ptr<AffichageInitJ2> (new AffichageInitJ2(this));
     affichageActif_ = affMen_;
-
-    team1_ = shared_ptr<Team>(new Team());
-    team2_ = shared_ptr<Team>(new Team());
 }
 
 void Core::changeMode(CompMode *mode){
@@ -39,7 +39,6 @@ void Core::changeAffichageToMenu(){
 
 void Core::changeAffichageToInitJ1(){
     affichageActif_->hide();
-    //affIniJ1_->b4IsChecked();
     affichageActif_ = affIniJ1_;
     affichageActif_->afficher();
 }
@@ -63,7 +62,7 @@ void Core::afficher(){
 }
 
 shared_ptr<Team> Core::getTeam1(){
-    return team1_;
+        return team1_;
 }
 
 shared_ptr<Team> Core::getTeam2(){

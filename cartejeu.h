@@ -3,6 +3,8 @@
 
 #include "carte.h"
 
+class CarteInit;
+
 class CarteJeu : public Carte
 {
     public:

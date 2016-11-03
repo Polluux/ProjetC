@@ -8,12 +8,12 @@
 
 using namespace std;
 
-Core::Core(CompMode* c)
+Core::Core(/*CompMode* c*/)
 {
     team1_ = shared_ptr<Team>(new Team());
     team2_ = shared_ptr<Team>(new Team());
 
-    mode_ = shared_ptr<CompMode> (c);
+    //mode_ = shared_ptr<CompMode> (c);
     affJeu_ = shared_ptr<AffichageJeu> (new AffichageJeu(this));
     affMen_ = shared_ptr<AffichageMenu> (new AffichageMenu(this));
     affIniJ1_ = shared_ptr<AffichageInitJ1> (new AffichageInitJ1(this));
@@ -49,13 +49,13 @@ void Core::changeAffichageToInitJ2(){
     affichageActif_->afficher();
 }
 
-bool Core::start(){
-    if(mode_ != nullptr){
-        return true;
-    }else{
-        return false;
-    }
-}
+//bool Core::start(){
+//    if(mode_ != nullptr){
+//        return true;
+//    }else{
+//        return false;
+//    }
+//}
 
 void Core::afficher(){
     affichageActif_->afficher();

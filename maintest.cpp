@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 
 
-    Core *myCore = new Core(nullptr);
+    Core *myCore = new Core(/*nullptr*/);
 //    if(myCore->start()){
 //        cout << "Initialisé" << endl;
 //        myCore->afficher();
@@ -24,13 +24,13 @@ int main(int argc, char *argv[]){
 //        cout << "NULL" << endl;
 //    }
 
-    myCore->changeMode(new Mode1vs1());
-    if(myCore->start()){
-        cout << "Initialisé" << endl;
+//    myCore->changeMode(new Mode1vs1());
+//    if(myCore->start()){
+//        cout << "Initialisé" << endl;
         myCore->afficher();
-    }else{
-        cout << "NULL" << endl;
-    }
+//    }else{
+//        cout << "NULL" << endl;
+//    }
 
     return app.exec();
 }

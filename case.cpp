@@ -13,12 +13,9 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
 
 bool Case::clic(){
     if(hit_){
-        cout << "Cette case à déjà été cliquée" << endl;
         return false;
     }else{
-        cout << "Clic de la case en (" << x_  << ", " << y_<< ")" << endl;
         hit_ = true;
-        //this->setEnabled(false);
         return content_->action(this); // A changer par la suite, en rendant le résultat de contenu.action();
     }
 }

@@ -42,14 +42,9 @@ void CarteJeu::actionBouton()
         }
     }
 
-    cout << "---------------" << endl;
-    cout << aff_->getCore()->getTeam1()->getIsTurn() << endl;
-    cout << aff_->getCore()->getTeam2()->getIsTurn() << endl;
-
     for(Bateau *b : tabBateaux_){
         if(b->estCoule()){
             enleverBateau(b);
-            cout << "Bateau coulé !" << endl;
         }
     }
 }

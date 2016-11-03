@@ -17,6 +17,7 @@ class AffichageJeu : public  IAffichage
     public:
         AffichageJeu(Core* c);
         void afficher();
+        void updateElements();
 
         void changeToMenu();
         virtual void changeToInitialisationJ1();
@@ -27,17 +28,17 @@ class AffichageJeu : public  IAffichage
 
         void setImageChgmtTour();
 
-    protected:
-        void updateElements();
-
-        QGridLayout *layout_;
+        std::shared_ptr<Carte> getCarteJeuT1();
+        std::shared_ptr<Carte> getCarteJeuT2();
 
     private:
         std::shared_ptr<Carte> carteJeuT1_;
         std::shared_ptr<Carte> carteJeuT2_;
         QPixmap triangleTour_;
         QLabel *labelChgmtTour_;
-        //std::shared_ptr<Core> core_;
+        QGridLayout *layout_;
+        std::shared_ptr<Team> joueur1_;
+        std::shared_ptr<Team> joueur2_;
 };
 
 #endif // AFFICHAGEJEU_H

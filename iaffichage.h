@@ -21,6 +21,8 @@ class IAffichage : public QWidget
         virtual void changeToInitialisationJ2()=0;
         virtual void changeToJeu()=0;
 
+        std::shared_ptr<Core> getCore();
+
         virtual ~IAffichage();
 
     protected:

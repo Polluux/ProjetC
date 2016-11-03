@@ -13,7 +13,6 @@
 #include <QCheckBox>
 #include <QMessageBox>
 
-#include "iaffichage.h"
 #include "core.h"
 #include "carteinit.h"
 

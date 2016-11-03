@@ -4,7 +4,6 @@
 #include "carte.h"
 
 class AffichageInit;
-class Team;
 
 class CarteInit : public Carte
 {

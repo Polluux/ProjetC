@@ -31,7 +31,7 @@ void AffichageInit::updateElements(string txtBt){
 
     gLayoutDroite_->addWidget(pseudo_,0,0,1,5,Qt::AlignCenter);
 
-    b4_ = new QRadioButton("x0");
+    b4_ = new QRadioButton("x1");
     b4_->setChecked(true);
     b3_ = new QRadioButton("x0");
     b2_ = new QRadioButton("x0");

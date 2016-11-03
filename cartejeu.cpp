@@ -18,11 +18,33 @@ void CarteJeu::actionBouton()
     bool res = bouton->clic();
     //Passage de main au joueur suivant si false sinon ... on continue
 
+    bool tourJ1 = aff_->getCore()->getTeam1()->getIsTurn();
+
     if(!res)
     {
-        aff_->setImageChgmtTour();
-        //if()
+        if(tourJ1){
+            aff_->getCore()->getTeam1()->setIsTurn(false);
+            aff_->getCore()->getTeam2()->setIsTurn(true);
+            for(Case *c : aff_->getCarteJeuT1()->getTabCase())
+                c->setEnabled(true);
+            for(Case *c : aff_->getCarteJeuT2()->getTabCase())
+                c->setEnabled(false);
+            aff_->setImageChgmtTour();
+        }
+        else{
+            aff_->getCore()->getTeam1()->setIsTurn(true);
+            aff_->getCore()->getTeam2()->setIsTurn(false);
+            for(Case *c : aff_->getCarteJeuT1()->getTabCase())
+                c->setEnabled(false);
+            for(Case *c : aff_->getCarteJeuT2()->getTabCase())
+                c->setEnabled(true);
+            aff_->setImageChgmtTour();
+        }
     }
+
+    cout << "---------------" << endl;
+    cout << aff_->getCore()->getTeam1()->getIsTurn() << endl;
+    cout << aff_->getCore()->getTeam2()->getIsTurn() << endl;
 
     for(Bateau *b : tabBateaux_){
         if(b->estCoule()){

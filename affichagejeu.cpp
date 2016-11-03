@@ -8,11 +8,16 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
     layout_ = new QGridLayout;
     carteJeuT1_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     carteJeuT2_ = shared_ptr<CarteJeu>(new CarteJeu(this));
+    joueur1_ = core_->getTeam1();
+    joueur2_ = core_->getTeam2();
+    joueur1_->setIsTurn(true);
+    for(Case *c : carteJeuT1_->getTabCase())
+        c->setEnabled(false);
 }
 
 void AffichageJeu::updateElements(){
-    vector<Bateau*> batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
-    vector<Bateau*> batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
+    vector<Bateau*> batJ1 = joueur1_->getCarteInit()->getTabBateau();
+    vector<Bateau*> batJ2 = joueur2_->getCarteInit()->getTabBateau();
 
     for(Bateau *b : batJ1)
         carteJeuT1_->ajouterBateau(b);
@@ -65,6 +70,14 @@ void AffichageJeu::addContent(QWidget* c, int x, int y){
 void AffichageJeu::setImageChgmtTour(){
     triangleTour_ = triangleTour_.transformed(QMatrix().rotate(180));
     labelChgmtTour_->setPixmap(triangleTour_.scaled(50,50,Qt::KeepAspectRatio));
+}
+
+std::shared_ptr<Carte> AffichageJeu::getCarteJeuT1(){
+    return carteJeuT1_;
+}
+
+std::shared_ptr<Carte> AffichageJeu::getCarteJeuT2(){
+    return carteJeuT2_;
 }
 
 void AffichageJeu::changeToMenu(){}

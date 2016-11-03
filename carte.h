@@ -11,8 +11,6 @@
 #include "case.h"
 #include "bateau.h"
 
-class Team;
-
 class Carte : public QWidget
 {
     Q_OBJECT

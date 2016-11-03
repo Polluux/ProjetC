@@ -1,10 +1,12 @@
 #include "cartejeu.h"
 
+#include "affichagejeu.h"
+
 using namespace std;
 
-CarteJeu::CarteJeu() : Carte()
+CarteJeu::CarteJeu(AffichageJeu *a) : Carte()
 {
-
+    aff_ = shared_ptr<AffichageJeu>(a);
 }
 
 void CarteJeu::actionBouton()
@@ -15,6 +17,12 @@ void CarteJeu::actionBouton()
 
     bool res = bouton->clic();
     //Passage de main au joueur suivant si false sinon ... on continue
+
+    if(!res)
+    {
+        aff_->setImageChgmtTour();
+        //if()
+    }
 
     for(Bateau *b : tabBateaux_){
         if(b->estCoule()){

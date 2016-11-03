@@ -15,10 +15,13 @@ class Team
         void setCarteInit(Carte *c);
         std::string getPseudo();
         void setPseudo(std::string p);
+        bool getIsTurn();
+        void setIsTurn(bool t);
 
     private:
         std::shared_ptr<Carte> carteInit_;
         std::string pseudo_;
+        bool isMyTurn_;
         //Joueur joueur_;
 };
 

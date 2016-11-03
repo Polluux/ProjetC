@@ -6,7 +6,7 @@ AffichageInitJ2::AffichageInitJ2(Core* c)
 {
     core_ = shared_ptr<Core>(c);
 
-    updateElements("Joueur 2", "Go !!!!");
+    updateElements("Go !!!!");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
     joueur2 = core_->getTeam2();
     //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
@@ -34,6 +34,7 @@ void AffichageInitJ2::clicBouton(){
     else
     {
         joueur2->setCarteInit(carteInit_);
+        joueur2->setPseudo(pseudo_->text().toStdString());
         changeToJeu();
     }
 }

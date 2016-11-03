@@ -5,6 +5,7 @@ using namespace std;
 Team::Team()
 {
     pseudo_ = "";
+    isMyTurn_ = false;
 }
 
 shared_ptr<Carte> Team::getCarteInit(){
@@ -21,4 +22,12 @@ string Team::getPseudo(){
 
 void Team::setPseudo(string p){
     pseudo_ = p;
+}
+
+bool Team::getIsTurn(){
+    return isMyTurn_;
+}
+
+void Team::setIsTurn(bool t){
+    isMyTurn_ = t;
 }

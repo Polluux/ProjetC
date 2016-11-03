@@ -3,13 +3,16 @@
 
 #include "carte.h"
 
-class CarteInit;
+class AffichageJeu;
 
 class CarteJeu : public Carte
 {
     public:
-        CarteJeu();
+        CarteJeu(AffichageJeu *a);
         void actionBouton();
+
+    private:
+        std::shared_ptr<AffichageJeu> aff_;
 };
 
 #endif // CARTEJEU_H

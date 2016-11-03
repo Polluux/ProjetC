@@ -25,6 +25,8 @@ class AffichageJeu : public  IAffichage
 
         void addContent(QWidget* c,int x, int y);
 
+        void setImageChgmtTour();
+
     protected:
         void updateElements();
 
@@ -33,6 +35,9 @@ class AffichageJeu : public  IAffichage
     private:
         std::shared_ptr<Carte> carteJeuT1_;
         std::shared_ptr<Carte> carteJeuT2_;
+        QPixmap triangleTour_;
+        QLabel *labelChgmtTour_;
+        //std::shared_ptr<Core> core_;
 };
 
 #endif // AFFICHAGEJEU_H

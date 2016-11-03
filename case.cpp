@@ -9,7 +9,6 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
     y_ = y;
     setContent(new Mer());
     this->setStyleSheet("background-color:grey;outline: none");
-
 }
 
 bool Case::clic(){
@@ -19,6 +18,7 @@ bool Case::clic(){
     }else{
         cout << "Clic de la case en (" << x_  << ", " << y_<< ")" << endl;
         hit_ = true;
+        //this->setEnabled(false);
         return content_->action(this); // A changer par la suite, en rendant le résultat de contenu.action();
     }
 }

@@ -21,7 +21,7 @@ class AffichageInit
 {
     public:
         AffichageInit();
-        void updateElements(std::string nomJoueur, std::string txtBt);
+        void updateElements(std::string txtBt);
 
         bool hChecked();
 

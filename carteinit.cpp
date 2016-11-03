@@ -2,7 +2,6 @@
 
 #include "affichageinit.h"
 
-
 using namespace std;
 
 CarteInit::CarteInit(AffichageInit *a) : Carte()

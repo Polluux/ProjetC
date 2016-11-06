@@ -31,8 +31,6 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
     gLayout_->addWidget(boutonMode1vsIA,2,1); // Ajout du bouton
     gLayout_->addWidget(boutonQuitter,4,1); // Ajout du bouton
 
-   // bLayout_->addLayout(gLayout_);
-
     this->setMinimumWidth(200);
     this->setWindowTitle("Menu");
     this->setStyleSheet("background-color:black;");

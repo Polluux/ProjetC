@@ -1,6 +1,8 @@
 #ifndef CARTEJEU_H
 #define CARTEJEU_H
 
+#include <QMessageBox>
+
 #include "carte.h"
 
 class AffichageJeu;

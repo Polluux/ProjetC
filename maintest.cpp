@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
 #include <QApplication>
-#include <QPushButton>
-#include <QGridLayout>
 #include <memory>
 
 #include "core.h"

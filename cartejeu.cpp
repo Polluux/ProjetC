@@ -47,4 +47,18 @@ void CarteJeu::actionBouton()
             enleverBateau(b);
         }
     }
+
+    string pseudoJ1 = aff_->getCore()->getTeam1()->getPseudo();
+    string pseudoJ2 = aff_->getCore()->getTeam2()->getPseudo();
+
+    if(aff_->getCarteJeuT1()->getTabBateau().empty())
+    {
+        QMessageBox::information(this, "Fin", QString::fromStdString(pseudoJ2 + " GAGNE !"));
+        aff_->close();
+    }
+    else if(aff_->getCarteJeuT2()->getTabBateau().empty())
+    {
+        QMessageBox::information(this, "Fin", QString::fromStdString(pseudoJ1 + " GAGNE !"));
+        aff_->close();
+    }
 }

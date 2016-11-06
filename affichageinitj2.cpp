@@ -8,8 +8,7 @@ AffichageInitJ2::AffichageInitJ2(Core* c)
 
     updateElements("Go !!!!");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
-    joueur2 = core_->getTeam2();
-    QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
+    //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ2::afficher(){
@@ -33,8 +32,8 @@ void AffichageInitJ2::clicBouton(){
         QMessageBox::warning(this, "Ce n'est pas encore l'heure de jouer", "Il reste encore des bateaux à placer !");
     else
     {
-        joueur2->setCarteInit(carteInit_);
-        joueur2->setPseudo(pseudo_->text().toStdString());
+        core_->getTeam2()->setCarteInit(carteInit_);
+        core_->getTeam2()->setPseudo(pseudo_->text().toStdString());
         changeToJeu();
     }
 }

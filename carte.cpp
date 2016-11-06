@@ -195,27 +195,27 @@ vector<Case*> Carte::getTabCase(){
 }
 
 void Carte::reset(){
-    int x;
-        int y;
-        bool h;
-        int taille;
-        for(Bateau *b : tabBateaux_){
-            x = b->getX();
-            y = b->getY();
-            h = b->getHorizontal();
-            taille = b->getTaille();
-            for(int i = 0; i<taille; ++i){
-                if(h){
-                    m_tabCase[(x*10+(y+i))]->setContent(new Mer());
-                    m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:grey; outline:none;");
-                    m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
-                }else{
-                    m_tabCase[((x+i)*10+y)]->setContent(new Mer());
-                    m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:grey; outline:none;");
-                    m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
-                }
-            }
-        }
-        tabBateaux_.clear();
+//    int x;
+//    int y;
+//    bool h;
+//    int taille;
+//        for(Bateau *b : tabBateaux_){
+//            x = b->getX();
+//            y = b->getY();
+//            h = b->getHorizontal();
+//            taille = b->getTaille();
+//            for(int i = 0; i<taille; ++i){
+//                if(h){
+//                    m_tabCase[(x*10+(y+i))]->setContent(new Mer());
+//                    m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:grey; outline:none;");
+//                    m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
+//                }else{
+//                    m_tabCase[((x+i)*10+y)]->setContent(new Mer());
+//                    m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:grey; outline:none;");
+//                    m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
+//                }
+//            }
+//        }
+//        tabBateaux_.clear();
 }
 

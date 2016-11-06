@@ -2,7 +2,14 @@
 #define COMPMODE_H
 
 #include <iostream>
+#include <memory>
 #include <string>
+
+//#include "affichageinit.h"
+
+//class Core;
+
+using namespace std;
 
 class CompMode
 {
@@ -20,6 +27,10 @@ class CompMode
         virtual void pret() = 0;
 
         virtual ~CompMode();
+
+//    protected:
+//        std::shared_ptr<Core> c;
+//        shared_ptr<AffichageInit> aff;
 };
 
 #endif // COMPMODE_H

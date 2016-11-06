@@ -29,6 +29,7 @@ class Core
         void changeAffichageToInitJ1();
         void changeAffichageToInitJ2();
 
+
         ~Core();
 
     protected:
@@ -36,10 +37,10 @@ class Core
         std::shared_ptr<Team> team1_;
         std::shared_ptr<Team> team2_;
         std::shared_ptr<IAffichage> affichageActif_;
-        std::shared_ptr<AffichageJeu> affJeu_;
-        std::shared_ptr<AffichageMenu> affMen_;
-        std::shared_ptr<AffichageInitJ1> affIniJ1_;
-        std::shared_ptr<AffichageInitJ2> affIniJ2_;
+        std::shared_ptr<IAffichage> affJeu_;
+        std::shared_ptr<IAffichage> affMen_;
+        std::shared_ptr<IAffichage> affIniJ1_;
+        std::shared_ptr<IAffichage> affIniJ2_;
 };
 
 #endif // CORE_H

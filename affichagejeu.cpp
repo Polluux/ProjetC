@@ -8,16 +8,14 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
     layout_ = new QGridLayout;
     carteJeuT1_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     carteJeuT2_ = shared_ptr<CarteJeu>(new CarteJeu(this));
-    joueur1_ = core_->getTeam1();
-    joueur2_ = core_->getTeam2();
-    joueur1_->setIsTurn(true);
+    core_->getTeam1()->setIsTurn(true);
     for(Case *c : carteJeuT1_->getTabCase())
         c->setEnabled(false);
 }
 
 void AffichageJeu::updateElements(){
-    vector<Bateau*> batJ1 = joueur1_->getCarteInit()->getTabBateau();
-    vector<Bateau*> batJ2 = joueur2_->getCarteInit()->getTabBateau();
+    vector<Bateau*> batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
+    vector<Bateau*> batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
 
     for(Bateau *b : batJ1)
         carteJeuT1_->ajouterBateau(b);

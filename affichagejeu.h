@@ -37,8 +37,6 @@ class AffichageJeu : public  IAffichage
         QPixmap triangleTour_;
         QLabel *labelChgmtTour_;
         QGridLayout *layout_;
-        std::shared_ptr<Team> joueur1_;
-        std::shared_ptr<Team> joueur2_;
 };
 
 #endif // AFFICHAGEJEU_H

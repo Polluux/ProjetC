@@ -18,12 +18,15 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
     QPushButton *boutonMode1vs1 = new QPushButton("Mode Joueur\n contre Joueur");
     QObject::connect(boutonMode1vs1, SIGNAL(clicked()), this, SLOT(clicMode1vs1()));
     boutonMode1vs1->setStyleSheet("background-color:gray;outline: none;color:black;");
+
     QPushButton *boutonMode1vsIA = new QPushButton("Mode Joueur\n contre IA");
     boutonMode1vsIA->setStyleSheet("background-color:gray;outline: none");
     boutonMode1vsIA->setEnabled(false);
+
     QPushButton *boutonQuitter = new QPushButton("Quitter");
     boutonQuitter->setStyleSheet("background-color:gray;outline: none;color:black;");
     QWidget::connect(boutonQuitter, SIGNAL(clicked()), this, SLOT(close()));
+
     gLayout_->addWidget(boutonMode1vs1,1,1); // Ajout du bouton
     gLayout_->addWidget(boutonMode1vsIA,2,1); // Ajout du bouton
     gLayout_->addWidget(boutonQuitter,4,1); // Ajout du bouton

@@ -13,7 +13,7 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
 
 bool Case::clic(){
     if(hit_){
-        return false;
+        return true;
     }else{
         hit_ = true;
         return content_->action(this); // A changer par la suite, en rendant le résultat de contenu.action();

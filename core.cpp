@@ -22,11 +22,13 @@ Core::Core(/*CompMode* c*/)
 
 void Core::changeMode(CompMode *mode){
     mode_ = shared_ptr<CompMode> (mode);
+    mode_->setAffichage(affichageActif_);
 }
 
 void Core::changeAffichageToJeu(){
     affichageActif_->hide();
     affichageActif_ = affJeu_;
+    mode_->setAffichage(affichageActif_);
     affichageActif_->afficher();
 }
 
@@ -39,13 +41,25 @@ void Core::changeAffichageToMenu(){
 void Core::changeAffichageToInitJ1(){
     affichageActif_->hide();
     affichageActif_ = affIniJ1_;
+    mode_->setAffichage(affichageActif_);
     affichageActif_->afficher();
 }
 
 void Core::changeAffichageToInitJ2(){
     affichageActif_->hide();
     affichageActif_ = affIniJ2_;
+    mode_->setAffichage(affichageActif_);
     affichageActif_->afficher();
+}
+
+void Core::finInitJ1(){
+    cout << "test2" << endl;
+    mode_->finInitJ1();
+}
+
+void Core::finInitJ2(){
+    cout << "test2" << endl;
+    mode_->lancer();
 }
 
 void Core::afficher(){

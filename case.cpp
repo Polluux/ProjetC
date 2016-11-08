@@ -7,7 +7,8 @@ Case::Case(QWidget* parent, int x, int y) : QPushButton(parent)
     hit_ = false;
     x_ = x;
     y_ = y;
-    setContent(new Mer());
+    content_ = make_shared<Mer>();
+    //setContent(new Mer());
     this->setStyleSheet("background-color:grey;outline: none");
 }
 
@@ -45,6 +46,14 @@ shared_ptr<Contenu> Case::getContent(){
 
 void Case::setContent(Contenu *c){
     content_ = shared_ptr<Contenu> (c);
+}
+
+void Case::setContent(shared_ptr<Contenu> c){
+    content_ = c;
+}
+
+void Case::resetCase(){
+    content_ = make_shared<Mer>();
 }
 
 

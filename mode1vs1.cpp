@@ -1,4 +1,5 @@
 #include "mode1vs1.h"
+#include "iaffichage.h"
 
 using namespace std;
 
@@ -11,9 +12,21 @@ void Mode1vs1::getMode(){
     cout << "Je suis le mode 1vs1" << endl;
 }
 
-void Mode1vs1::initialiserJoueurs(){}
-void Mode1vs1::initialiserCartes(){}
-void Mode1vs1::lancer(){}
+void Mode1vs1::initialiser(){
+    //affichage->ChangeToInitJ1();
+}
+void Mode1vs1::finInitJ1(){
+    cout << "test3" << endl;
+    aff_->changeToInitialisationJ2();
+}
+
+void Mode1vs1::setAffichage(shared_ptr<IAffichage> aff){
+    aff_ = aff;
+}
+
+void Mode1vs1::lancer(){
+    aff_->changeToJeu();
+}
 void Mode1vs1::arreter(){}
 void Mode1vs1::checkFinis(){}
 void Mode1vs1::debutTour(){}

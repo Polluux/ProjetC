@@ -12,14 +12,15 @@ class Mode1vsIA : public CompMode
         Mode1vsIA();
         void getMode();
 
-        void initialiserJoueurs();
-        void initialiserCartes();
+        void initialiser();
         void lancer();
+        void finInitJ1();
         void arreter();
         void checkFinis();
         void debutTour();
         void finTour();
         void pret();
+        void setAffichage(shared_ptr<IAffichage> aff);
 
         ~Mode1vsIA();
 };

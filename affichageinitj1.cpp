@@ -6,9 +6,9 @@ AffichageInitJ1::AffichageInitJ1(Core* c)
 {
     core_ = shared_ptr<Core>(c);
 
-    updateElements("Au tour du Joueur 2");
+    updateElements("Fin");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
-    //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
+    QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ1::afficher(){
@@ -34,7 +34,9 @@ void AffichageInitJ1::clicBouton(){
     {
         core_->getTeam1()->setCarteInit(carteInit_);
         core_->getTeam1()->setPseudo(pseudo_->text().toStdString());
-        changeToInitialisationJ2();
+        //changeToInitialisationJ2();
+        cout << "test" << endl;
+        core_->finInitJ1();
     }
 }
 
@@ -46,6 +48,7 @@ void AffichageInitJ1::resetCarteInit(){
 void AffichageInitJ1::changeToMenu(){}
 void AffichageInitJ1::changeToInitialisationJ1(){}
 void AffichageInitJ1::changeToInitialisationJ2(){
+    cout << "test4" << endl;
     core_->changeAffichageToInitJ2();
 }
 void AffichageInitJ1::changeToJeu(){}

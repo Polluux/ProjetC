@@ -22,7 +22,9 @@ class Case : public QPushButton
         void toString();
         std::shared_ptr<Contenu> getContent();
         void setContent(Contenu *c);
+        void setContent(std::shared_ptr<Contenu> c);
         bool isEmpty();
+        void resetCase();
 
         virtual ~Case();
 

@@ -34,7 +34,8 @@ void AffichageInitJ2::clicBouton(){
     {
         core_->getTeam2()->setCarteInit(carteInit_);
         core_->getTeam2()->setPseudo(pseudo_->text().toStdString());
-        changeToJeu();
+        core_->finInitJ2();
+        //changeToJeu();
     }
 }
 

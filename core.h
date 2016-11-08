@@ -28,6 +28,8 @@ class Core
         void changeAffichageToMenu();
         void changeAffichageToInitJ1();
         void changeAffichageToInitJ2();
+        void finInitJ1();
+        void finInitJ2();
 
 
         ~Core();

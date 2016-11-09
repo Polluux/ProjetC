@@ -17,6 +17,8 @@ class Contenu
         virtual bool getHorizontal() = 0;
         virtual int getTaille() = 0;
         virtual bool isEmpty()=0;
+        // à enlever
+        virtual void toString()=0;
 
         virtual ~Contenu();
     protected:

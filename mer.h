@@ -21,7 +21,9 @@ class Mer : public Contenu
         int getTaille();
         bool isEmpty();
 
-        ~Mer();
+        void toString();
+
+        virtual ~Mer();
 
 };
 

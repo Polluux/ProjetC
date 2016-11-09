@@ -53,7 +53,14 @@ void Case::setContent(shared_ptr<Contenu> c){
 }
 
 void Case::resetCase(){
-    content_ = make_shared<Mer>();
+    shared_ptr<Contenu> c = content_;
+    //c->toString();
+    //content_->toString();
+    content_ = make_shared<Mer>(Mer());
+    //c->toString();
+    //content_->toString();
+
+    //= &make_shared<Mer>();
 }
 
 

@@ -40,4 +40,8 @@ int Mer::getTaille(){
     return taille_;
 }
 
-Mer::~Mer(){}
+void Mer::toString(){
+    cout << "je suis une mer fdp !" << endl;
+}
+
+Mer::~Mer(){cout << "mer" << endl;}

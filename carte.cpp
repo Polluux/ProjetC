@@ -64,7 +64,7 @@ Carte::Carte() : QWidget()
 
 bool Carte::ajouterBateau(Bateau *b)
 {
-    cout << "AJOUTER BATEAU" << endl;
+    /*cout << "AJOUTER BATEAU" << endl;
     for(int i=0; i<10; ++i)
     {
         for(int j=0; j<10; ++j)
@@ -74,7 +74,7 @@ bool Carte::ajouterBateau(Bateau *b)
         cout << endl;
     }
 
-    cout << "===============================" << endl;
+    cout << "===============================" << endl;*/
 
     int x = b->getX();
     int y = b->getY();
@@ -236,18 +236,34 @@ void Carte::reset(){
                     //m_tabCase[(x*10+(y+i))]->setContent(new Mer());
 
                     //m_tabCase[(x*10+(y+i))]->setContent(make_shared<Mer>());
+                   // m_tabCase[(x*10+(y+i))]->getContent()->toString();
                     m_tabCase[(x*10+(y+i))]->resetCase();
+                    //m_tabCase[(x*10+(y+i))]->getContent()->toString();
                     m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:grey; outline:none;");
                     m_tabCase[(x*10+(y+i))]->setIcon(QIcon());
                 }else{
                     //m_tabCase[((x+i)*10+y)]->setContent(new Mer());
                     //m_tabCase[(x*10+(y+i))]->setContent(make_shared<Mer>());
+                   // m_tabCase[((x+i)*10+y)]->getContent()->toString();
                     m_tabCase[((x+i)*10+y)]->resetCase();
+                    //m_tabCase[((x+i)*10+y)]->getContent()->toString();
                     m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:grey; outline:none;");
                     m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
                 }
             }
         }
         tabBateaux_.clear();
+
+        cout << "APRES RESET" << endl;
+        for(int i=0; i<10; ++i)
+        {
+            for(int j=0; j<10; ++j)
+            {
+                cout << m_tabCase[i*10+j]->isEmpty() << " ";
+            }
+            cout << endl;
+        }
+
+        cout << "===============================" << endl;
 }
 

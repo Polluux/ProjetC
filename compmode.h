@@ -7,7 +7,7 @@
 
 #include "iaffichage.h"
 
-//class Core;
+class Core;
 
 using namespace std;
 

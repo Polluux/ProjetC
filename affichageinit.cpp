@@ -33,9 +33,9 @@ void AffichageInit::updateElements(string txtBt){
 
     b4_ = new QRadioButton("x1");
     b4_->setChecked(true);
-    b3_ = new QRadioButton("x0");
-    b2_ = new QRadioButton("x0");
-    b1_ = new QRadioButton("x0");
+    b3_ = new QRadioButton("x2");
+    b2_ = new QRadioButton("x3");
+    b1_ = new QRadioButton("x4");
 
     QLabel *labelCygne = new QLabel;
     QLabel *labelCygne2 = new QLabel;

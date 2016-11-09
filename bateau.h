@@ -24,8 +24,9 @@ class Bateau : public Contenu
         bool estCoule();
         bool estEgal(Bateau *b);
 
+        void toString();
 
-        ~Bateau();
+        virtual ~Bateau();
 
     private:
         int pvActuels_;

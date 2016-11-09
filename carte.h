@@ -35,9 +35,6 @@ class Carte : public QWidget
         QPixmap oie_;
         QPixmap canard_;
         QPixmap caneton_;
-
-        // compmode ?
-        // dans actionBouton appeler les méthodes adéquate
 };
 
 #endif // CARTE_H

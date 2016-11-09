@@ -9,6 +9,8 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
     carteJeuT1_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     carteJeuT2_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     core_->getTeam1()->setIsTurn(true);
+    core_->getTeam1()->setCarteJeu(carteJeuT1_);
+    core_->getTeam2()->setCarteJeu(carteJeuT2_);
     for(Case *c : carteJeuT1_->getTabCase())
         c->setEnabled(false);
 }

@@ -183,7 +183,7 @@ void Carte::enleverBateau(shared_ptr<Bateau> b){
         }
     }
 
-    tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
+    //tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
 }
 
 vector<shared_ptr<Bateau> > Carte::getTabBateau(){

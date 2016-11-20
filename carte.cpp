@@ -62,7 +62,7 @@ Carte::Carte() : QWidget()
     caneton_ = QPixmap("fonts/caneton.jpg");
 }
 
-bool Carte::ajouterBateau(Bateau *b)
+bool Carte::ajouterBateau(shared_ptr<Bateau> b)
 {
     int x = b->getX();
     int y = b->getY();
@@ -144,7 +144,7 @@ bool Carte::ajouterBateau(Bateau *b)
     return !err;
 }
 
-void Carte::enleverBateau(Bateau *b){
+void Carte::enleverBateau(shared_ptr<Bateau> b){
     int x = b->getX();
     int y = b->getY();
     int taille = b->getTaille();
@@ -186,7 +186,7 @@ void Carte::enleverBateau(Bateau *b){
     tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
 }
 
-vector<Bateau*> Carte::getTabBateau(){
+vector<shared_ptr<Bateau> > Carte::getTabBateau(){
     return tabBateaux_;
 }
 
@@ -199,7 +199,7 @@ void Carte::reset(){
     int y;
     bool h;
     int taille;
-    for(Bateau *b : tabBateaux_){
+    for(shared_ptr<Bateau> b : tabBateaux_){
         x = b->getX();
         y = b->getY();
         h = b->getHorizontal();

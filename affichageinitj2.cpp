@@ -8,7 +8,7 @@ AffichageInitJ2::AffichageInitJ2(Core* c)
 
     updateElements("Go !!!!");
     QObject::connect(boutonSuivant_, SIGNAL(clicked()), this, SLOT(clicBouton()));
-    //QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
+    QObject::connect(reset_, SIGNAL(clicked()), this, SLOT(resetCarteInit()));
 }
 
 void AffichageInitJ2::afficher(){

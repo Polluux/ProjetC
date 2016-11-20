@@ -42,7 +42,7 @@ void CarteJeu::actionBouton()
         }
     }
 
-    for(Bateau *b : tabBateaux_){
+    for(shared_ptr<Bateau> b : tabBateaux_){
         if(b->estCoule()){
             enleverBateau(b);
         }

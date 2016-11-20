@@ -18,29 +18,36 @@ void CarteInit::actionBouton()
     int x = bouton->getX();
     int y = bouton->getY();
 
-    int tailleB = 0;
-
     QRadioButton* bateauSelec = aff_->getBateauSelect();
 
-    if(bateauSelec == aff_->getB4())
-        tailleB = 4;
-    else if(bateauSelec == aff_->getB3())
-        tailleB = 3;
-    else if(bateauSelec == aff_->getB2())
-        tailleB = 2;
-    else
-        tailleB = 1;
+    shared_ptr<Bateau> bateau = shared_ptr<Bateau>(new Bateau(0));
+
+    if(bateauSelec == aff_->getB4()){
+        factory = shared_ptr<FactoryCygne>(new FactoryCygne);
+        bateau = factory->creerBateau();
+    }
+    else if(bateauSelec == aff_->getB3()){
+        factory = shared_ptr<FactoryOie>(new FactoryOie);
+        bateau = factory->creerBateau();
+    }
+    else if(bateauSelec == aff_->getB2()){
+        factory = shared_ptr<FactoryCanard>(new FactoryCanard);
+        bateau = factory->creerBateau();
+    }
+    else{
+        factory = shared_ptr<FactoryCaneton>(new FactoryCaneton);
+        bateau = factory->creerBateau();
+    }
 
     string nb = bateauSelec->text().toStdString();
 
-    Bateau *b = new Bateau(tailleB);
-    b->setX(x);
-    b->setY(y);
+    bateau->setX(x);
+    bateau->setY(y);
 
     if(aff_->hChecked())
-        b->setHorizontal(true);
+        bateau->setHorizontal(true);
 
-    if(nb != "x0" && ajouterBateau(b)){
+    if(nb != "x0" && ajouterBateau(bateau)){
         if(nb == "x4")
             bateauSelec->setText("x3");
         else if(nb == "x3")
@@ -54,6 +61,8 @@ void CarteInit::actionBouton()
         }
     }
 }
+
+
 
 
 

@@ -22,9 +22,7 @@ class Bateau : public Contenu
         int getPvActuels();
         bool isEmpty();
         bool estCoule();
-        bool estEgal(Bateau *b);
-
-        void toString();
+        bool estEgal(std::shared_ptr<Bateau> b);
 
         virtual ~Bateau();
 

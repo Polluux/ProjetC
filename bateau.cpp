@@ -50,11 +50,7 @@ int Bateau::getPvActuels(){
     return pvActuels_;
 }
 
-void Bateau::toString(){
-    cout << "je suis un bateau connard !" << endl;
-}
-
-bool Bateau::estEgal(Bateau *b)
+bool Bateau::estEgal(shared_ptr<Bateau> b)
 {
     return x_ == b->x_ &&
            y_ == b->y_ &&

@@ -9,20 +9,18 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
     carteJeuT1_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     carteJeuT2_ = shared_ptr<CarteJeu>(new CarteJeu(this));
     core_->getTeam1()->setIsTurn(true);
-    core_->getTeam1()->setCarteJeu(carteJeuT1_);
-    core_->getTeam2()->setCarteJeu(carteJeuT2_);
     for(Case *c : carteJeuT1_->getTabCase())
         c->setEnabled(false);
 }
 
 void AffichageJeu::updateElements(){
-    vector<Bateau*> batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
-    vector<Bateau*> batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
+    vector<shared_ptr<Bateau> > batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
+    vector<shared_ptr<Bateau> > batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
 
-    for(Bateau *b : batJ1)
+    for(shared_ptr<Bateau> b : batJ1)
         carteJeuT1_->ajouterBateau(b);
 
-    for(Bateau *b : batJ2)
+    for(shared_ptr<Bateau> b : batJ2)
         carteJeuT2_->ajouterBateau(b);
 
     for(Case *c : carteJeuT1_->getTabCase())

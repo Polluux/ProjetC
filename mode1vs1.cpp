@@ -16,6 +16,7 @@ void Mode1vs1::initialiser(){
     //affichage->ChangeToInitJ1();
 }
 void Mode1vs1::finInitJ1(){
+    cout << "test3" << endl;
     aff_->changeToInitialisationJ2();
 }
 

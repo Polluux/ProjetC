@@ -14,8 +14,8 @@ AffichageJeu::AffichageJeu(Core* c) : IAffichage()
 }
 
 void AffichageJeu::updateElements(){
-    vector<shared_ptr<Bateau> > batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
-    vector<shared_ptr<Bateau> > batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
+    QVector<shared_ptr<Bateau> > batJ1 = core_->getTeam1()->getCarteInit()->getTabBateau();
+    QVector<shared_ptr<Bateau> > batJ2 = core_->getTeam2()->getCarteInit()->getTabBateau();
 
     for(shared_ptr<Bateau> b : batJ1)
         carteJeuT1_->ajouterBateau(b);

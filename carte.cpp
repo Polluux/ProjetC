@@ -149,7 +149,6 @@ void Carte::enleverBateau(shared_ptr<Bateau> b){
     int y = b->getY();
     int taille = b->getTaille();
     bool h = b->getHorizontal();
-    int indiceBateau = 0;
 
     switch(taille){
         case 1:
@@ -166,13 +165,6 @@ void Carte::enleverBateau(shared_ptr<Bateau> b){
             break;
     }
 
-    for(unsigned int i=0; i<tabBateaux_.size(); ++i) {
-        if(tabBateaux_[i]->estEgal(b))
-        {
-            indiceBateau = i;
-        }
-    }
-
     for(int i = 0; i<taille; ++i){
         if(h){
             m_tabCase[(x*10+(y+i))]->setIcon(logoCase_);
@@ -183,14 +175,14 @@ void Carte::enleverBateau(shared_ptr<Bateau> b){
         }
     }
 
-    //tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
+    tabBateaux_.remove(tabBateaux_.indexOf(b));
 }
 
-vector<shared_ptr<Bateau> > Carte::getTabBateau(){
+QVector<shared_ptr<Bateau> > Carte::getTabBateau(){
     return tabBateaux_;
 }
 
-vector<Case*> Carte::getTabCase(){
+QVector<Case *> Carte::getTabCase(){
     return m_tabCase;
 }
 

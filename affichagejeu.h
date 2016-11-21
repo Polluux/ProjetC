@@ -6,6 +6,7 @@
 #include <QApplication>
 #include <iostream>
 #include <memory>
+#include <QVector>
 
 #include "iaffichage.h"
 #include "core.h"

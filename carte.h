@@ -7,6 +7,8 @@
 #include <QApplication>
 #include <QLabel>
 #include <string>
+#include <iterator>
+#include <QVector>
 
 #include "case.h"
 #include "bateau.h"
@@ -25,16 +27,16 @@ class Carte : public QWidget
         bool ajouterBateau(std::shared_ptr<Bateau> b);
         void enleverBateau(std::shared_ptr<Bateau> b);
         void afficherCarte();
-        std::vector<std::shared_ptr<Bateau> > getTabBateau();
-        std::vector<Case*> getTabCase();
+        QVector<std::shared_ptr<Bateau> > getTabBateau();
+        QVector<Case*> getTabCase();
         void reset();
 
     public slots :
         virtual void actionBouton() = 0;
 
     protected:
-        std::vector<Case*> m_tabCase;
-        std::vector<std::shared_ptr<Bateau> > tabBateaux_;
+        QVector<Case*> m_tabCase;
+        QVector<std::shared_ptr<Bateau> > tabBateaux_;
         QIcon logoCase_;
         QPixmap cygne_;
         QPixmap oie_;

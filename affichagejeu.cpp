@@ -46,6 +46,7 @@ void AffichageJeu::updateElements(){
     layout_->addWidget(pseudoJ2,0,2,Qt::AlignCenter);
     addContent(&*carteJeuT1_,1,0);
 
+
     labelChgmtTour_ = new QLabel;
     triangleTour_ = QPixmap("fonts/triangle_tour.png");
     labelChgmtTour_->setPixmap(triangleTour_.scaled(50,50,Qt::KeepAspectRatio));

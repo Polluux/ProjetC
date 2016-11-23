@@ -12,8 +12,8 @@ void AffichageInit::updateElements(string txtBt){
     gLayoutGauche_ = new QGridLayout;
     gLayoutDroite_ = new QGridLayout;
 
-    carteInit_ = new CarteInit(this);
-    gLayoutGauche_->addWidget(carteInit_,0,0);
+    carteInit_ = shared_ptr<Carte>(new CarteInit(shared_ptr<AffichageInit>(this)));
+    gLayoutGauche_->addWidget(&*carteInit_,0,0);
 
     QLabel *p = new QLabel;
     p->setMaximumHeight(100);

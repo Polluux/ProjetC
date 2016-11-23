@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 
-    Core *myCore = new Core();
+    shared_ptr<Core> myCore = shared_ptr<Core>(new Core());
     myCore->afficher();
 
     return app.exec();

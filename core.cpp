@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Core::Core(/*CompMode* c*/)
+Core::Core()
 {
     team1_ = shared_ptr<Team>(new Team());
     team2_ = shared_ptr<Team>(new Team());
@@ -49,16 +49,14 @@ void Core::changeAffichageToInitJ2(){
     affichageActif_->hide();
     affichageActif_ = affIniJ2_;
     mode_->setAffichage(affichageActif_);
-    affichageActif_->afficher();
+    mode_->choixPourJ2();
 }
 
 void Core::finInitJ1(){
-    cout << "test2" << endl;
     mode_->finInitJ1();
 }
 
 void Core::finInitJ2(){
-    cout << "test2" << endl;
     mode_->lancer();
 }
 
@@ -72,6 +70,10 @@ shared_ptr<Team> Core::getTeam1(){
 
 shared_ptr<Team> Core::getTeam2(){
     return team2_;
+}
+
+void Core::setAffichageActif(shared_ptr<IAffichage> a){
+    affichageActif_ = a;
 }
 
 Core::~Core(){}

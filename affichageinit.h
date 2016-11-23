@@ -37,7 +37,7 @@ class AffichageInit
         QGridLayout *gLayoutCentral_;
         QGridLayout *gLayoutGauche_;
         QGridLayout *gLayoutDroite_;
-        Carte *carteInit_;
+        std::shared_ptr<Carte> carteInit_;
         QRadioButton *b1_;
         QRadioButton *b2_;
         QRadioButton *b3_;

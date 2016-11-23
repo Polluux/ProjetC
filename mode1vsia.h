@@ -5,6 +5,9 @@
 #include <string>
 
 #include "compmode.h"
+#include "bateau.h"
+
+#include "carteinit.h"
 
 class Mode1vsIA : public CompMode
 {
@@ -21,6 +24,8 @@ class Mode1vsIA : public CompMode
         void finTour();
         void pret();
         void setAffichage(shared_ptr<IAffichage> aff);
+
+        void choixPourJ2();
 
         ~Mode1vsIA();
 };

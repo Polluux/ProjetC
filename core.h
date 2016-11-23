@@ -17,9 +17,8 @@ class AffichageInitJ2;
 class Core
 {
     public:
-        Core(/*CompMode* c*/);
+        Core();
         void changeMode(CompMode *mode);
-        //bool start();
         void afficher();
         std::shared_ptr<Team> getTeam1();
         std::shared_ptr<Team> getTeam2();
@@ -30,6 +29,8 @@ class Core
         void changeAffichageToInitJ2();
         void finInitJ1();
         void finInitJ2();
+
+        void setAffichageActif(std::shared_ptr<IAffichage> a);
 
 
         ~Core();

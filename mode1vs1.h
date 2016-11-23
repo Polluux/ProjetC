@@ -22,6 +22,8 @@ class Mode1vs1 : public CompMode
         void pret();
         void setAffichage(shared_ptr<IAffichage> aff);
 
+        void choixPourJ2();
+
         ~Mode1vs1();
 };
 

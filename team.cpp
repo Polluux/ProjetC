@@ -12,7 +12,7 @@ shared_ptr<Carte> Team::getCarteInit(){
     return carteInit_;
 }
 
-void Team::setCarteInit(Carte *c){
+void Team::setCarteInit(shared_ptr<Carte> c){
     carteInit_ = shared_ptr<Carte>(c);
 }
 

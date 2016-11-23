@@ -13,10 +13,9 @@ void Mode1vs1::getMode(){
 }
 
 void Mode1vs1::initialiser(){
-    //affichage->ChangeToInitJ1();
+
 }
 void Mode1vs1::finInitJ1(){
-    cout << "test3" << endl;
     aff_->changeToInitialisationJ2();
 }
 
@@ -32,5 +31,9 @@ void Mode1vs1::checkFinis(){}
 void Mode1vs1::debutTour(){}
 void Mode1vs1::finTour(){}
 void Mode1vs1::pret(){}
+
+void Mode1vs1::choixPourJ2(){
+    aff_->afficher();
+}
 
 Mode1vs1::~Mode1vs1(){}

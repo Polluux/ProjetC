@@ -12,7 +12,7 @@ class Team
     public:
         Team();
         std::shared_ptr<Carte> getCarteInit();
-        void setCarteInit(Carte *c);
+        void setCarteInit(std::shared_ptr<Carte> c);
         std::string getPseudo();
         void setPseudo(std::string p);
         bool getIsTurn();

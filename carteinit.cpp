@@ -4,9 +4,15 @@
 
 using namespace std;
 
-CarteInit::CarteInit(AffichageInit *a) : Carte()
+CarteInit::CarteInit(/*AffichageInit*/ shared_ptr<IAffichage> a) : Carte()
 {
-    aff_ = shared_ptr<AffichageInit>(a);
+    shared_ptr<AffichageInit> affi = dynamic_pointer_cast<AffichageInit>(a);
+    aff_ = affi;
+}
+
+CarteInit::CarteInit(shared_ptr<AffichageInit> a) : Carte()
+{
+    aff_ = a;
 }
 
 void CarteInit::actionBouton()

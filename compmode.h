@@ -7,7 +7,6 @@
 
 #include "iaffichage.h"
 
-class Core;
 
 using namespace std;
 
@@ -27,10 +26,11 @@ class CompMode
         virtual void pret() = 0;
         virtual void setAffichage(shared_ptr<IAffichage> aff) = 0;
 
+        virtual void choixPourJ2() = 0;
+
         virtual ~CompMode();
 
     protected:
-        //std::shared_ptr<Core> c;
         shared_ptr<IAffichage> aff_;
 };
 

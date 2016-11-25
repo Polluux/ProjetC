@@ -1,5 +1,4 @@
 #include "mer.h"
-#include <iostream>
 
 using namespace std;
 
@@ -11,7 +10,6 @@ Mer::Mer(): Contenu(){
 }
 
 bool Mer::action(Case *c){
-    cout << "Dans l'eau" << endl;
     c->setStyleSheet("background-color:blue;outline: none");
     return false;
 }
@@ -41,5 +39,6 @@ bool Mer::getHorizontal(){
 int Mer::getTaille(){
     return taille_;
 }
+
 
 Mer::~Mer(){}

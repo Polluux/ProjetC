@@ -5,10 +5,13 @@
 #include <QGridLayout>
 #include <QApplication>
 #include <iostream>
+#include <memory>
+#include <QLabel>
 
 #include "iaffichage.h"
 #include "core.h"
-#include <memory>
+#include "mode1vs1.h"
+#include "mode1vsia.h"
 
 class AffichageMenu : public  IAffichage
 {
@@ -19,11 +22,13 @@ class AffichageMenu : public  IAffichage
         void afficher();
 
         void changeToMenu();
-        void changeToInitialisation();
+        void changeToInitialisationJ1();
+        void changeToInitialisationJ2();
         void changeToJeu();
 
     public slots :
         void clicMode1vs1();
+        void clicMode1vsIA();
 
     protected:
         QVBoxLayout *bLayout_;

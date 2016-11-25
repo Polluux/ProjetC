@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "compmode.h"
 
 using namespace std;

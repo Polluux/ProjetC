@@ -1,15 +1,15 @@
 #ifndef BATEAU_H
 #define BATEAU_H
 
+#include <iostream>
+
 #include "contenu.h"
 #include "case.h"
-#include "observer.h"
 
 class Bateau : public Contenu
 {
     public:
         Bateau(int taille);
-        //void AbstractMemberFunction();
         bool action(Case *c);
 
         void setX(int x);
@@ -18,14 +18,13 @@ class Bateau : public Contenu
         int getX();
         int getY();
         bool getHorizontal();
-        int getTaille();
+        virtual int getTaille() = 0;
         int getPvActuels();
         bool isEmpty();
         bool estCoule();
-        bool estEgal(Bateau *b);
+        bool estEgal(std::shared_ptr<Bateau> b);
 
-
-        ~Bateau();
+        virtual ~Bateau();
 
     private:
         int pvActuels_;

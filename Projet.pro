@@ -12,7 +12,21 @@ HEADERS += \
     iaffichage.h \
     affichagejeu.h \
     affichagemenu.h \
-    affichageinit.h
+    carteinit.h \
+    cartejeu.h \
+    affichageinitj1.h \
+    affichageinitj2.h \
+    affichageinit.h \
+    joueur.h \
+    bateaufactory.h \
+    factorycygne.h \
+    factoryoie.h \
+    factorycanard.h \
+    factorycaneton.h \
+    cygne.h \
+    oie.h \
+    canard.h \
+    caneton.h
 
 SOURCES += \
     mode1vs1.cpp \
@@ -29,7 +43,22 @@ SOURCES += \
     iaffichage.cpp \
     affichagejeu.cpp \
     affichagemenu.cpp \
-    affichageinit.cpp
+    carteinit.cpp \
+    cartejeu.cpp \
+    affichageinitj1.cpp \
+    affichageinitj2.cpp \
+    affichageinit.cpp \
+    joueur.cpp \
+    bateaufactory.cpp \
+    factorycygne.cpp \
+    factoryoie.cpp \
+    factorycanard.cpp \
+    factorycaneton.cpp \
+    cygne.cpp \
+    oie.cpp \
+    canard.cpp \
+    caneton.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
 QT += widgets
+QT += core

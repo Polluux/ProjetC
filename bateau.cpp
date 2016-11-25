@@ -1,5 +1,4 @@
 #include "bateau.h"
-#include <iostream>
 
 using namespace std;
 
@@ -12,7 +11,6 @@ Bateau::Bateau(int taille): Contenu(){
 }
 
 bool Bateau::action(Case *c){
-    cout << "Touché" << endl;
     c->setStyleSheet("background-color:red;outline: none");
     --pvActuels_;
     return true;
@@ -44,15 +42,15 @@ int Bateau::getY(){
 bool Bateau::getHorizontal(){
     return horizontal_;
 }
-int Bateau::getTaille(){
-    return taille_;
-}
+//int Bateau::getTaille(){
+//    return taille_;
+//}
 
 int Bateau::getPvActuels(){
     return pvActuels_;
 }
 
-bool Bateau::estEgal(Bateau *b)
+bool Bateau::estEgal(shared_ptr<Bateau> b)
 {
     return x_ == b->x_ &&
            y_ == b->y_ &&

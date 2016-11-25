@@ -1,6 +1,6 @@
 #include "affichagemenu.h"
-#include "QLabel"
-#include "mode1vs1.h"
+
+using namespace std;
 
 AffichageMenu::AffichageMenu(Core* c) : IAffichage()
 {
@@ -18,17 +18,18 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
     QPushButton *boutonMode1vs1 = new QPushButton("Mode Joueur\n contre Joueur");
     QObject::connect(boutonMode1vs1, SIGNAL(clicked()), this, SLOT(clicMode1vs1()));
     boutonMode1vs1->setStyleSheet("background-color:gray;outline: none;color:black;");
+
     QPushButton *boutonMode1vsIA = new QPushButton("Mode Joueur\n contre IA");
+    QObject::connect(boutonMode1vsIA, SIGNAL(clicked()), this, SLOT(clicMode1vsIA()));
     boutonMode1vsIA->setStyleSheet("background-color:gray;outline: none");
-    boutonMode1vsIA->setEnabled(false);
+
     QPushButton *boutonQuitter = new QPushButton("Quitter");
     boutonQuitter->setStyleSheet("background-color:gray;outline: none;color:black;");
-    //QWidget::connect(boutonQuitter, SIGNAL(clicked()), &app, SLOT(quit()));
+    QWidget::connect(boutonQuitter, SIGNAL(clicked()), this, SLOT(close()));
+
     gLayout_->addWidget(boutonMode1vs1,1,1); // Ajout du bouton
     gLayout_->addWidget(boutonMode1vsIA,2,1); // Ajout du bouton
     gLayout_->addWidget(boutonQuitter,4,1); // Ajout du bouton
-
-   // bLayout_->addLayout(gLayout_);
 
     this->setMinimumWidth(200);
     this->setWindowTitle("Menu");
@@ -42,13 +43,18 @@ void AffichageMenu::afficher(){
 }
 
 void AffichageMenu::clicMode1vs1(){
-    cout << "test" << endl;
     core_->changeMode(new Mode1vs1());
-    changeToInitialisation();
+    changeToInitialisationJ1();
+}
+
+void AffichageMenu::clicMode1vsIA(){
+    core_->changeMode(new Mode1vsIA());
+    changeToInitialisationJ1();
 }
 
 void AffichageMenu::changeToMenu(){}
-void AffichageMenu::changeToInitialisation(){
-    core_->changeAffichageToInit();
+void AffichageMenu::changeToInitialisationJ1(){
+    core_->changeAffichageToInitJ1();
 }
+void AffichageMenu::changeToInitialisationJ2(){}
 void AffichageMenu::changeToJeu(){}

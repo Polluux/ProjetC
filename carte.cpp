@@ -1,5 +1,4 @@
 #include "carte.h"
-#include <string>
 
 using namespace std;
 
@@ -56,16 +55,34 @@ Carte::Carte() : QWidget()
     fenetre->addLayout(grille, 1, 1);
 
     this->setLayout(fenetre);
+
+    cygne_ = QPixmap("fonts/cygne.jpg");
+    oie_ = QPixmap("fonts/oie.jpg");
+    canard_ = QPixmap("fonts/canard.jpg");
+    caneton_ = QPixmap("fonts/caneton.jpg");
 }
 
-bool Carte::ajouterBateau(Bateau *b)
+bool Carte::ajouterBateau(shared_ptr<Bateau> b)
 {
     int x = b->getX();
     int y = b->getY();
     int taille = b->getTaille();
     bool h = b->getHorizontal();
 
-    //cout << "BATEAU : [" << x << ":" << y << "]" << endl;
+    switch(taille){
+        case 1:
+            logoCase_ = QIcon(caneton_);
+            break;
+        case 2:
+            logoCase_ = QIcon(canard_);
+            break;
+        case 3:
+            logoCase_ = QIcon(oie_);
+            break;
+        default:
+            logoCase_ = QIcon(cygne_);
+            break;
+    }
 
     // pour gérer les cas de dépassements de zone
     bool err = false;
@@ -109,8 +126,12 @@ bool Carte::ajouterBateau(Bateau *b)
             for(int i = 0; i<taille; ++i){
                 if(h){
                     m_tabCase[(x*10+(y+i))]->setContent(b);
+                    m_tabCase[(x*10+(y+i))]->setIcon(logoCase_);
+                    m_tabCase[(x*10+(y+i))]->setIconSize(QSize(40,40));
                 }else{
                     m_tabCase[((x+i)*10+y)]->setContent(b);
+                    m_tabCase[((x+i)*10+y)]->setIcon(logoCase_);
+                    m_tabCase[((x+i)*10+y)]->setIconSize(QSize(40,40));
                 }
             }
 
@@ -119,61 +140,74 @@ bool Carte::ajouterBateau(Bateau *b)
         }
     }
 
-    /*string res = "";
-    int i = 0;
-    for(Case* c : m_tabCase){
-        if(i%10 == 0)res+="\n";
-        if(c->isEmpty()){
-            res+="0 ";
-        }else{
-            res+="1 ";
-        }
-        ++i;
-    }
-    cout << res << endl;*/
-
     // on retourne un booléen pour savoir si le bateau a été placé ou non
     return !err;
 }
 
-void Carte::enleverBateau(Bateau *b){
+void Carte::enleverBateau(shared_ptr<Bateau> b){
     int x = b->getX();
     int y = b->getY();
     int taille = b->getTaille();
     bool h = b->getHorizontal();
-    int indiceBateau = 0;
 
-    for(unsigned int i=0; i<tabBateaux_.size(); ++i) {
-        if(tabBateaux_[i]->estEgal(b))
-        {
-            indiceBateau = i;
-        }
+    switch(taille){
+        case 1:
+            logoCase_ = QIcon(caneton_);
+            break;
+        case 2:
+            logoCase_ = QIcon(canard_);
+            break;
+        case 3:
+            logoCase_ = QIcon(oie_);
+            break;
+        default:
+            logoCase_ = QIcon(cygne_);
+            break;
     }
 
     for(int i = 0; i<taille; ++i){
         if(h){
-            m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:purple; outline:none;");
+            m_tabCase[(x*10+(y+i))]->setIcon(logoCase_);
+            m_tabCase[(x*10+(y+i))]->setIconSize(QSize(40,40));
         }else{
-            m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:purple; outline:none;");
+            m_tabCase[((x+i)*10+y)]->setIcon(logoCase_);
+            m_tabCase[((x+i)*10+y)]->setIconSize(QSize(40,40));
         }
     }
 
-    tabBateaux_.erase(tabBateaux_.begin() + indiceBateau);
+    tabBateaux_.remove(tabBateaux_.indexOf(b));
 }
 
-void Carte::actionBouton()
-{
-    QObject *emetteur = sender();
+QVector<shared_ptr<Bateau> > Carte::getTabBateau(){
+    return tabBateaux_;
+}
 
-    Case *bouton = dynamic_cast<Case*>(emetteur);
+QVector<Case *> Carte::getTabCase(){
+    return m_tabCase;
+}
 
-    bool res = bouton->clic();
-    //Passage de main au joueur suivant si false sinon ... on continue
-
-    for(Bateau *b : tabBateaux_){
-        if(b->estCoule()){
-            enleverBateau(b);
-            cout << "Bateau coulé !" << endl;
+void Carte::reset(){
+    int x;
+    int y;
+    bool h;
+    int taille;
+    for(shared_ptr<Bateau> b : tabBateaux_){
+        x = b->getX();
+        y = b->getY();
+        h = b->getHorizontal();
+        taille = b->getTaille();
+        for(int i = 0; i<taille; ++i){
+            if(h){
+                m_tabCase[(x*10+(y+i))]->resetCase();
+                m_tabCase[(x*10+(y+i))]->setStyleSheet("background-color:grey; outline:none;");
+                m_tabCase[(x*10+(y+i))]->setIcon(QIcon());
+            }else{
+                m_tabCase[((x+i)*10+y)]->resetCase();
+                m_tabCase[((x+i)*10+y)]->setStyleSheet("background-color:grey; outline:none;");
+                m_tabCase[((x+i)*10+y)]->setIcon(QIcon());
+            }
         }
     }
+    tabBateaux_.clear();
 }
+

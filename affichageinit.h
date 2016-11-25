@@ -5,35 +5,47 @@
 #include <QGridLayout>
 #include <QApplication>
 #include <iostream>
-
-#include "iaffichage.h"
-#include "core.h"
+#include <QLabel>
 #include <memory>
+#include <string>
+#include <QRadioButton>
+#include <QLineEdit>
+#include <QCheckBox>
+#include <QMessageBox>
 
-class AffichageInit : public  IAffichage
+#include "core.h"
+#include "carteinit.h"
+
+class AffichageInit
 {
-    Q_OBJECT
-
     public:
-        AffichageInit(Core* c);
-        void afficher();
+        AffichageInit();
+        void updateElements(std::string txtBt);
 
-        void changeToMenu();
-        void changeToInitialisation();
-        void changeToJeu();
+        bool hChecked();
 
-    protected:
-        void updateElements();
+        QRadioButton* getB4();
+        QRadioButton* getB3();
+        QRadioButton* getB2();
+        QRadioButton* getB1();
+
+        QRadioButton* getBateauSelect();
+
+        void resetBouton();
 
     protected:
         QGridLayout *gLayoutCentral_;
         QGridLayout *gLayoutGauche_;
         QGridLayout *gLayoutDroite_;
-        shared_ptr<Core> core_;
+        std::shared_ptr<Carte> carteInit_;
+        QRadioButton *b1_;
+        QRadioButton *b2_;
+        QRadioButton *b3_;
+        QRadioButton *b4_;
+        QLineEdit *pseudo_;
+        QCheckBox *horizontal_;
+        QPushButton *boutonSuivant_;
+        QPushButton *reset_;
 };
-
-
-
-
 
 #endif // AFFICHAGEINIT_H

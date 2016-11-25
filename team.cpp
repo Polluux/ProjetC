@@ -1,23 +1,33 @@
 #include "team.h"
 
+using namespace std;
+
 Team::Team()
 {
-    Carte* c = new Carte();
-    carte_ = shared_ptr<Carte> (c);
-    Bateau *b = new Bateau(3);
-    b->setX(2);
-    b->setY(3);
-
-    Bateau *b1 = new Bateau(3);
-    b1->setHorizontal(true);
-    b1->setX(7);
-    b1->setY(7);
-
-    c->ajouterBateau(b);
-    c->ajouterBateau(b1);
-
+    pseudo_ = "";
+    isMyTurn_ = false;
 }
 
-shared_ptr<Carte> Team::getCarte(){
-    return carte_;
+shared_ptr<Carte> Team::getCarteInit(){
+    return carteInit_;
+}
+
+void Team::setCarteInit(shared_ptr<Carte> c){
+    carteInit_ = shared_ptr<Carte>(c);
+}
+
+string Team::getPseudo(){
+    return pseudo_;
+}
+
+void Team::setPseudo(string p){
+    pseudo_ = p;
+}
+
+bool Team::getIsTurn(){
+    return isMyTurn_;
+}
+
+void Team::setIsTurn(bool t){
+    isMyTurn_ = t;
 }

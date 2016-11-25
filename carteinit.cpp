@@ -26,7 +26,11 @@ void CarteInit::actionBouton()
 
     QRadioButton* bateauSelec = aff_->getBateauSelect();
 
+<<<<<<< HEAD
     shared_ptr<Bateau> bateau;// = shared_ptr<Bateau>(new Bateau(0));
+=======
+    shared_ptr<Bateau> bateau = shared_ptr<Bateau>(new Bateau(0));
+>>>>>>> 443b7fa8dcb2e6e3717b5f139d5a04cee051a601
 
     if(bateauSelec == aff_->getB4()){
         factory = shared_ptr<FactoryCygne>(new FactoryCygne);

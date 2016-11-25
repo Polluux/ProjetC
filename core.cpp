@@ -72,4 +72,8 @@ shared_ptr<Team> Core::getTeam2(){
     return team2_;
 }
 
+void Core::setAffichageActif(shared_ptr<IAffichage> a){
+    affichageActif_ = a;
+}
+
 Core::~Core(){}

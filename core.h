@@ -30,6 +30,12 @@ class Core
         void finInitJ1();
         void finInitJ2();
 
+<<<<<<< HEAD
+=======
+        void setAffichageActif(std::shared_ptr<IAffichage> a);
+
+
+>>>>>>> 443b7fa8dcb2e6e3717b5f139d5a04cee051a601
         ~Core();
 
     protected:

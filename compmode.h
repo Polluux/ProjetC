@@ -21,6 +21,7 @@ class CompMode
         virtual void lancer() = 0;
 
         virtual void jouer() = 0;
+        virtual void touche() = 0;
 
         virtual void setAffichage(shared_ptr<IAffichage> aff) = 0;
 

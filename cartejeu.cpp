@@ -7,6 +7,7 @@ using namespace std;
 CarteJeu::CarteJeu(AffichageJeu *a) : Carte()
 {
     aff_ = shared_ptr<AffichageJeu>(a);
+    //caseTouchee_ = 0;
 }
 
 void CarteJeu::actionBouton()
@@ -23,10 +24,8 @@ void CarteJeu::actionBouton()
         aff_->getCore()->getMode()->jouer();
     }
 
-    for(shared_ptr<Bateau> b : tabBateaux_){
-        if(b->estCoule()){
-            enleverBateau(b);
-        }
+    else {
+        aff_->getCore()->getMode()->touche();
     }
 
     string pseudoJ1 = aff_->getCore()->getTeam1()->getPseudo();

@@ -19,6 +19,7 @@ class Mode1vsIA : public CompMode
         void finInitJ1();
 
         void jouer();
+        void touche();
 
         void setAffichage(shared_ptr<IAffichage> aff);
 

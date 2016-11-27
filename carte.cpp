@@ -7,16 +7,16 @@ Carte::Carte() : QWidget()
     QGridLayout *fenetre = new QGridLayout;
 
     QGridLayout *lettre_h = new QGridLayout;
-    lettre_h->addWidget(new QLabel("    A"), 0, 0);
-    lettre_h->addWidget(new QLabel("    B "), 0, 1);
-    lettre_h->addWidget(new QLabel("    C "), 0, 2);
-    lettre_h->addWidget(new QLabel("    D "), 0, 3);
-    lettre_h->addWidget(new QLabel("    E "), 0, 4);
-    lettre_h->addWidget(new QLabel("    F "), 0, 5);
-    lettre_h->addWidget(new QLabel("    G "), 0, 6);
-    lettre_h->addWidget(new QLabel("    H "), 0, 7);
-    lettre_h->addWidget(new QLabel("    I "), 0, 8);
-    lettre_h->addWidget(new QLabel("    J "), 0, 9);
+    lettre_h->addWidget(new QLabel("    0"), 0, 0);
+    lettre_h->addWidget(new QLabel("    1 "), 0, 1);
+    lettre_h->addWidget(new QLabel("    2 "), 0, 2);
+    lettre_h->addWidget(new QLabel("    3 "), 0, 3);
+    lettre_h->addWidget(new QLabel("    4 "), 0, 4);
+    lettre_h->addWidget(new QLabel("    5 "), 0, 5);
+    lettre_h->addWidget(new QLabel("    6 "), 0, 6);
+    lettre_h->addWidget(new QLabel("    7 "), 0, 7);
+    lettre_h->addWidget(new QLabel("    8 "), 0, 8);
+    lettre_h->addWidget(new QLabel("    9 "), 0, 9);
 
     QGridLayout *chiffre_v = new QGridLayout;
     chiffre_v->addWidget(new QLabel("0"), 0, 0);

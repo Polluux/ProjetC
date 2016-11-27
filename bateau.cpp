@@ -46,6 +46,7 @@ int Bateau::getY(){
 bool Bateau::getHorizontal(){
     return horizontal_;
 }
+
 //int Bateau::getTaille(){
 //    return taille_;
 //}

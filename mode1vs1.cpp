@@ -54,6 +54,23 @@ void Mode1vs1::jouer(){
     }
 }
 
+void Mode1vs1::touche(){
+    QVector<shared_ptr<Bateau> > bxT1 = aff_->getCore()->getTeam1()->getCarteJeu()->getTabBateau();
+    QVector<shared_ptr<Bateau> > bxT2 = aff_->getCore()->getTeam2()->getCarteJeu()->getTabBateau();
+
+    for(shared_ptr<Bateau> b : bxT1){
+        if(b->estCoule()){
+            aff_->getCore()->getTeam1()->getCarteJeu()->enleverBateau(b);
+        }
+    }
+
+    for(shared_ptr<Bateau> b : bxT2){
+        if(b->estCoule()){
+            aff_->getCore()->getTeam2()->getCarteJeu()->enleverBateau(b);
+        }
+    }
+}
+
 void Mode1vs1::choixPourJ2(){
     aff_->afficher();
 }

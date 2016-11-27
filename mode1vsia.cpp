@@ -68,6 +68,7 @@ void Mode1vsIA::initialiser(){
     carteIA->ajouterBateau(b10);
 
     aff_->getCore()->getTeam2()->setCarteInit(carteIA);
+    aff_->getCore()->getTeam2()->setCarteJeu(carteIA);
     aff_->getCore()->getTeam2()->setPseudo("IA très très facile");
 }
 void Mode1vsIA::finInitJ1(){
@@ -84,7 +85,8 @@ void Mode1vsIA::lancer(){
 
 void Mode1vsIA::jouer(){
     QVector<Case*> cases = aff_->getCore()->getTeam1()->getCarteJeu()->getTabCase();
-    int caseAlea = -1;
+    int caseAlea;
+    QVector<shared_ptr<Bateau> > bxT1 = aff_->getCore()->getTeam1()->getCarteJeu()->getTabBateau();
 
     do {
         do {
@@ -94,9 +96,27 @@ void Mode1vsIA::jouer(){
         casesTouchees_.push_back(caseAlea);
 
         cases.at(caseAlea)->clic();
+
+        if(cases.at(caseAlea)->getContent()->touche()){
+            for(shared_ptr<Bateau> b : bxT1){
+                if(b->estCoule()){
+                    // problème ici quand deux bateaux sont coulés de suite
+                    aff_->getCore()->getTeam1()->getCarteJeu()->enleverBateau(b);
+                }
+            }
+        }
     } while(cases.at(caseAlea)->getContent()->touche());
 }
 
+void Mode1vsIA::touche(){
+    QVector<shared_ptr<Bateau> > bxIA = aff_->getCore()->getTeam2()->getCarteJeu()->getTabBateau();
+
+    for(shared_ptr<Bateau> b : bxIA){
+        if(b->estCoule()){
+            aff_->getCore()->getTeam2()->getCarteJeu()->enleverBateau(b);
+        }
+    }
+}
 
 void Mode1vsIA::choixPourJ2(){
     initialiser();

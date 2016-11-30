@@ -21,7 +21,7 @@ AffichageMenu::AffichageMenu(Core* c) : IAffichage()
 
     QPushButton *boutonMode1vsIA = new QPushButton("Mode Joueur\n contre IA");
     QObject::connect(boutonMode1vsIA, SIGNAL(clicked()), this, SLOT(clicMode1vsIA()));
-    boutonMode1vsIA->setStyleSheet("background-color:gray;outline: none");
+    boutonMode1vsIA->setStyleSheet("background-color:gray;outline: none;color:black;");
 
     QPushButton *boutonQuitter = new QPushButton("Quitter");
     boutonQuitter->setStyleSheet("background-color:gray;outline: none;color:black;");

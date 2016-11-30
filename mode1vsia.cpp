@@ -1,12 +1,13 @@
 #include "mode1vsia.h"
 #include "iaffichage.h"
 #include "core.h"
+#include <time.h>
 
 using namespace std;
 
 Mode1vsIA::Mode1vsIA() : CompMode()
 {
-
+    srand (time(NULL));
 }
 
 void Mode1vsIA::getMode(){

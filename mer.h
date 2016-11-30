@@ -22,6 +22,7 @@ class Mer : public Contenu
         bool isEmpty();
 
         bool touche();
+        bool estCoule();
 
         virtual ~Mer();
 

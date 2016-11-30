@@ -76,4 +76,9 @@ shared_ptr<CompMode> Core::getMode(){
     return mode_;
 }
 
+void Core::setImageChgmtTour(){
+    affJeu_->setImageChgmtTour();
+}
+
+
 Core::~Core(){}

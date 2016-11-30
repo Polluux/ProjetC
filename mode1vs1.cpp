@@ -39,8 +39,9 @@ void Mode1vs1::jouer(){
             c->setEnabled(true);
         for(Case *c : aff_->getCore()->getTeam2()->getCarteJeu()->getTabCase())
             c->setEnabled(false);
+
+        aff_->getCore()->setImageChgmtTour();
         //aff_->setImageChgmtTour();
-        cout << "au tour du joueur 2" << endl;
     }
     else{
         aff_->getCore()->getTeam1()->setIsTurn(true);
@@ -49,8 +50,9 @@ void Mode1vs1::jouer(){
             c->setEnabled(false);
         for(Case *c : aff_->getCore()->getTeam2()->getCarteJeu()->getTabCase())
             c->setEnabled(true);
+
+        aff_->getCore()->setImageChgmtTour();
         //aff_->setImageChgmtTour();
-        cout << "au tour du joueur 1" << endl;
     }
 }
 

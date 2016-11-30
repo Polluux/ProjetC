@@ -19,6 +19,7 @@ class Contenu
         virtual bool isEmpty()=0;
 
         virtual bool touche() = 0;
+        virtual bool estCoule() = 0;
 
         virtual ~Contenu();
     protected:

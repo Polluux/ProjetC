@@ -108,8 +108,22 @@ void Mode1vsIA::jouer(){
     QVector<shared_ptr<Bateau> > bxT1 = aff_->getCore()->getTeam1()->getCarteJeu()->getTabBateau();
 
     do {
+        QVector<int> casesTmp;
+        if(casesProches_.size() != 0){
+            for(int c : casesProches_){
+                int ct = cases.at(c)->getX()*10+cases.at(c)->getY();
+                if(cases.at(c)->getX() != 0)casesTmp.push_back(ct-10);
+                if(cases.at(c)->getX() != 9)casesTmp.push_back(ct+10);
+                if(cases.at(c)->getY() != 0)casesTmp.push_back(ct-1);
+                if(cases.at(c)->getY() != 9)casesTmp.push_back(ct+1);
+            }
+        }
         do {
-            caseAlea = rand() % 100;
+            if(casesProches_.size() != 0){
+                caseAlea = casesTmp.at(rand() % casesTmp.size());
+            }else{
+                caseAlea = rand() % 100;
+            }
         } while(casesTouchees_.contains(caseAlea));
 
         casesTouchees_.push_back(caseAlea);
@@ -117,6 +131,12 @@ void Mode1vsIA::jouer(){
         cases.at(caseAlea)->clic();
 
         if(cases.at(caseAlea)->getContent()->touche()){
+            casesProches_.push_back(caseAlea);
+            for(int i = casesProches_.size()-1; i >= 0; i--){
+                if(cases.at(casesProches_.at(i))->getContent()->estCoule()){
+                    casesProches_.erase(casesProches_.begin()+i);
+                }
+            }
             for(shared_ptr<Bateau> b : bxT1){
                 if(b->estCoule() && b == cases.at(caseAlea)->getContent()){ //Si on tue 2 bateaux à suivre on va vouloir enleverBateau(b) d'un bateau déjà enlevé dans le meme appel de la fonction (sans reprendre le tableau des bateaux en vie)
                     aff_->getCore()->getTeam1()->getCarteJeu()->enleverBateau(b);
@@ -130,7 +150,7 @@ void Mode1vsIA::touche(){
     QVector<shared_ptr<Bateau> > bxIA = aff_->getCore()->getTeam2()->getCarteJeu()->getTabBateau();
 
     for(shared_ptr<Bateau> b : bxIA){
-        if(b->estCoule()){
+        if(b->estCoule()) {
             aff_->getCore()->getTeam2()->getCarteJeu()->enleverBateau(b);
         }
     }

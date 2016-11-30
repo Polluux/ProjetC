@@ -30,6 +30,7 @@ class Core
         void changeAffichageToInitJ2();
         void finInitJ1();
         void finInitJ2();
+        void setImageChgmtTour();
 
         ~Core();
 
@@ -38,7 +39,7 @@ class Core
         std::shared_ptr<Team> team1_;
         std::shared_ptr<Team> team2_;
         std::shared_ptr<IAffichage> affichageActif_;
-        std::shared_ptr<IAffichage> affJeu_;
+        std::shared_ptr<AffichageJeu> affJeu_;
         std::shared_ptr<IAffichage> affMen_;
         std::shared_ptr<IAffichage> affIniJ1_;
         std::shared_ptr<IAffichage> affIniJ2_;

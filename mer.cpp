@@ -18,6 +18,10 @@ bool Mer::touche(){
     return false;
 }
 
+bool Mer::estCoule(){
+    return false;
+}
+
 bool Mer::isEmpty(){
     return true;
 }

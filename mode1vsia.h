@@ -29,6 +29,7 @@ class Mode1vsIA : public CompMode
 
     private:
         QVector<int> casesTouchees_;
+        QVector<int> casesProches_;
 };
 
 #endif // MODE1VSIA_H

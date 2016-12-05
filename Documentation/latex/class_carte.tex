@@ -1,0 +1,210 @@
+\hypertarget{class_carte}{}\section{Carte Class Reference}
+\label{class_carte}\index{Carte@{Carte}}
+
+
+classe representant une \hyperlink{class_carte}{Carte}  
+
+
+
+
+{\ttfamily \#include $<$carte.\+h$>$}
+
+
+
+Inheritance diagram for Carte\+:
+% FIG 0
+
+
+Collaboration diagram for Carte\+:
+% FIG 1
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_carte_a8628e3d1c1c812b945f2cc3987ae1a40}{action\+Bouton} ()=0
+\begin{DoxyCompactList}\small\item\em Action qui sera déclenché à chaque clic sur une case selon la carte (Init ou Jeu) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{Carte} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_carte_a8415ea8b3274e0fddecc122d83ce80a9}{ajouter\+Bateau} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ b)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_ae4966ed5306a6f85453b556830935026}{enlever\+Bateau} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ b)
+\begin{DoxyCompactList}\small\item\em Suppression d\textquotesingle{}un \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+Q\+Vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ $>$ \hyperlink{class_carte_ac05b028a316243ba5e66d4bfab48f6fa}{get\+Tab\+Bateau} ()
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}ensemble des Bateaux de la carte. \end{DoxyCompactList}\item 
+Q\+Vector$<$ \hyperlink{class_case}{Case} $\ast$ $>$ \hyperlink{class_carte_a6974f6c1fb5884205ba7b45f6ef7c89c}{get\+Tab\+Case} ()
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}ensemble des \hyperlink{class_case}{Case} de la carte. \end{DoxyCompactList}\item 
+void \hyperlink{class_carte_a108f801be6118ec28cf29102a68b4e9f}{reset} ()
+\begin{DoxyCompactList}\small\item\em Remet à zéro la carte en enlevant tous les Bateaux. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ \hyperlink{class_case}{Case} $\ast$ $>$ \hyperlink{class_carte_adb0cda59419437b3c29b4b6e7abbbbf5}{m\+\_\+tab\+Case}
+\item 
+Q\+Vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ $>$ \hyperlink{class_carte_a5551a4561583b6536efe31b8de645f60}{tab\+Bateaux\+\_\+}
+\item 
+Q\+Icon \hyperlink{class_carte_a8f5f0d81b5134126a52d338ea5d28dc6}{logo\+Case\+\_\+}
+\item 
+Q\+Pixmap \hyperlink{class_carte_a9077e065a5b672393b68afcbde4951f3}{cygne\+\_\+}
+\item 
+Q\+Pixmap \hyperlink{class_carte_ac66303b2e5f99770c450993f45b9ebc2}{oie\+\_\+}
+\item 
+Q\+Pixmap \hyperlink{class_carte_aaa54051f62acfe29059fb0973d977828}{canard\+\_\+}
+\item 
+Q\+Pixmap \hyperlink{class_carte_a824ab30e6ce53cc9c65c8af8146867f0}{caneton\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau_factory}{Bateau\+Factory} $>$ \hyperlink{class_carte_afbc674d4d0a924d3a73c6f3f966a723a}{factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant une \hyperlink{class_carte}{Carte} 
+
+La classe modélise les actions que l\textquotesingle{}on peut faire sur une \hyperlink{class_carte}{Carte} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{Carte()}{Carte()}}]{\setlength{\rightskip}{0pt plus 5cm}Carte\+::\+Carte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{}\label{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_carte}{Carte} 
+
+\subsection{Member Function Documentation}
+\index{Carte@{Carte}!action\+Bouton@{action\+Bouton}}
+\index{action\+Bouton@{action\+Bouton}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{action\+Bouton}{actionBouton}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Carte\+::action\+Bouton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [slot]}}\hypertarget{class_carte_a8628e3d1c1c812b945f2cc3987ae1a40}{}\label{class_carte_a8628e3d1c1c812b945f2cc3987ae1a40}
+
+
+Action qui sera déclenché à chaque clic sur une case selon la carte (Init ou Jeu) 
+
+Méthode permettant d\textquotesingle{}interagir lors du clic sur une case de la carte 
+
+Implemented in \hyperlink{class_carte_init_a48844f800556030890bdc4d5933a3573}{Carte\+Init}, and \hyperlink{class_carte_jeu_a9ba23d5a5b1e5d297c68ebd478f20a57}{Carte\+Jeu}.
+
+\index{Carte@{Carte}!ajouter\+Bateau@{ajouter\+Bateau}}
+\index{ajouter\+Bateau@{ajouter\+Bateau}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{ajouter\+Bateau(std\+::shared\+\_\+ptr$<$ Bateau $>$ b)}{ajouterBateau(std::shared_ptr< Bateau > b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Carte\+::ajouter\+Bateau (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Bateau} $>$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_a8415ea8b3274e0fddecc122d83ce80a9}{}\label{class_carte_a8415ea8b3274e0fddecc122d83ce80a9}
+
+
+Ajout d\textquotesingle{}un \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant d\textquotesingle{}ajouter un \hyperlink{class_bateau}{Bateau} sur la carte
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \hyperlink{class_bateau}{Bateau} à ajouter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le \hyperlink{class_bateau}{Bateau} s\textquotesingle{}est placé sur la carte, sinon false 
+\end{DoxyReturn}
+\index{Carte@{Carte}!enlever\+Bateau@{enlever\+Bateau}}
+\index{enlever\+Bateau@{enlever\+Bateau}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{enlever\+Bateau(std\+::shared\+\_\+ptr$<$ Bateau $>$ b)}{enleverBateau(std::shared_ptr< Bateau > b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\+::enlever\+Bateau (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Bateau} $>$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_ae4966ed5306a6f85453b556830935026}{}\label{class_carte_ae4966ed5306a6f85453b556830935026}
+
+
+Suppression d\textquotesingle{}un \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de supprimer un \hyperlink{class_bateau}{Bateau} sur la carte
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \hyperlink{class_bateau}{Bateau} à supprimer \\
+\hline
+\end{DoxyParams}
+\index{Carte@{Carte}!get\+Tab\+Bateau@{get\+Tab\+Bateau}}
+\index{get\+Tab\+Bateau@{get\+Tab\+Bateau}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{get\+Tab\+Bateau()}{getTabBateau()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$ shared\+\_\+ptr$<$ {\bf Bateau} $>$ $>$ Carte\+::get\+Tab\+Bateau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_ac05b028a316243ba5e66d4bfab48f6fa}{}\label{class_carte_ac05b028a316243ba5e66d4bfab48f6fa}
+
+
+Récupère l\textquotesingle{}ensemble des Bateaux de la carte. 
+
+Méthode permettant de récupérer l\textquotesingle{}ensemble des Bateaux qui ont été ajouté à la liste des Bateaux de la \hyperlink{class_carte}{Carte}
+
+\begin{DoxyReturn}{Returns}
+la liste des Bateaux qui ont été ajoutés à la carte 
+\end{DoxyReturn}
+\index{Carte@{Carte}!get\+Tab\+Case@{get\+Tab\+Case}}
+\index{get\+Tab\+Case@{get\+Tab\+Case}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{get\+Tab\+Case()}{getTabCase()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$ {\bf Case} $\ast$ $>$ Carte\+::get\+Tab\+Case (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_a6974f6c1fb5884205ba7b45f6ef7c89c}{}\label{class_carte_a6974f6c1fb5884205ba7b45f6ef7c89c}
+
+
+Récupère l\textquotesingle{}ensemble des \hyperlink{class_case}{Case} de la carte. 
+
+Méthode permettant de récupérer l\textquotesingle{}ensemble des 100 cases de la \hyperlink{class_carte}{Carte}
+
+\begin{DoxyReturn}{Returns}
+la liste des cases de la carte 
+\end{DoxyReturn}
+\index{Carte@{Carte}!reset@{reset}}
+\index{reset@{reset}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void Carte\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_carte_a108f801be6118ec28cf29102a68b4e9f}{}\label{class_carte_a108f801be6118ec28cf29102a68b4e9f}
+
+
+Remet à zéro la carte en enlevant tous les Bateaux. 
+
+Méthode permettant de supprimer tous les Bateaux déjà présents sur la carte en changeant le contenu de chaque case par de la \hyperlink{class_mer}{Mer} 
+
+\subsection{Member Data Documentation}
+\index{Carte@{Carte}!canard\+\_\+@{canard\+\_\+}}
+\index{canard\+\_\+@{canard\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{canard\+\_\+}{canard_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Carte\+::canard\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_aaa54051f62acfe29059fb0973d977828}{}\label{class_carte_aaa54051f62acfe29059fb0973d977828}
+image pour les bateaux de taille 2 \index{Carte@{Carte}!caneton\+\_\+@{caneton\+\_\+}}
+\index{caneton\+\_\+@{caneton\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{caneton\+\_\+}{caneton_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Carte\+::caneton\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_a824ab30e6ce53cc9c65c8af8146867f0}{}\label{class_carte_a824ab30e6ce53cc9c65c8af8146867f0}
+image pour les bateaux de taille 1 \index{Carte@{Carte}!cygne\+\_\+@{cygne\+\_\+}}
+\index{cygne\+\_\+@{cygne\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{cygne\+\_\+}{cygne_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Carte\+::cygne\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_a9077e065a5b672393b68afcbde4951f3}{}\label{class_carte_a9077e065a5b672393b68afcbde4951f3}
+image pour le bateau de taille 4 \index{Carte@{Carte}!factory@{factory}}
+\index{factory@{factory}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{factory}{factory}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Bateau\+Factory}$>$ Carte\+::factory\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_afbc674d4d0a924d3a73c6f3f966a723a}{}\label{class_carte_afbc674d4d0a924d3a73c6f3f966a723a}
+le chantier naval pour la construction des bateaux \index{Carte@{Carte}!logo\+Case\+\_\+@{logo\+Case\+\_\+}}
+\index{logo\+Case\+\_\+@{logo\+Case\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{logo\+Case\+\_\+}{logoCase_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Icon Carte\+::logo\+Case\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_a8f5f0d81b5134126a52d338ea5d28dc6}{}\label{class_carte_a8f5f0d81b5134126a52d338ea5d28dc6}
+l\textquotesingle{}image que pourra prendre une case \index{Carte@{Carte}!m\+\_\+tab\+Case@{m\+\_\+tab\+Case}}
+\index{m\+\_\+tab\+Case@{m\+\_\+tab\+Case}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{m\+\_\+tab\+Case}{m_tabCase}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<${\bf Case}$\ast$$>$ Carte\+::m\+\_\+tab\+Case\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_adb0cda59419437b3c29b4b6e7abbbbf5}{}\label{class_carte_adb0cda59419437b3c29b4b6e7abbbbf5}
+liste des cases de la carte \index{Carte@{Carte}!oie\+\_\+@{oie\+\_\+}}
+\index{oie\+\_\+@{oie\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{oie\+\_\+}{oie_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Carte\+::oie\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_ac66303b2e5f99770c450993f45b9ebc2}{}\label{class_carte_ac66303b2e5f99770c450993f45b9ebc2}
+image pour les bateaux de taille 3 \index{Carte@{Carte}!tab\+Bateaux\+\_\+@{tab\+Bateaux\+\_\+}}
+\index{tab\+Bateaux\+\_\+@{tab\+Bateaux\+\_\+}!Carte@{Carte}}
+\subsubsection[{\texorpdfstring{tab\+Bateaux\+\_\+}{tabBateaux_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$std\+::shared\+\_\+ptr$<${\bf Bateau}$>$ $>$ Carte\+::tab\+Bateaux\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_carte_a5551a4561583b6536efe31b8de645f60}{}\label{class_carte_a5551a4561583b6536efe31b8de645f60}
+liste des bateaux placés sur la carte 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+carte.\+h\item 
+carte.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AffichageInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_init.html",tooltip="classe representant l&#39;affichage des éléments communs pour l&#39;initialisation des deux joueurs ..."];
+  Node1 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AffichageInitJ1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_init_j1.html",tooltip="classe representant l&#39;affichage de la phase d&#39;initialisation du J1 "];
+  Node1 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AffichageInitJ2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_init_j2.html",tooltip="classe representant l&#39;affichage de la phase d&#39;initialisation du J2 "];
+  Node4 [label="QWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Carte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_carte.html",tooltip="classe representant une Carte "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CarteInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_carte_init.html",tooltip="classe representant une Carte d&#39;initialisation "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CarteJeu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_carte_jeu.html",tooltip="classe representant une Carte de jeu "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="IAffichage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_affichage.html",tooltip="classe representant les comportements des affichages "];
+  Node8 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AffichageJeu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_jeu.html",tooltip="classe representant l&#39;affichage du jeu "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AffichageMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_menu.html",tooltip="classe representant l&#39;affichage du menu "];
+}

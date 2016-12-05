@@ -1,0 +1,257 @@
+\hypertarget{class_core}{}\section{Core Class Reference}
+\label{class_core}\index{Core@{Core}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}{Core} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_aefcf76351ec813fb99f39fbcce42afac}{change\+Mode} (\hyperlink{class_comp_mode}{Comp\+Mode} $\ast$mode)
+\begin{DoxyCompactList}\small\item\em Changer le mode de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_aeb0646c87941a9120d85bbe3f5fb8700}{afficher} ()
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher l\textquotesingle{}affichage actif. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_team}{Team} $>$ \hyperlink{class_core_ab8696ef45b3d2d52ffbbe8a591dc99fb}{get\+Team1} ()
+\begin{DoxyCompactList}\small\item\em Récupère le J1. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_team}{Team} $>$ \hyperlink{class_core_ae2a1b22acb1cc7a021c279b22e5c1cc1}{get\+Team2} ()
+\begin{DoxyCompactList}\small\item\em Récupère le J2. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_comp_mode}{Comp\+Mode} $>$ \hyperlink{class_core_ae18939eeb844be8ec6960af11ddc31db}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Récupère le mode de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_aa9f91b5e846906e97f1ba479ae3c1cc1}{change\+Affichage\+To\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_aa6e820eee8d7479036e082652474006e}{change\+Affichage\+To\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui du menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_a3a83d27d66ff842b74f8399c483973b1}{change\+Affichage\+To\+Init\+J1} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J1. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_a7dde7558331088ab7d57572477fc8f2b}{change\+Affichage\+To\+Init\+J2} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J2. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_abc88e9e2f23f9df672ffc987ea29d329}{fin\+Init\+J1} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J2. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_af10b83849055258108b9769617edb5e5}{fin\+Init\+J2} ()
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}affichage vers le celui du jeu selon le mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_a0a45f16dc5613ac2239f8648befb59c4}{set\+Image\+Chgmt\+Tour} ()
+\begin{DoxyCompactList}\small\item\em Tourne l\textquotesingle{}image pour l\textquotesingle{}\hyperlink{class_affichage_jeu}{Affichage\+Jeu} pour le tour des joueurs. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_core_a776f8c46504b14183883c6273f93eaed}{$\sim$\+Core} ()\hypertarget{class_core_a776f8c46504b14183883c6273f93eaed}{}\label{class_core_a776f8c46504b14183883c6273f93eaed}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_core}{Core}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_comp_mode}{Comp\+Mode} $>$ \hyperlink{class_core_ab7d2af28daa772c12d0a2cea6e65f887}{mode\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_team}{Team} $>$ \hyperlink{class_core_a299a0b1ed101953462d17c6e0528b006}{team1\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_team}{Team} $>$ \hyperlink{class_core_a4e9f0791fb0449a8c4b0ccce607a11da}{team2\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_i_affichage}{I\+Affichage} $>$ \hyperlink{class_core_ace6812af8ec428d12258d5c895a1fb2d}{affichage\+Actif\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_affichage_jeu}{Affichage\+Jeu} $>$ \hyperlink{class_core_a2558f752fb1c060782d4f75d9d09b864}{aff\+Jeu\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_i_affichage}{I\+Affichage} $>$ \hyperlink{class_core_a2d9a9ba8be0844338f67e8feab39ba9e}{aff\+Men\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_i_affichage}{I\+Affichage} $>$ \hyperlink{class_core_af1b29bd6eb49663e39efff0a91d9c9df}{aff\+Ini\+J1\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_i_affichage}{I\+Affichage} $>$ \hyperlink{class_core_a4d85e8590561c684900e1a2fd18184e2}{aff\+Ini\+J2\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\subsubsection[{\texorpdfstring{Core()}{Core()}}]{\setlength{\rightskip}{0pt plus 5cm}Core\+::\+Core (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}{}\label{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_core}{Core} 
+
+\subsection{Member Function Documentation}
+\index{Core@{Core}!afficher@{afficher}}
+\index{afficher@{afficher}!Core@{Core}}
+\subsubsection[{\texorpdfstring{afficher()}{afficher()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_aeb0646c87941a9120d85bbe3f5fb8700}{}\label{class_core_aeb0646c87941a9120d85bbe3f5fb8700}
+
+
+Permet d\textquotesingle{}afficher l\textquotesingle{}affichage actif. 
+
+Méthode permettant de déléguer l\textquotesingle{}affichage à l\textquotesingle{}affichage actif \index{Core@{Core}!change\+Affichage\+To\+Init\+J1@{change\+Affichage\+To\+Init\+J1}}
+\index{change\+Affichage\+To\+Init\+J1@{change\+Affichage\+To\+Init\+J1}!Core@{Core}}
+\subsubsection[{\texorpdfstring{change\+Affichage\+To\+Init\+J1()}{changeAffichageToInitJ1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::change\+Affichage\+To\+Init\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_a3a83d27d66ff842b74f8399c483973b1}{}\label{class_core_a3a83d27d66ff842b74f8399c483973b1}
+
+
+Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J1. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui de l\textquotesingle{}initialisation du J1 \index{Core@{Core}!change\+Affichage\+To\+Init\+J2@{change\+Affichage\+To\+Init\+J2}}
+\index{change\+Affichage\+To\+Init\+J2@{change\+Affichage\+To\+Init\+J2}!Core@{Core}}
+\subsubsection[{\texorpdfstring{change\+Affichage\+To\+Init\+J2()}{changeAffichageToInitJ2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::change\+Affichage\+To\+Init\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_a7dde7558331088ab7d57572477fc8f2b}{}\label{class_core_a7dde7558331088ab7d57572477fc8f2b}
+
+
+Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J2. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui de l\textquotesingle{}initialisation du J2 \index{Core@{Core}!change\+Affichage\+To\+Jeu@{change\+Affichage\+To\+Jeu}}
+\index{change\+Affichage\+To\+Jeu@{change\+Affichage\+To\+Jeu}!Core@{Core}}
+\subsubsection[{\texorpdfstring{change\+Affichage\+To\+Jeu()}{changeAffichageToJeu()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::change\+Affichage\+To\+Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_aa9f91b5e846906e97f1ba479ae3c1cc1}{}\label{class_core_aa9f91b5e846906e97f1ba479ae3c1cc1}
+
+
+Change l\textquotesingle{}affichage vers le celui de jeu. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui du jeu \index{Core@{Core}!change\+Affichage\+To\+Menu@{change\+Affichage\+To\+Menu}}
+\index{change\+Affichage\+To\+Menu@{change\+Affichage\+To\+Menu}!Core@{Core}}
+\subsubsection[{\texorpdfstring{change\+Affichage\+To\+Menu()}{changeAffichageToMenu()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::change\+Affichage\+To\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_aa6e820eee8d7479036e082652474006e}{}\label{class_core_aa6e820eee8d7479036e082652474006e}
+
+
+Change l\textquotesingle{}affichage vers le celui du menu. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui du menu \index{Core@{Core}!change\+Mode@{change\+Mode}}
+\index{change\+Mode@{change\+Mode}!Core@{Core}}
+\subsubsection[{\texorpdfstring{change\+Mode(\+Comp\+Mode $\ast$mode)}{changeMode(CompMode *mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::change\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf Comp\+Mode} $\ast$}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_aefcf76351ec813fb99f39fbcce42afac}{}\label{class_core_aefcf76351ec813fb99f39fbcce42afac}
+
+
+Changer le mode de jeu. 
+
+Méthode permettant de passer du mode 1\+V1 vers 1\+V\+IA et inversement
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \+: le nouveau mode de jeu \\
+\hline
+\end{DoxyParams}
+\index{Core@{Core}!fin\+Init\+J1@{fin\+Init\+J1}}
+\index{fin\+Init\+J1@{fin\+Init\+J1}!Core@{Core}}
+\subsubsection[{\texorpdfstring{fin\+Init\+J1()}{finInitJ1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::fin\+Init\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_abc88e9e2f23f9df672ffc987ea29d329}{}\label{class_core_abc88e9e2f23f9df672ffc987ea29d329}
+
+
+Change l\textquotesingle{}affichage vers le celui de l\textquotesingle{}initialisation pour le J2. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui de l\textquotesingle{}initialisation du J2 \index{Core@{Core}!fin\+Init\+J2@{fin\+Init\+J2}}
+\index{fin\+Init\+J2@{fin\+Init\+J2}!Core@{Core}}
+\subsubsection[{\texorpdfstring{fin\+Init\+J2()}{finInitJ2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::fin\+Init\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_af10b83849055258108b9769617edb5e5}{}\label{class_core_af10b83849055258108b9769617edb5e5}
+
+
+Change l\textquotesingle{}affichage vers le celui du jeu selon le mode. 
+
+Méthode pour cacher l\textquotesingle{}affichage courant avec celui du jeu selon le mode avec 1\+V1 \+: on passe au jeu avec 1\+V\+IA \+: on passe au jeu après avoir initialiser automatiquement le J2 \index{Core@{Core}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Core@{Core}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Comp\+Mode} $>$ Core\+::get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_ae18939eeb844be8ec6960af11ddc31db}{}\label{class_core_ae18939eeb844be8ec6960af11ddc31db}
+
+
+Récupère le mode de jeu. 
+
+Méthode permettant de récupérer le mode de jeu actif
+
+\begin{DoxyReturn}{Returns}
+le mode de jeu actif 
+\end{DoxyReturn}
+\index{Core@{Core}!get\+Team1@{get\+Team1}}
+\index{get\+Team1@{get\+Team1}!Core@{Core}}
+\subsubsection[{\texorpdfstring{get\+Team1()}{getTeam1()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Team} $>$ Core\+::get\+Team1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_ab8696ef45b3d2d52ffbbe8a591dc99fb}{}\label{class_core_ab8696ef45b3d2d52ffbbe8a591dc99fb}
+
+
+Récupère le J1. 
+
+Méthode permettant de récupérer le J1
+
+\begin{DoxyReturn}{Returns}
+le J1 
+\end{DoxyReturn}
+\index{Core@{Core}!get\+Team2@{get\+Team2}}
+\index{get\+Team2@{get\+Team2}!Core@{Core}}
+\subsubsection[{\texorpdfstring{get\+Team2()}{getTeam2()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Team} $>$ Core\+::get\+Team2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_ae2a1b22acb1cc7a021c279b22e5c1cc1}{}\label{class_core_ae2a1b22acb1cc7a021c279b22e5c1cc1}
+
+
+Récupère le J2. 
+
+Méthode permettant de récupérer le J2
+
+\begin{DoxyReturn}{Returns}
+le J2 
+\end{DoxyReturn}
+\index{Core@{Core}!set\+Image\+Chgmt\+Tour@{set\+Image\+Chgmt\+Tour}}
+\index{set\+Image\+Chgmt\+Tour@{set\+Image\+Chgmt\+Tour}!Core@{Core}}
+\subsubsection[{\texorpdfstring{set\+Image\+Chgmt\+Tour()}{setImageChgmtTour()}}]{\setlength{\rightskip}{0pt plus 5cm}void Core\+::set\+Image\+Chgmt\+Tour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_core_a0a45f16dc5613ac2239f8648befb59c4}{}\label{class_core_a0a45f16dc5613ac2239f8648befb59c4}
+
+
+Tourne l\textquotesingle{}image pour l\textquotesingle{}\hyperlink{class_affichage_jeu}{Affichage\+Jeu} pour le tour des joueurs. 
+
+Méthode qui est déléguée à l\textquotesingle{}\hyperlink{class_affichage_jeu}{Affichage\+Jeu} 
+
+\subsection{Member Data Documentation}
+\index{Core@{Core}!affichage\+Actif\+\_\+@{affichage\+Actif\+\_\+}}
+\index{affichage\+Actif\+\_\+@{affichage\+Actif\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{affichage\+Actif\+\_\+}{affichageActif_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf I\+Affichage}$>$ Core\+::affichage\+Actif\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_ace6812af8ec428d12258d5c895a1fb2d}{}\label{class_core_ace6812af8ec428d12258d5c895a1fb2d}
+l\textquotesingle{}affichage actif qui prend pour valeur les différents affichages quand c\textquotesingle{}est nécessaire \index{Core@{Core}!aff\+Ini\+J1\+\_\+@{aff\+Ini\+J1\+\_\+}}
+\index{aff\+Ini\+J1\+\_\+@{aff\+Ini\+J1\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{aff\+Ini\+J1\+\_\+}{affIniJ1_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf I\+Affichage}$>$ Core\+::aff\+Ini\+J1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_af1b29bd6eb49663e39efff0a91d9c9df}{}\label{class_core_af1b29bd6eb49663e39efff0a91d9c9df}
+pour l\textquotesingle{}affichage de l\textquotesingle{}initialisation du J1 \index{Core@{Core}!aff\+Ini\+J2\+\_\+@{aff\+Ini\+J2\+\_\+}}
+\index{aff\+Ini\+J2\+\_\+@{aff\+Ini\+J2\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{aff\+Ini\+J2\+\_\+}{affIniJ2_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf I\+Affichage}$>$ Core\+::aff\+Ini\+J2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_a4d85e8590561c684900e1a2fd18184e2}{}\label{class_core_a4d85e8590561c684900e1a2fd18184e2}
+pour l\textquotesingle{}affichage de l\textquotesingle{}initialisation du J2 \index{Core@{Core}!aff\+Jeu\+\_\+@{aff\+Jeu\+\_\+}}
+\index{aff\+Jeu\+\_\+@{aff\+Jeu\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{aff\+Jeu\+\_\+}{affJeu_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Affichage\+Jeu}$>$ Core\+::aff\+Jeu\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_a2558f752fb1c060782d4f75d9d09b864}{}\label{class_core_a2558f752fb1c060782d4f75d9d09b864}
+pour l\textquotesingle{}affichage du jeu \index{Core@{Core}!aff\+Men\+\_\+@{aff\+Men\+\_\+}}
+\index{aff\+Men\+\_\+@{aff\+Men\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{aff\+Men\+\_\+}{affMen_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf I\+Affichage}$>$ Core\+::aff\+Men\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_a2d9a9ba8be0844338f67e8feab39ba9e}{}\label{class_core_a2d9a9ba8be0844338f67e8feab39ba9e}
+pour l\textquotesingle{}affichage du menu \index{Core@{Core}!mode\+\_\+@{mode\+\_\+}}
+\index{mode\+\_\+@{mode\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{mode\+\_\+}{mode_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Comp\+Mode}$>$ Core\+::mode\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_ab7d2af28daa772c12d0a2cea6e65f887}{}\label{class_core_ab7d2af28daa772c12d0a2cea6e65f887}
+correspond au mode de jeu \index{Core@{Core}!team1\+\_\+@{team1\+\_\+}}
+\index{team1\+\_\+@{team1\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{team1\+\_\+}{team1_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Team}$>$ Core\+::team1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_a299a0b1ed101953462d17c6e0528b006}{}\label{class_core_a299a0b1ed101953462d17c6e0528b006}
+le J1 \index{Core@{Core}!team2\+\_\+@{team2\+\_\+}}
+\index{team2\+\_\+@{team2\+\_\+}!Core@{Core}}
+\subsubsection[{\texorpdfstring{team2\+\_\+}{team2_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Team}$>$ Core\+::team2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_core_a4e9f0791fb0449a8c4b0ccce607a11da}{}\label{class_core_a4e9f0791fb0449a8c4b0ccce607a11da}
+le J2 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core.\+h\item 
+core.\+cpp\end{DoxyCompactItemize}

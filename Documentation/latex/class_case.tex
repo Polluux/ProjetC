@@ -1,0 +1,224 @@
+\hypertarget{class_case}{}\section{Case Class Reference}
+\label{class_case}\index{Case@{Case}}
+
+
+classe representant une \hyperlink{class_case}{Case}  
+
+
+
+
+{\ttfamily \#include $<$case.\+h$>$}
+
+
+
+Inheritance diagram for Case\+:
+% FIG 0
+
+
+Collaboration diagram for Case\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_case_a5fc4408a8eea8e390fd9b8d3ae6345a7}{Case} (Q\+Widget $\ast$parent, int x, int y)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_case_afa446bb3223628f76144f077df5e7618}{clic} ()
+\begin{DoxyCompactList}\small\item\em Permet de savoir si la case a déjà été touchée et ce qu\textquotesingle{}elle contient. \end{DoxyCompactList}\item 
+int \hyperlink{class_case_ab5580b919199dd2ec379672d3390bbff}{getX} ()
+\begin{DoxyCompactList}\small\item\em Récupère la ligne où se trouve la case. \end{DoxyCompactList}\item 
+int \hyperlink{class_case_a824f612c5a660a1d55ac06931747c46d}{getY} ()
+\begin{DoxyCompactList}\small\item\em Récupère la colonne où se trouve la case. \end{DoxyCompactList}\item 
+void \hyperlink{class_case_a77e28934961e13da9fcf0f1168b8e7a4}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em Décrit la case. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_contenu}{Contenu} $>$ \hyperlink{class_case_ae761fa055a6c3e3e228d22b503b525ae}{get\+Content} ()
+\begin{DoxyCompactList}\small\item\em Récupère le contenu de la case. \end{DoxyCompactList}\item 
+void \hyperlink{class_case_a474429530bc089e09a51410ca92a5ad7}{set\+Content} (\hyperlink{class_contenu}{Contenu} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Modifie le contenu de la case. \end{DoxyCompactList}\item 
+void \hyperlink{class_case_ae461d39a197ed070e54f430c681b93b1}{set\+Content} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_contenu}{Contenu} $>$ c)
+\begin{DoxyCompactList}\small\item\em Modifie le contenu de la case. \end{DoxyCompactList}\item 
+bool \hyperlink{class_case_ae66f6f25dbb860d02ee3a7af62fc56eb}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le contenu de la case est vide (de la \hyperlink{class_mer}{Mer}) \end{DoxyCompactList}\item 
+void \hyperlink{class_case_abc8ddec34f7f32980b8c2af01934a45a}{reset\+Case} ()
+\begin{DoxyCompactList}\small\item\em Permet de vider la case. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_case_ab004564aae3e15db0c7fd5dde0b4c379}{$\sim$\+Case} ()\hypertarget{class_case_ab004564aae3e15db0c7fd5dde0b4c379}{}\label{class_case_ab004564aae3e15db0c7fd5dde0b4c379}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_case}{Case}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant une \hyperlink{class_case}{Case} 
+
+La classe décrit une case qui composera une carte 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Case@{Case}!Case@{Case}}
+\index{Case@{Case}!Case@{Case}}
+\subsubsection[{\texorpdfstring{Case(\+Q\+Widget $\ast$parent, int x, int y)}{Case(QWidget *parent, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}Case\+::\+Case (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_a5fc4408a8eea8e390fd9b8d3ae6345a7}{}\label{class_case_a5fc4408a8eea8e390fd9b8d3ae6345a7}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_case}{Case}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \+: déigne le parent de la case (la carte) \\
+\hline
+{\em x} & \+: le numéro de ligne de la case \\
+\hline
+{\em y} & \+: le numéro de colonne de la case \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Case@{Case}!clic@{clic}}
+\index{clic@{clic}!Case@{Case}}
+\subsubsection[{\texorpdfstring{clic()}{clic()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Case\+::clic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_afa446bb3223628f76144f077df5e7618}{}\label{class_case_afa446bb3223628f76144f077df5e7618}
+
+
+Permet de savoir si la case a déjà été touchée et ce qu\textquotesingle{}elle contient. 
+
+Méthode permettant de savoir si la case a déjà été cliqué et connaitre son contenu grâce à son retour
+
+\begin{DoxyReturn}{Returns}
+true si la case a déjà été touchée ou s\textquotesingle{}il s\textquotesingle{}agit d\textquotesingle{}un bateau, sinon false 
+\end{DoxyReturn}
+\index{Case@{Case}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Case@{Case}}
+\subsubsection[{\texorpdfstring{get\+Content()}{getContent()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Contenu} $>$ Case\+::get\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_ae761fa055a6c3e3e228d22b503b525ae}{}\label{class_case_ae761fa055a6c3e3e228d22b503b525ae}
+
+
+Récupère le contenu de la case. 
+
+Méthode permettant de récupérer le contenu de la case
+
+\begin{DoxyReturn}{Returns}
+le contenu la case (\hyperlink{class_bateau}{Bateau} ou \hyperlink{class_mer}{Mer}) 
+\end{DoxyReturn}
+\index{Case@{Case}!getX@{getX}}
+\index{getX@{getX}!Case@{Case}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}int Case\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_ab5580b919199dd2ec379672d3390bbff}{}\label{class_case_ab5580b919199dd2ec379672d3390bbff}
+
+
+Récupère la ligne où se trouve la case. 
+
+Méthode permettant de récupérer la ligne sur laquelle se situe la case sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de ligne sur laquelle se trouve la case 
+\end{DoxyReturn}
+\index{Case@{Case}!getY@{getY}}
+\index{getY@{getY}!Case@{Case}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}int Case\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_a824f612c5a660a1d55ac06931747c46d}{}\label{class_case_a824f612c5a660a1d55ac06931747c46d}
+
+
+Récupère la colonne où se trouve la case. 
+
+Méthode permettant de récupérer la colonne sur laquelle se situe la case sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de colonne sur laquelle se trouve la case 
+\end{DoxyReturn}
+\index{Case@{Case}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Case@{Case}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Case\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_ae66f6f25dbb860d02ee3a7af62fc56eb}{}\label{class_case_ae66f6f25dbb860d02ee3a7af62fc56eb}
+
+
+Savoir si le contenu de la case est vide (de la \hyperlink{class_mer}{Mer}) 
+
+Méthode permettant de savoir si le contenu de la case est de la \hyperlink{class_mer}{Mer} ou non
+
+\begin{DoxyReturn}{Returns}
+true si le contenu de la case est de la \hyperlink{class_mer}{Mer}, sinon false 
+\end{DoxyReturn}
+\index{Case@{Case}!reset\+Case@{reset\+Case}}
+\index{reset\+Case@{reset\+Case}!Case@{Case}}
+\subsubsection[{\texorpdfstring{reset\+Case()}{resetCase()}}]{\setlength{\rightskip}{0pt plus 5cm}void Case\+::reset\+Case (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_abc8ddec34f7f32980b8c2af01934a45a}{}\label{class_case_abc8ddec34f7f32980b8c2af01934a45a}
+
+
+Permet de vider la case. 
+
+Méthode permettant de modifier le contenu de la case par de la \hyperlink{class_mer}{Mer} \index{Case@{Case}!set\+Content@{set\+Content}}
+\index{set\+Content@{set\+Content}!Case@{Case}}
+\subsubsection[{\texorpdfstring{set\+Content(\+Contenu $\ast$c)}{setContent(Contenu *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Case\+::set\+Content (
+\begin{DoxyParamCaption}
+\item[{{\bf Contenu} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_a474429530bc089e09a51410ca92a5ad7}{}\label{class_case_a474429530bc089e09a51410ca92a5ad7}
+
+
+Modifie le contenu de la case. 
+
+Méthode permettant modifier le contenu de la case
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: le nouveau contenu de la case (\hyperlink{class_mer}{Mer} ou \hyperlink{class_bateau}{Bateau}) \\
+\hline
+\end{DoxyParams}
+\index{Case@{Case}!set\+Content@{set\+Content}}
+\index{set\+Content@{set\+Content}!Case@{Case}}
+\subsubsection[{\texorpdfstring{set\+Content(std\+::shared\+\_\+ptr$<$ Contenu $>$ c)}{setContent(std::shared_ptr< Contenu > c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Case\+::set\+Content (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Contenu} $>$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_ae461d39a197ed070e54f430c681b93b1}{}\label{class_case_ae461d39a197ed070e54f430c681b93b1}
+
+
+Modifie le contenu de la case. 
+
+Méthode permettant modifier le contenu de la case
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: le nouveau contenu de la case (\hyperlink{class_mer}{Mer} ou \hyperlink{class_bateau}{Bateau}) \\
+\hline
+\end{DoxyParams}
+\index{Case@{Case}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Case@{Case}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}void Case\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_case_a77e28934961e13da9fcf0f1168b8e7a4}{}\label{class_case_a77e28934961e13da9fcf0f1168b8e7a4}
+
+
+Décrit la case. 
+
+Méthode permettant de décrire la case avec ses coordonnées 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+case.\+h\item 
+case.\+cpp\end{DoxyCompactItemize}

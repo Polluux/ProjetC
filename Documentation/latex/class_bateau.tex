@@ -1,0 +1,361 @@
+\hypertarget{class_bateau}{}\section{Bateau Class Reference}
+\label{class_bateau}\index{Bateau@{Bateau}}
+
+
+classe representant un \hyperlink{class_bateau}{Bateau}  
+
+
+
+
+{\ttfamily \#include $<$bateau.\+h$>$}
+
+
+
+Inheritance diagram for Bateau\+:
+% FIG 0
+
+
+Collaboration diagram for Bateau\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bateau_af9484dd811f8f678d92bfd70e2f1c5e2}{Bateau} (int taille)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a3e54040953962f545b5fabadbcc330e8}{action} (\hyperlink{class_case}{Case} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Action émise lorsqu\textquotesingle{}on a cliqué sur un \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+void \hyperlink{class_bateau_a12cc2226f5533d98b5b1f71fc042f1a6}{setX} (int x)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée X du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+void \hyperlink{class_bateau_ad84a941f5968a3690b80b12ca56547c4}{setY} (int y)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée Y du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+void \hyperlink{class_bateau_a1dae1dbd3d3e0334a4dc5b43ef579c25}{set\+Horizontal} (bool a)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+int \hyperlink{class_bateau_ab7bd97ef05abea97c5322a16760b7d51}{getX} ()
+\begin{DoxyCompactList}\small\item\em Récupère la ligne où se trouve le \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+int \hyperlink{class_bateau_a178bb83641412590fcc39d8974d6562a}{getY} ()
+\begin{DoxyCompactList}\small\item\em Récupère la colonne où se trouve le \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a8578b6073e4f546d4c255e23fbb3c1dc}{get\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_bateau_a08be20b8c871149d717a30b00c1068b9}{get\+Taille} ()=0
+\begin{DoxyCompactList}\small\item\em Connaitre la taille du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+int \hyperlink{class_bateau_afe0dcf17979772fef6973b5aa5bca46a}{get\+Pv\+Actuels} ()
+\begin{DoxyCompactList}\small\item\em Connaitre le nombre de PV du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a8a8984f7b1010fbdd4cd15c7768da2ca}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le contenu est vide. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a6e4d8fc7cf8b265592dd009ecac72be2}{est\+Coule} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_bateau}{Bateau} est coulé \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a0eaa5c908df108398064be6a8ab20a60}{est\+Egal} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ b)
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_bateau}{Bateau} est identique à un autre. \end{DoxyCompactList}\item 
+bool \hyperlink{class_bateau_a8fff831d5081544b0abbf5b6816ebe35}{touche} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_contenu}{Contenu} est touché \end{DoxyCompactList}\item 
+virtual \hyperlink{class_bateau_a8545a0456e618328674c5cdf629e14b5}{$\sim$\+Bateau} ()\hypertarget{class_bateau_a8545a0456e618328674c5cdf629e14b5}{}\label{class_bateau_a8545a0456e618328674c5cdf629e14b5}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe representant un \hyperlink{class_bateau}{Bateau} 
+
+La classe gère l\textquotesingle{}ensemble des actions émises ou impactant un \hyperlink{class_bateau}{Bateau} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Bateau@{Bateau}!Bateau@{Bateau}}
+\index{Bateau@{Bateau}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{Bateau(int taille)}{Bateau(int taille)}}]{\setlength{\rightskip}{0pt plus 5cm}Bateau\+::\+Bateau (
+\begin{DoxyParamCaption}
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}\hypertarget{class_bateau_af9484dd811f8f678d92bfd70e2f1c5e2}{}\label{class_bateau_af9484dd811f8f678d92bfd70e2f1c5e2}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_bateau}{Bateau}
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille} & \+: la taille du \hyperlink{class_bateau}{Bateau} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Bateau@{Bateau}!action@{action}}
+\index{action@{action}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{action(\+Case $\ast$c)}{action(Case *c)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Case} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a3e54040953962f545b5fabadbcc330e8}{}\label{class_bateau_a3e54040953962f545b5fabadbcc330e8}
+
+
+Action émise lorsqu\textquotesingle{}on a cliqué sur un \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de savoir si le contenu de la case est un \hyperlink{class_bateau}{Bateau} et décrémente son nombre de points de vie
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la case sur laquelle on a cliqué\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le contenu de la case est un bateau sinon false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_ae54145207bfdae5a24ce2c8c523c74a0}{Contenu}.
+
+\index{Bateau@{Bateau}!est\+Coule@{est\+Coule}}
+\index{est\+Coule@{est\+Coule}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{est\+Coule()}{estCoule()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::est\+Coule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a6e4d8fc7cf8b265592dd009ecac72be2}{}\label{class_bateau_a6e4d8fc7cf8b265592dd009ecac72be2}
+
+
+Savoir si le \hyperlink{class_bateau}{Bateau} est coulé 
+
+Méthode permettant de savoir si le nombre de PV du \hyperlink{class_bateau}{Bateau} est à 0
+
+\begin{DoxyReturn}{Returns}
+true le nombre de PV est égal à 0, false sinon 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_ad8ba918a8d5a08e4f8c0c742778500d6}{Contenu}.
+
+\index{Bateau@{Bateau}!est\+Egal@{est\+Egal}}
+\index{est\+Egal@{est\+Egal}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{est\+Egal(std\+::shared\+\_\+ptr$<$ Bateau $>$ b)}{estEgal(std::shared_ptr< Bateau > b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::est\+Egal (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Bateau} $>$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_bateau_a0eaa5c908df108398064be6a8ab20a60}{}\label{class_bateau_a0eaa5c908df108398064be6a8ab20a60}
+
+
+Savoir si le \hyperlink{class_bateau}{Bateau} est identique à un autre. 
+
+Méthode permettant de savoir si \hyperlink{class_bateau}{Bateau} possède exactement les mêmes attributs qu\textquotesingle{}un autre
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: le \hyperlink{class_bateau}{Bateau} que l\textquotesingle{}on souhaite comparé à notre \hyperlink{class_bateau}{Bateau}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si c\textquotesingle{}est le même, false sinon 
+\end{DoxyReturn}
+\index{Bateau@{Bateau}!get\+Horizontal@{get\+Horizontal}}
+\index{get\+Horizontal@{get\+Horizontal}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{get\+Horizontal()}{getHorizontal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::get\+Horizontal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a8578b6073e4f546d4c255e23fbb3c1dc}{}\label{class_bateau_a8578b6073e4f546d4c255e23fbb3c1dc}
+
+
+Récupère l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de savoir si le \hyperlink{class_bateau}{Bateau} est horizontal ou vertical
+
+\begin{DoxyReturn}{Returns}
+true si le \hyperlink{class_bateau}{Bateau} est horizontal, false sinon 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_aa9b4dbb3de416310cd53422a0d14879b}{Contenu}.
+
+\index{Bateau@{Bateau}!get\+Pv\+Actuels@{get\+Pv\+Actuels}}
+\index{get\+Pv\+Actuels@{get\+Pv\+Actuels}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{get\+Pv\+Actuels()}{getPvActuels()}}]{\setlength{\rightskip}{0pt plus 5cm}int Bateau\+::get\+Pv\+Actuels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_bateau_afe0dcf17979772fef6973b5aa5bca46a}{}\label{class_bateau_afe0dcf17979772fef6973b5aa5bca46a}
+
+
+Connaitre le nombre de PV du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de nombre de PV restant au \hyperlink{class_bateau}{Bateau}
+
+\begin{DoxyReturn}{Returns}
+le nombre de PV qu\textquotesingle{}a le \hyperlink{class_bateau}{Bateau} actuellement 
+\end{DoxyReturn}
+\index{Bateau@{Bateau}!get\+Taille@{get\+Taille}}
+\index{get\+Taille@{get\+Taille}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{get\+Taille()=0}{getTaille()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Bateau\+::get\+Taille (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_bateau_a08be20b8c871149d717a30b00c1068b9}{}\label{class_bateau_a08be20b8c871149d717a30b00c1068b9}
+
+
+Connaitre la taille du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de connaitre la taille du \hyperlink{class_bateau}{Bateau}
+
+\begin{DoxyReturn}{Returns}
+la taille du \hyperlink{class_bateau}{Bateau} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_abba99a1726eb744067cca7deb571444b}{Contenu}.
+
+
+
+Implemented in \hyperlink{class_canard_a5c99dcdcd79601f9cc075072c6fa8e47}{Canard}, \hyperlink{class_caneton_a173cbd22638bbf2806a47c329284ceee}{Caneton}, \hyperlink{class_cygne_a48ec6800d6f11358be648cbe9a5fceb0}{Cygne}, and \hyperlink{class_oie_aa07fdf5abd6eec1a4578a90edb029ad1}{Oie}.
+
+\index{Bateau@{Bateau}!getX@{getX}}
+\index{getX@{getX}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}int Bateau\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_ab7bd97ef05abea97c5322a16760b7d51}{}\label{class_bateau_ab7bd97ef05abea97c5322a16760b7d51}
+
+
+Récupère la ligne où se trouve le \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de récupérer la ligne sur laquelle se situe le \hyperlink{class_bateau}{Bateau} sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de ligne sur laquelle se trouve le \hyperlink{class_bateau}{Bateau} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_afce83627ee635c60edb0edced8191af4}{Contenu}.
+
+\index{Bateau@{Bateau}!getY@{getY}}
+\index{getY@{getY}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}int Bateau\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a178bb83641412590fcc39d8974d6562a}{}\label{class_bateau_a178bb83641412590fcc39d8974d6562a}
+
+
+Récupère la colonne où se trouve le \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de récupérer la colonne sur laquelle se situe le \hyperlink{class_bateau}{Bateau} sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de colonne sur laquelle se trouve le \hyperlink{class_bateau}{Bateau} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_a1087d1609ec4842bb3d2a5dd960359b6}{Contenu}.
+
+\index{Bateau@{Bateau}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a8a8984f7b1010fbdd4cd15c7768da2ca}{}\label{class_bateau_a8a8984f7b1010fbdd4cd15c7768da2ca}
+
+
+Savoir si le contenu est vide. 
+
+Méthode permettant de savoir si le contenu est vide
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_a426053a6e632f1963c1c59c1515c99fb}{Contenu}.
+
+\index{Bateau@{Bateau}!set\+Horizontal@{set\+Horizontal}}
+\index{set\+Horizontal@{set\+Horizontal}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{set\+Horizontal(bool a)}{setHorizontal(bool a)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bateau\+::set\+Horizontal (
+\begin{DoxyParamCaption}
+\item[{bool}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a1dae1dbd3d3e0334a4dc5b43ef579c25}{}\label{class_bateau_a1dae1dbd3d3e0334a4dc5b43ef579c25}
+
+
+Modifie l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de modifier l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau} à l\textquotesingle{}origine, le \hyperlink{class_bateau}{Bateau} est vertical
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: booléen à true \+: horizontal, sinon vertical \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_ad06f3204769fdc758a5859fbb7cac637}{Contenu}.
+
+\index{Bateau@{Bateau}!setX@{setX}}
+\index{setX@{setX}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{set\+X(int x)}{setX(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bateau\+::setX (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a12cc2226f5533d98b5b1f71fc042f1a6}{}\label{class_bateau_a12cc2226f5533d98b5b1f71fc042f1a6}
+
+
+Modifie la coordonnée X du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de modifier la coordonnée en X, c\textquotesingle{}est à dire sur quelle ligne placer le \hyperlink{class_bateau}{Bateau}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: numéro de la ligne \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_a801fc9cb327750d2889ab3e7b185c029}{Contenu}.
+
+\index{Bateau@{Bateau}!setY@{setY}}
+\index{setY@{setY}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{set\+Y(int y)}{setY(int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bateau\+::setY (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_ad84a941f5968a3690b80b12ca56547c4}{}\label{class_bateau_ad84a941f5968a3690b80b12ca56547c4}
+
+
+Modifie la coordonnée Y du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de modifier la coordonnée en Y, c\textquotesingle{}est à dire sur quelle colonne placer le \hyperlink{class_bateau}{Bateau}
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \+: numéro de la colonne \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_afc6fc6f669313fe77ca57559475d1750}{Contenu}.
+
+\index{Bateau@{Bateau}!touche@{touche}}
+\index{touche@{touche}!Bateau@{Bateau}}
+\subsubsection[{\texorpdfstring{touche()}{touche()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bateau\+::touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_bateau_a8fff831d5081544b0abbf5b6816ebe35}{}\label{class_bateau_a8fff831d5081544b0abbf5b6816ebe35}
+
+
+Savoir si le \hyperlink{class_contenu}{Contenu} est touché 
+
+Méthode permettant de savoir si le \hyperlink{class_contenu}{Contenu} est touché
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_af917356550ccc6025373c652b6e8b938}{Contenu}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bateau.\+h\item 
+bateau.\+cpp\end{DoxyCompactItemize}

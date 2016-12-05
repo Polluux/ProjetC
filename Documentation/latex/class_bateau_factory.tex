@@ -1,0 +1,70 @@
+\hypertarget{class_bateau_factory}{}\section{Bateau\+Factory Interface Reference}
+\label{class_bateau_factory}\index{Bateau\+Factory@{Bateau\+Factory}}
+
+
+classe representant un \char`\"{}\+Chantier Naval\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$bateaufactory.\+h$>$}
+
+
+
+Inheritance diagram for Bateau\+Factory\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bateau_factory_ab2c99aa64b7804fa2d67699a2d80703a}{Bateau\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_bateau}{Bateau} $>$ \hyperlink{class_bateau_factory_a8cec9c2ab3793cec80e43b3d940da1d9}{creer\+Bateau} ()=0
+\begin{DoxyCompactList}\small\item\em Récupère le \hyperlink{class_bateau}{Bateau} créé \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant un \char`\"{}\+Chantier Naval\char`\"{} 
+
+La classe gère la création de Bateaux 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Bateau\+Factory@{Bateau\+Factory}!Bateau\+Factory@{Bateau\+Factory}}
+\index{Bateau\+Factory@{Bateau\+Factory}!Bateau\+Factory@{Bateau\+Factory}}
+\subsubsection[{\texorpdfstring{Bateau\+Factory()}{BateauFactory()}}]{\setlength{\rightskip}{0pt plus 5cm}Bateau\+Factory\+::\+Bateau\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_bateau_factory_ab2c99aa64b7804fa2d67699a2d80703a}{}\label{class_bateau_factory_ab2c99aa64b7804fa2d67699a2d80703a}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_bateau_factory}{Bateau\+Factory} 
+
+\subsection{Member Function Documentation}
+\index{Bateau\+Factory@{Bateau\+Factory}!creer\+Bateau@{creer\+Bateau}}
+\index{creer\+Bateau@{creer\+Bateau}!Bateau\+Factory@{Bateau\+Factory}}
+\subsubsection[{\texorpdfstring{creer\+Bateau()=0}{creerBateau()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::shared\+\_\+ptr$<${\bf Bateau}$>$ Bateau\+Factory\+::creer\+Bateau (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_bateau_factory_a8cec9c2ab3793cec80e43b3d940da1d9}{}\label{class_bateau_factory_a8cec9c2ab3793cec80e43b3d940da1d9}
+
+
+Récupère le \hyperlink{class_bateau}{Bateau} créé 
+
+Méthode permettant de récupérer le \hyperlink{class_bateau}{Bateau} créé
+
+\begin{DoxyReturn}{Returns}
+le \hyperlink{class_bateau}{Bateau} créé en fonction de la factory invoqué 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_factory_cygne_aa49b4a3704bcb68c0e31cebc3f5767b8}{Factory\+Cygne}, \hyperlink{class_factory_canard_a3ef0d9a9c293006fb09fd03a911a1377}{Factory\+Canard}, \hyperlink{class_factory_caneton_ac03710919dab69d816bb4c8fd047f4eb}{Factory\+Caneton}, and \hyperlink{class_factory_oie_aef35f008954feedb26821fdf5b73328f}{Factory\+Oie}.
+
+
+
+The documentation for this interface was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bateaufactory.\+h\item 
+bateaufactory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,330 @@
+\hypertarget{class_contenu}{}\section{Contenu Interface Reference}
+\label{class_contenu}\index{Contenu@{Contenu}}
+
+
+classe representant un \hyperlink{class_contenu}{Contenu}  
+
+
+
+
+{\ttfamily \#include $<$contenu.\+h$>$}
+
+
+
+Inheritance diagram for Contenu\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_contenu_ac20817eae49d031383e9a3be58c2bf15}{Contenu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_contenu_ae54145207bfdae5a24ce2c8c523c74a0}{action} (\hyperlink{class_case}{Case} $\ast$c)=0
+\begin{DoxyCompactList}\small\item\em Action émise lorsqu\textquotesingle{}on a cliqué sur une \hyperlink{class_case}{Case}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_contenu_a801fc9cb327750d2889ab3e7b185c029}{setX} (int x)=0
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée X du \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_contenu_afc6fc6f669313fe77ca57559475d1750}{setY} (int y)=0
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée Y du \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_contenu_ad06f3204769fdc758a5859fbb7cac637}{set\+Horizontal} (bool a)=0
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_contenu_afce83627ee635c60edb0edced8191af4}{getX} ()=0
+\begin{DoxyCompactList}\small\item\em Récupère la ligne où se trouve le \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_contenu_a1087d1609ec4842bb3d2a5dd960359b6}{getY} ()=0
+\begin{DoxyCompactList}\small\item\em Récupère la colonne où se trouve le \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_contenu_aa9b4dbb3de416310cd53422a0d14879b}{get\+Horizontal} ()=0
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}orientation du \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_contenu_abba99a1726eb744067cca7deb571444b}{get\+Taille} ()=0
+\begin{DoxyCompactList}\small\item\em Connaitre la taille du \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_contenu_a426053a6e632f1963c1c59c1515c99fb}{is\+Empty} ()=0
+\begin{DoxyCompactList}\small\item\em Savoir si le contenu est vide. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_contenu_af917356550ccc6025373c652b6e8b938}{touche} ()=0
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_contenu}{Contenu} est touché \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_contenu_ad8ba918a8d5a08e4f8c0c742778500d6}{est\+Coule} ()=0
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_contenu}{Contenu} est coulé \end{DoxyCompactList}\item 
+virtual \hyperlink{class_contenu_a77f59e494b5c0f00ceb2da8d0067d4b8}{$\sim$\+Contenu} ()\hypertarget{class_contenu_a77f59e494b5c0f00ceb2da8d0067d4b8}{}\label{class_contenu_a77f59e494b5c0f00ceb2da8d0067d4b8}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_contenu}{Contenu}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_contenu_a181b4b730433d5f2775d0c19cadd4132}{x\+\_\+}
+\item 
+int \hyperlink{class_contenu_a571f1aa960aaaa1971bfefe70326457d}{y\+\_\+}
+\item 
+bool \hyperlink{class_contenu_a7512c8fe29c284d31c24bfe03a6b2684}{horizontal\+\_\+}
+\item 
+int \hyperlink{class_contenu_a354281d1fa2b2e8e39ee84c56115a7f5}{taille\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant un \hyperlink{class_contenu}{Contenu} 
+
+La classe gère l\textquotesingle{}ensemble des comportements sur un contenu de cases 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Contenu@{Contenu}!Contenu@{Contenu}}
+\index{Contenu@{Contenu}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{Contenu()}{Contenu()}}]{\setlength{\rightskip}{0pt plus 5cm}Contenu\+::\+Contenu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_contenu_ac20817eae49d031383e9a3be58c2bf15}{}\label{class_contenu_ac20817eae49d031383e9a3be58c2bf15}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_contenu}{Contenu} 
+
+\subsection{Member Function Documentation}
+\index{Contenu@{Contenu}!action@{action}}
+\index{action@{action}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{action(\+Case $\ast$c)=0}{action(Case *c)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Contenu\+::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Case} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_ae54145207bfdae5a24ce2c8c523c74a0}{}\label{class_contenu_ae54145207bfdae5a24ce2c8c523c74a0}
+
+
+Action émise lorsqu\textquotesingle{}on a cliqué sur une \hyperlink{class_case}{Case}. 
+
+Méthode permettant de savoir si le contenu de la case est un \hyperlink{class_bateau}{Bateau} ou de la \hyperlink{class_mer}{Mer}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la case sur laquelle on a cliqué\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le contenu de la case est un \hyperlink{class_bateau}{Bateau} sinon false 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a3e54040953962f545b5fabadbcc330e8}{Bateau}, and \hyperlink{class_mer_aa30fffa94a8e0d5be6ae503aa8392973}{Mer}.
+
+\index{Contenu@{Contenu}!est\+Coule@{est\+Coule}}
+\index{est\+Coule@{est\+Coule}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{est\+Coule()=0}{estCoule()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Contenu\+::est\+Coule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_ad8ba918a8d5a08e4f8c0c742778500d6}{}\label{class_contenu_ad8ba918a8d5a08e4f8c0c742778500d6}
+
+
+Savoir si le \hyperlink{class_contenu}{Contenu} est coulé 
+
+Méthode permettant de savoir si le \hyperlink{class_contenu}{Contenu} n\textquotesingle{}a plus de vie
+
+\begin{DoxyReturn}{Returns}
+true si le \hyperlink{class_contenu}{Contenu} n\textquotesingle{}a plus de vie, false sinon 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a6e4d8fc7cf8b265592dd009ecac72be2}{Bateau}, and \hyperlink{class_mer_aa1a5b5633f2d7590e3074bf70a867ee0}{Mer}.
+
+\index{Contenu@{Contenu}!get\+Horizontal@{get\+Horizontal}}
+\index{get\+Horizontal@{get\+Horizontal}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{get\+Horizontal()=0}{getHorizontal()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Contenu\+::get\+Horizontal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_aa9b4dbb3de416310cd53422a0d14879b}{}\label{class_contenu_aa9b4dbb3de416310cd53422a0d14879b}
+
+
+Récupère l\textquotesingle{}orientation du \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de savoir si le \hyperlink{class_contenu}{Contenu} est horizontal ou vertical
+
+\begin{DoxyReturn}{Returns}
+true si le \hyperlink{class_contenu}{Contenu} est horizontal, false sinon 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a8578b6073e4f546d4c255e23fbb3c1dc}{Bateau}, and \hyperlink{class_mer_aa2cfaf3bb10d817c535b843724759bc7}{Mer}.
+
+\index{Contenu@{Contenu}!get\+Taille@{get\+Taille}}
+\index{get\+Taille@{get\+Taille}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{get\+Taille()=0}{getTaille()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Contenu\+::get\+Taille (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_abba99a1726eb744067cca7deb571444b}{}\label{class_contenu_abba99a1726eb744067cca7deb571444b}
+
+
+Connaitre la taille du \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de connaitre la taille du \hyperlink{class_contenu}{Contenu}
+
+\begin{DoxyReturn}{Returns}
+la taille du \hyperlink{class_contenu}{Contenu} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a08be20b8c871149d717a30b00c1068b9}{Bateau}, \hyperlink{class_mer_ad3662e679f566da98a77b585d1699a7e}{Mer}, \hyperlink{class_canard_a5c99dcdcd79601f9cc075072c6fa8e47}{Canard}, \hyperlink{class_caneton_a173cbd22638bbf2806a47c329284ceee}{Caneton}, \hyperlink{class_cygne_a48ec6800d6f11358be648cbe9a5fceb0}{Cygne}, and \hyperlink{class_oie_aa07fdf5abd6eec1a4578a90edb029ad1}{Oie}.
+
+\index{Contenu@{Contenu}!getX@{getX}}
+\index{getX@{getX}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{get\+X()=0}{getX()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Contenu\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_afce83627ee635c60edb0edced8191af4}{}\label{class_contenu_afce83627ee635c60edb0edced8191af4}
+
+
+Récupère la ligne où se trouve le \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de récupérer la ligne sur laquelle se situe le \hyperlink{class_contenu}{Contenu} de la \hyperlink{class_case}{Case}
+
+\begin{DoxyReturn}{Returns}
+le numéro de ligne sur laquelle se trouve le \hyperlink{class_contenu}{Contenu} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_ab7bd97ef05abea97c5322a16760b7d51}{Bateau}, and \hyperlink{class_mer_a668a9c3acfa903bb7c8e1d607e1229a4}{Mer}.
+
+\index{Contenu@{Contenu}!getY@{getY}}
+\index{getY@{getY}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{get\+Y()=0}{getY()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Contenu\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_a1087d1609ec4842bb3d2a5dd960359b6}{}\label{class_contenu_a1087d1609ec4842bb3d2a5dd960359b6}
+
+
+Récupère la colonne où se trouve le \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de récupérer la colonne sur laquelle se situe le \hyperlink{class_contenu}{Contenu} de la \hyperlink{class_case}{Case}
+
+\begin{DoxyReturn}{Returns}
+le numéro de colonne sur laquelle se trouve le \hyperlink{class_contenu}{Contenu} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a178bb83641412590fcc39d8974d6562a}{Bateau}, and \hyperlink{class_mer_a41f5d00f824057af9c9b57d666bf6fcc}{Mer}.
+
+\index{Contenu@{Contenu}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{is\+Empty()=0}{isEmpty()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Contenu\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_a426053a6e632f1963c1c59c1515c99fb}{}\label{class_contenu_a426053a6e632f1963c1c59c1515c99fb}
+
+
+Savoir si le contenu est vide. 
+
+Méthode permettant de savoir si le contenu est vide ( de la \hyperlink{class_mer}{Mer} )
+
+\begin{DoxyReturn}{Returns}
+true s\textquotesingle{}il s\textquotesingle{}agit d\textquotesingle{}un \hyperlink{class_bateau}{Bateau}, false si c\textquotesingle{}est de la \hyperlink{class_mer}{Mer} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a8a8984f7b1010fbdd4cd15c7768da2ca}{Bateau}, and \hyperlink{class_mer_ac76c2299715ae08f07e8a9fc0821b032}{Mer}.
+
+\index{Contenu@{Contenu}!set\+Horizontal@{set\+Horizontal}}
+\index{set\+Horizontal@{set\+Horizontal}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{set\+Horizontal(bool a)=0}{setHorizontal(bool a)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Contenu\+::set\+Horizontal (
+\begin{DoxyParamCaption}
+\item[{bool}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_ad06f3204769fdc758a5859fbb7cac637}{}\label{class_contenu_ad06f3204769fdc758a5859fbb7cac637}
+
+
+Modifie l\textquotesingle{}orientation du \hyperlink{class_bateau}{Bateau}. 
+
+Méthode permettant de modifier l\textquotesingle{}orientation du \hyperlink{class_contenu}{Contenu}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: booléen à true \+: horizontal, sinon vertical \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_bateau_a1dae1dbd3d3e0334a4dc5b43ef579c25}{Bateau}, and \hyperlink{class_mer_a3244c63c7b077ef84e593d9b5e5f4472}{Mer}.
+
+\index{Contenu@{Contenu}!setX@{setX}}
+\index{setX@{setX}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{set\+X(int x)=0}{setX(int x)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Contenu\+::setX (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_a801fc9cb327750d2889ab3e7b185c029}{}\label{class_contenu_a801fc9cb327750d2889ab3e7b185c029}
+
+
+Modifie la coordonnée X du \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de modifier la coordonnée en X, c\textquotesingle{}est à dire sur quelle ligne placer le \hyperlink{class_contenu}{Contenu}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: numéro de la ligne \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_bateau_a12cc2226f5533d98b5b1f71fc042f1a6}{Bateau}, and \hyperlink{class_mer_ab20617d436898cc631fc1842e897de0c}{Mer}.
+
+\index{Contenu@{Contenu}!setY@{setY}}
+\index{setY@{setY}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{set\+Y(int y)=0}{setY(int y)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Contenu\+::setY (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_afc6fc6f669313fe77ca57559475d1750}{}\label{class_contenu_afc6fc6f669313fe77ca57559475d1750}
+
+
+Modifie la coordonnée Y du \hyperlink{class_contenu}{Contenu}. 
+
+Méthode permettant de modifier la coordonnée en Y, c\textquotesingle{}est à dire sur quelle colonne placer le \hyperlink{class_contenu}{Contenu}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: numéro de la colonne \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_bateau_ad84a941f5968a3690b80b12ca56547c4}{Bateau}, and \hyperlink{class_mer_a13ac62cb31e498d5bcf786d5a0d196ed}{Mer}.
+
+\index{Contenu@{Contenu}!touche@{touche}}
+\index{touche@{touche}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{touche()=0}{touche()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Contenu\+::touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_contenu_af917356550ccc6025373c652b6e8b938}{}\label{class_contenu_af917356550ccc6025373c652b6e8b938}
+
+
+Savoir si le \hyperlink{class_contenu}{Contenu} est touché 
+
+Méthode permettant de savoir si le \hyperlink{class_contenu}{Contenu} est touché
+
+\begin{DoxyReturn}{Returns}
+true si le \hyperlink{class_contenu}{Contenu} est un \hyperlink{class_bateau}{Bateau}, false si c\textquotesingle{}est de la \hyperlink{class_mer}{Mer} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_bateau_a8fff831d5081544b0abbf5b6816ebe35}{Bateau}, and \hyperlink{class_mer_a2ec6ecba14a8f737335720f3dffe9877}{Mer}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Contenu@{Contenu}!horizontal\+\_\+@{horizontal\+\_\+}}
+\index{horizontal\+\_\+@{horizontal\+\_\+}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{horizontal\+\_\+}{horizontal_}}]{\setlength{\rightskip}{0pt plus 5cm}bool Contenu\+::horizontal\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_contenu_a7512c8fe29c284d31c24bfe03a6b2684}{}\label{class_contenu_a7512c8fe29c284d31c24bfe03a6b2684}
+l\textquotesingle{}orientation du contenu \index{Contenu@{Contenu}!taille\+\_\+@{taille\+\_\+}}
+\index{taille\+\_\+@{taille\+\_\+}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{taille\+\_\+}{taille_}}]{\setlength{\rightskip}{0pt plus 5cm}int Contenu\+::taille\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_contenu_a354281d1fa2b2e8e39ee84c56115a7f5}{}\label{class_contenu_a354281d1fa2b2e8e39ee84c56115a7f5}
+la taille du contenu \index{Contenu@{Contenu}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{x\+\_\+}{x_}}]{\setlength{\rightskip}{0pt plus 5cm}int Contenu\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_contenu_a181b4b730433d5f2775d0c19cadd4132}{}\label{class_contenu_a181b4b730433d5f2775d0c19cadd4132}
+le numéro de ligne du \hyperlink{class_contenu}{Contenu} \index{Contenu@{Contenu}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!Contenu@{Contenu}}
+\subsubsection[{\texorpdfstring{y\+\_\+}{y_}}]{\setlength{\rightskip}{0pt plus 5cm}int Contenu\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_contenu_a571f1aa960aaaa1971bfefe70326457d}{}\label{class_contenu_a571f1aa960aaaa1971bfefe70326457d}
+le numéro de colonne du \hyperlink{class_contenu}{Contenu} 
+
+The documentation for this interface was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+contenu.\+h\item 
+contenu.\+cpp\end{DoxyCompactItemize}

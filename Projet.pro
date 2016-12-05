@@ -17,7 +17,6 @@ HEADERS += \
     affichageinitj1.h \
     affichageinitj2.h \
     affichageinit.h \
-    joueur.h \
     bateaufactory.h \
     factorycygne.h \
     factoryoie.h \
@@ -48,7 +47,6 @@ SOURCES += \
     affichageinitj1.cpp \
     affichageinitj2.cpp \
     affichageinit.cpp \
-    joueur.cpp \
     bateaufactory.cpp \
     factorycygne.cpp \
     factoryoie.cpp \

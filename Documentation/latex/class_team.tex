@@ -1,0 +1,196 @@
+\hypertarget{class_team}{}\section{Team Class Reference}
+\label{class_team}\index{Team@{Team}}
+
+
+classe representant un Joueur  
+
+
+
+
+{\ttfamily \#include $<$team.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_team_aada295895b747960576b69d8c87a54ba}{Team} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_carte}{Carte} $>$ \hyperlink{class_team_a8437fa1637e3a4669a676035e9d2fa56}{get\+Carte\+Init} ()
+\begin{DoxyCompactList}\small\item\em Récupère la carte d\textquotesingle{}initialisation du Joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_team_a3af475d5b149db7883694bed764ddf04}{set\+Carte\+Init} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_carte}{Carte} $>$ c)
+\begin{DoxyCompactList}\small\item\em Modifie la carte d\textquotesingle{}initialisation. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_carte}{Carte} $>$ \hyperlink{class_team_a25cc34febbd1876085272a62ce96fb2c}{get\+Carte\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em Récupère la carte de jeu du Joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_team_a0786a89ae3fd8fc20d327ddd3e07b2cf}{set\+Carte\+Jeu} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_carte}{Carte} $>$ c)
+\begin{DoxyCompactList}\small\item\em Modifie la carte de jeu. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_team_a7bba8af6230814d10edb9312dd13069b}{get\+Pseudo} ()
+\begin{DoxyCompactList}\small\item\em Récupère le pseudo du Joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_team_a21cb86bba554a00f774ed417336f3957}{set\+Pseudo} (std\+::string p)
+\begin{DoxyCompactList}\small\item\em Modifie le pseudo du Joueur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_team_a71301541074a696ce146c89c2c399093}{get\+Is\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Savoir à qui est le tour de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{class_team_a0bb7e1d431a4d343a9c694c04f967706}{set\+Is\+Turn} (bool t)
+\begin{DoxyCompactList}\small\item\em Modifie le tour du Joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant un Joueur 
+
+La classe modélise un Joueur et ce qui le compose 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Team@{Team}!Team@{Team}}
+\index{Team@{Team}!Team@{Team}}
+\subsubsection[{\texorpdfstring{Team()}{Team()}}]{\setlength{\rightskip}{0pt plus 5cm}Team\+::\+Team (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_aada295895b747960576b69d8c87a54ba}{}\label{class_team_aada295895b747960576b69d8c87a54ba}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_team}{Team} 
+
+\subsection{Member Function Documentation}
+\index{Team@{Team}!get\+Carte\+Init@{get\+Carte\+Init}}
+\index{get\+Carte\+Init@{get\+Carte\+Init}!Team@{Team}}
+\subsubsection[{\texorpdfstring{get\+Carte\+Init()}{getCarteInit()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Carte} $>$ Team\+::get\+Carte\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a8437fa1637e3a4669a676035e9d2fa56}{}\label{class_team_a8437fa1637e3a4669a676035e9d2fa56}
+
+
+Récupère la carte d\textquotesingle{}initialisation du Joueur. 
+
+Méthode permettant de récupérer la carte d\textquotesingle{}initialisation du joueur une fois qu\textquotesingle{}il a fini
+
+\begin{DoxyReturn}{Returns}
+la carte d\textquotesingle{}initialisation 
+\end{DoxyReturn}
+\index{Team@{Team}!get\+Carte\+Jeu@{get\+Carte\+Jeu}}
+\index{get\+Carte\+Jeu@{get\+Carte\+Jeu}!Team@{Team}}
+\subsubsection[{\texorpdfstring{get\+Carte\+Jeu()}{getCarteJeu()}}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Carte} $>$ Team\+::get\+Carte\+Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a25cc34febbd1876085272a62ce96fb2c}{}\label{class_team_a25cc34febbd1876085272a62ce96fb2c}
+
+
+Récupère la carte de jeu du Joueur. 
+
+Méthode permettant de récupérer la carte de jeu
+
+\begin{DoxyReturn}{Returns}
+la carte de jeu du Joueur 
+\end{DoxyReturn}
+\index{Team@{Team}!get\+Is\+Turn@{get\+Is\+Turn}}
+\index{get\+Is\+Turn@{get\+Is\+Turn}!Team@{Team}}
+\subsubsection[{\texorpdfstring{get\+Is\+Turn()}{getIsTurn()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Team\+::get\+Is\+Turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a71301541074a696ce146c89c2c399093}{}\label{class_team_a71301541074a696ce146c89c2c399093}
+
+
+Savoir à qui est le tour de jeu. 
+
+Méthode permettant de savoir si c\textquotesingle{}est au tour du Joueur 1 ou du Joueur 2
+
+\begin{DoxyReturn}{Returns}
+si c\textquotesingle{}est au tour du Joueur courant 
+\end{DoxyReturn}
+\index{Team@{Team}!get\+Pseudo@{get\+Pseudo}}
+\index{get\+Pseudo@{get\+Pseudo}!Team@{Team}}
+\subsubsection[{\texorpdfstring{get\+Pseudo()}{getPseudo()}}]{\setlength{\rightskip}{0pt plus 5cm}string Team\+::get\+Pseudo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a7bba8af6230814d10edb9312dd13069b}{}\label{class_team_a7bba8af6230814d10edb9312dd13069b}
+
+
+Récupère le pseudo du Joueur. 
+
+Méthode permettant de récupérer le pseudo du joueur
+
+\begin{DoxyReturn}{Returns}
+le pseudo du Joueur 
+\end{DoxyReturn}
+\index{Team@{Team}!set\+Carte\+Init@{set\+Carte\+Init}}
+\index{set\+Carte\+Init@{set\+Carte\+Init}!Team@{Team}}
+\subsubsection[{\texorpdfstring{set\+Carte\+Init(std\+::shared\+\_\+ptr$<$ Carte $>$ c)}{setCarteInit(std::shared_ptr< Carte > c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Carte\+Init (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Carte} $>$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a3af475d5b149db7883694bed764ddf04}{}\label{class_team_a3af475d5b149db7883694bed764ddf04}
+
+
+Modifie la carte d\textquotesingle{}initialisation. 
+
+Méthode permettant de modifier la carte d\textquotesingle{}initialisation après l\textquotesingle{}ajout des bateaux
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la carte d\textquotesingle{}initialisation \\
+\hline
+\end{DoxyParams}
+\index{Team@{Team}!set\+Carte\+Jeu@{set\+Carte\+Jeu}}
+\index{set\+Carte\+Jeu@{set\+Carte\+Jeu}!Team@{Team}}
+\subsubsection[{\texorpdfstring{set\+Carte\+Jeu(std\+::shared\+\_\+ptr$<$ Carte $>$ c)}{setCarteJeu(std::shared_ptr< Carte > c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Carte\+Jeu (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Carte} $>$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a0786a89ae3fd8fc20d327ddd3e07b2cf}{}\label{class_team_a0786a89ae3fd8fc20d327ddd3e07b2cf}
+
+
+Modifie la carte de jeu. 
+
+Méthode permettant de modifier la carte de jeu
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la carte de jeu \\
+\hline
+\end{DoxyParams}
+\index{Team@{Team}!set\+Is\+Turn@{set\+Is\+Turn}}
+\index{set\+Is\+Turn@{set\+Is\+Turn}!Team@{Team}}
+\subsubsection[{\texorpdfstring{set\+Is\+Turn(bool t)}{setIsTurn(bool t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Is\+Turn (
+\begin{DoxyParamCaption}
+\item[{bool}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a0bb7e1d431a4d343a9c694c04f967706}{}\label{class_team_a0bb7e1d431a4d343a9c694c04f967706}
+
+
+Modifie le tour du Joueur. 
+
+Méthode permettant de modifier le tour du joueur courant
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \+: booléen à true pour changer le tour, false sinon \\
+\hline
+\end{DoxyParams}
+\index{Team@{Team}!set\+Pseudo@{set\+Pseudo}}
+\index{set\+Pseudo@{set\+Pseudo}!Team@{Team}}
+\subsubsection[{\texorpdfstring{set\+Pseudo(std\+::string p)}{setPseudo(std::string p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Team\+::set\+Pseudo (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_team_a21cb86bba554a00f774ed417336f3957}{}\label{class_team_a21cb86bba554a00f774ed417336f3957}
+
+
+Modifie le pseudo du Joueur. 
+
+Méthode permettant de modifier le pseudo du joueur
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: le nouveau pseudo du joueur \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+team.\+h\item 
+team.\+cpp\end{DoxyCompactItemize}

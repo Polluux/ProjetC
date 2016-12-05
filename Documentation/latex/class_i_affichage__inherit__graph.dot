@@ -1,0 +1,16 @@
+digraph "IAffichage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="IAffichage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="QWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="AffichageInitJ1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_init_j1.html",tooltip="classe representant l&#39;affichage de la phase d&#39;initialisation du J1 "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="AffichageInitJ2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_init_j2.html",tooltip="classe representant l&#39;affichage de la phase d&#39;initialisation du J2 "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="AffichageJeu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_jeu.html",tooltip="classe representant l&#39;affichage du jeu "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="AffichageMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichage_menu.html",tooltip="classe representant l&#39;affichage du menu "];
+}

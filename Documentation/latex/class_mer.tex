@@ -1,0 +1,309 @@
+\hypertarget{class_mer}{}\section{Mer Class Reference}
+\label{class_mer}\index{Mer@{Mer}}
+
+
+classe representant de la \hyperlink{class_mer}{Mer}  
+
+
+
+
+{\ttfamily \#include $<$mer.\+h$>$}
+
+
+
+Inheritance diagram for Mer\+:
+% FIG 0
+
+
+Collaboration diagram for Mer\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mer_ace88286368f6f30f2462de952083bcd0}{Mer} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mer_aa30fffa94a8e0d5be6ae503aa8392973}{action} (\hyperlink{class_case}{Case} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Action émise lorsqu\textquotesingle{}on a cliqué sur une case contenant de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+void \hyperlink{class_mer_ab20617d436898cc631fc1842e897de0c}{setX} (int x)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée X de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+void \hyperlink{class_mer_a13ac62cb31e498d5bcf786d5a0d196ed}{setY} (int y)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée Y de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+void \hyperlink{class_mer_a3244c63c7b077ef84e593d9b5e5f4472}{set\+Horizontal} (bool a)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}orientation de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+int \hyperlink{class_mer_a668a9c3acfa903bb7c8e1d607e1229a4}{getX} ()
+\begin{DoxyCompactList}\small\item\em Récupère la ligne où se trouve la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+int \hyperlink{class_mer_a41f5d00f824057af9c9b57d666bf6fcc}{getY} ()
+\begin{DoxyCompactList}\small\item\em Récupère la colonne où se trouve la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mer_aa2cfaf3bb10d817c535b843724759bc7}{get\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}orientation de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+int \hyperlink{class_mer_ad3662e679f566da98a77b585d1699a7e}{get\+Taille} ()
+\begin{DoxyCompactList}\small\item\em Connaitre la taille de la \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mer_ac76c2299715ae08f07e8a9fc0821b032}{is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le contenu est vide. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mer_a2ec6ecba14a8f737335720f3dffe9877}{touche} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_contenu}{Contenu} est touché \end{DoxyCompactList}\item 
+bool \hyperlink{class_mer_aa1a5b5633f2d7590e3074bf70a867ee0}{est\+Coule} ()
+\begin{DoxyCompactList}\small\item\em Savoir si le \hyperlink{class_contenu}{Contenu} est coulé \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mer_a5c47272a53feac903046599b3c638d2c}{$\sim$\+Mer} ()\hypertarget{class_mer_a5c47272a53feac903046599b3c638d2c}{}\label{class_mer_a5c47272a53feac903046599b3c638d2c}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_mer}{Mer}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe representant de la \hyperlink{class_mer}{Mer} 
+
+La classe gère l\textquotesingle{}ensemble des actions impactant une \hyperlink{class_mer}{Mer} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mer@{Mer}!Mer@{Mer}}
+\index{Mer@{Mer}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{Mer()}{Mer()}}]{\setlength{\rightskip}{0pt plus 5cm}Mer\+::\+Mer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mer_ace88286368f6f30f2462de952083bcd0}{}\label{class_mer_ace88286368f6f30f2462de952083bcd0}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_mer}{Mer} 
+
+\subsection{Member Function Documentation}
+\index{Mer@{Mer}!action@{action}}
+\index{action@{action}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{action(\+Case $\ast$c)}{action(Case *c)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mer\+::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Case} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_aa30fffa94a8e0d5be6ae503aa8392973}{}\label{class_mer_aa30fffa94a8e0d5be6ae503aa8392973}
+
+
+Action émise lorsqu\textquotesingle{}on a cliqué sur une case contenant de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de savoir si le contenu de la case est de la \hyperlink{class_mer}{Mer}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: la case sur laquelle on a cliqué\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false si le contenu de la case est de la \hyperlink{class_mer}{Mer} sinon true 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_ae54145207bfdae5a24ce2c8c523c74a0}{Contenu}.
+
+\index{Mer@{Mer}!est\+Coule@{est\+Coule}}
+\index{est\+Coule@{est\+Coule}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{est\+Coule()}{estCoule()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mer\+::est\+Coule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_aa1a5b5633f2d7590e3074bf70a867ee0}{}\label{class_mer_aa1a5b5633f2d7590e3074bf70a867ee0}
+
+
+Savoir si le \hyperlink{class_contenu}{Contenu} est coulé 
+
+Méthode permettant de savoir si le contenu de la case est coulé logique dans ce cas
+
+\begin{DoxyReturn}{Returns}
+false ici 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_ad8ba918a8d5a08e4f8c0c742778500d6}{Contenu}.
+
+\index{Mer@{Mer}!get\+Horizontal@{get\+Horizontal}}
+\index{get\+Horizontal@{get\+Horizontal}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{get\+Horizontal()}{getHorizontal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mer\+::get\+Horizontal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_aa2cfaf3bb10d817c535b843724759bc7}{}\label{class_mer_aa2cfaf3bb10d817c535b843724759bc7}
+
+
+Récupère l\textquotesingle{}orientation de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de savoir si la \hyperlink{class_mer}{Mer} est horizontal ou vertical
+
+\begin{DoxyReturn}{Returns}
+true si la \hyperlink{class_mer}{Mer} est horizontal, false sinon 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_aa9b4dbb3de416310cd53422a0d14879b}{Contenu}.
+
+\index{Mer@{Mer}!get\+Taille@{get\+Taille}}
+\index{get\+Taille@{get\+Taille}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{get\+Taille()}{getTaille()}}]{\setlength{\rightskip}{0pt plus 5cm}int Mer\+::get\+Taille (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_ad3662e679f566da98a77b585d1699a7e}{}\label{class_mer_ad3662e679f566da98a77b585d1699a7e}
+
+
+Connaitre la taille de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de connaitre la taille de la \hyperlink{class_mer}{Mer}
+
+\begin{DoxyReturn}{Returns}
+la taille de la \hyperlink{class_mer}{Mer} (1) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_abba99a1726eb744067cca7deb571444b}{Contenu}.
+
+\index{Mer@{Mer}!getX@{getX}}
+\index{getX@{getX}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{get\+X()}{getX()}}]{\setlength{\rightskip}{0pt plus 5cm}int Mer\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_a668a9c3acfa903bb7c8e1d607e1229a4}{}\label{class_mer_a668a9c3acfa903bb7c8e1d607e1229a4}
+
+
+Récupère la ligne où se trouve la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de récupérer la ligne sur laquelle se situe la \hyperlink{class_mer}{Mer} sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de ligne sur laquelle se trouve la \hyperlink{class_mer}{Mer} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_afce83627ee635c60edb0edced8191af4}{Contenu}.
+
+\index{Mer@{Mer}!getY@{getY}}
+\index{getY@{getY}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{get\+Y()}{getY()}}]{\setlength{\rightskip}{0pt plus 5cm}int Mer\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_a41f5d00f824057af9c9b57d666bf6fcc}{}\label{class_mer_a41f5d00f824057af9c9b57d666bf6fcc}
+
+
+Récupère la colonne où se trouve la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de récupérer la colonne sur laquelle se situe la \hyperlink{class_mer}{Mer} sur la carte
+
+\begin{DoxyReturn}{Returns}
+le numéro de colonne sur laquelle se trouve la \hyperlink{class_mer}{Mer} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_a1087d1609ec4842bb3d2a5dd960359b6}{Contenu}.
+
+\index{Mer@{Mer}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mer\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_ac76c2299715ae08f07e8a9fc0821b032}{}\label{class_mer_ac76c2299715ae08f07e8a9fc0821b032}
+
+
+Savoir si le contenu est vide. 
+
+Méthode permettant de savoir si le contenu est vide
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_a426053a6e632f1963c1c59c1515c99fb}{Contenu}.
+
+\index{Mer@{Mer}!set\+Horizontal@{set\+Horizontal}}
+\index{set\+Horizontal@{set\+Horizontal}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{set\+Horizontal(bool a)}{setHorizontal(bool a)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mer\+::set\+Horizontal (
+\begin{DoxyParamCaption}
+\item[{bool}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_a3244c63c7b077ef84e593d9b5e5f4472}{}\label{class_mer_a3244c63c7b077ef84e593d9b5e5f4472}
+
+
+Modifie l\textquotesingle{}orientation de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de modifier l\textquotesingle{}orientation de la \hyperlink{class_mer}{Mer}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: booléen à true \+: horizontal, sinon vertical \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_ad06f3204769fdc758a5859fbb7cac637}{Contenu}.
+
+\index{Mer@{Mer}!setX@{setX}}
+\index{setX@{setX}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{set\+X(int x)}{setX(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mer\+::setX (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_ab20617d436898cc631fc1842e897de0c}{}\label{class_mer_ab20617d436898cc631fc1842e897de0c}
+
+
+Modifie la coordonnée X de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de modifier la coordonnée en X, c\textquotesingle{}est à dire sur quelle ligne placer la \hyperlink{class_mer}{Mer}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: numéro de la ligne \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_a801fc9cb327750d2889ab3e7b185c029}{Contenu}.
+
+\index{Mer@{Mer}!setY@{setY}}
+\index{setY@{setY}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{set\+Y(int y)}{setY(int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mer\+::setY (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_a13ac62cb31e498d5bcf786d5a0d196ed}{}\label{class_mer_a13ac62cb31e498d5bcf786d5a0d196ed}
+
+
+Modifie la coordonnée Y de la \hyperlink{class_mer}{Mer}. 
+
+Méthode permettant de modifier la coordonnée en Y, c\textquotesingle{}est à dire sur quelle colonne placer la \hyperlink{class_mer}{Mer}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: numéro de la colonne \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_contenu_afc6fc6f669313fe77ca57559475d1750}{Contenu}.
+
+\index{Mer@{Mer}!touche@{touche}}
+\index{touche@{touche}!Mer@{Mer}}
+\subsubsection[{\texorpdfstring{touche()}{touche()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mer\+::touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mer_a2ec6ecba14a8f737335720f3dffe9877}{}\label{class_mer_a2ec6ecba14a8f737335720f3dffe9877}
+
+
+Savoir si le \hyperlink{class_contenu}{Contenu} est touché 
+
+Méthode permettant de savoir si le \hyperlink{class_contenu}{Contenu} est touché
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_contenu_af917356550ccc6025373c652b6e8b938}{Contenu}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mer.\+h\item 
+mer.\+cpp\end{DoxyCompactItemize}

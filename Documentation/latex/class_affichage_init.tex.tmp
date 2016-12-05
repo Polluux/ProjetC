@@ -1,0 +1,242 @@
+\hypertarget{class_affichage_init}{}\section{Affichage\+Init Class Reference}
+\label{class_affichage_init}\index{Affichage\+Init@{Affichage\+Init}}
+
+
+classe representant l\textquotesingle{}affichage des éléments communs pour l\textquotesingle{}initialisation des deux joueurs  
+
+
+
+
+{\ttfamily \#include $<$affichageinit.\+h$>$}
+
+
+
+Inheritance diagram for Affichage\+Init\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_affichage_init_a5edfda4c52c2c15fbb9ee87112deebe4}{Affichage\+Init} ()\hypertarget{class_affichage_init_a5edfda4c52c2c15fbb9ee87112deebe4}{}\label{class_affichage_init_a5edfda4c52c2c15fbb9ee87112deebe4}
+
+\begin{DoxyCompactList}\small\item\em Constructeur Constructeur de la classe \hyperlink{class_affichage_init}{Affichage\+Init}. \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_init_ad8af1158fc6b73fa42817d3f610a82c5}{update\+Elements} (std\+::string txt\+Bt)
+\begin{DoxyCompactList}\small\item\em Ajout de tous les éléments pour l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+bool \hyperlink{class_affichage_init_a2cc64639534b8088912c64d733937508}{h\+Checked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_case}{Case} pour bateau horizontal cochée ? \end{DoxyCompactList}\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a5c268472841e36e713ea27c1675c6e11}{get\+B4} ()
+\begin{DoxyCompactList}\small\item\em Retourne le radiobouton cliqué \end{DoxyCompactList}\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_acb11d9f4409fabf79a63b0a3362ffdbb}{get\+B3} ()
+\begin{DoxyCompactList}\small\item\em Retourne le radiobouton cliqué \end{DoxyCompactList}\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a6f5a1714feffff2e93cb7d80509576ff}{get\+B2} ()
+\begin{DoxyCompactList}\small\item\em Retourne le radiobouton cliqué \end{DoxyCompactList}\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a79cbb21d4b8b84ad87f13ec7f7fb5224}{get\+B1} ()
+\begin{DoxyCompactList}\small\item\em Retourne le radiobouton cliqué \end{DoxyCompactList}\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a9334010a1147906ffd45dbb48a63ad6e}{get\+Bateau\+Select} ()
+\begin{DoxyCompactList}\small\item\em Retourne le radiobouton cliqué \end{DoxyCompactList}\item 
+void \hyperlink{class_affichage_init_a55b47fb580a1eb29aa79475453c6936b}{reset\+Bouton} ()
+\begin{DoxyCompactList}\small\item\em Permet de remettre à zéro la carte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{class_affichage_init_a6cfa8eefd38ed8397269da4b472d7ad5}{g\+Layout\+Central\+\_\+}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{class_affichage_init_a7e46084cc3c86b029ac04b59f3e70d5e}{g\+Layout\+Gauche\+\_\+}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{class_affichage_init_a30c6eb873576eb8c416091b3fe54d46a}{g\+Layout\+Droite\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_carte}{Carte} $>$ \hyperlink{class_affichage_init_ae64aeadaa88e3d7b62c9b8edb77f4bc1}{carte\+Init\+\_\+}
+\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a705aa3459121ac5b4ef60520fb0b509f}{b1\+\_\+}
+\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_ac8c97eaabcc52302156b5d0fb2dd4b7f}{b2\+\_\+}
+\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_afc2ce79e46033da8e7949f69fee1811c}{b3\+\_\+}
+\item 
+Q\+Radio\+Button $\ast$ \hyperlink{class_affichage_init_a364a79854751059ea883f4f111416e27}{b4\+\_\+}
+\item 
+Q\+Line\+Edit $\ast$ \hyperlink{class_affichage_init_a5327093a0df1060ada2be6678a3d2c2e}{pseudo\+\_\+}
+\item 
+Q\+Check\+Box $\ast$ \hyperlink{class_affichage_init_ad3535a45425dc7a11b8f0ed8c4b07f4c}{horizontal\+\_\+}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_affichage_init_a2d5808b5c427d934c16b6ffb1046ea1a}{bouton\+Suivant\+\_\+}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_affichage_init_a057a07eb4c76bde07bf75eb0d7a45f73}{reset\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant l\textquotesingle{}affichage des éléments communs pour l\textquotesingle{}initialisation des deux joueurs 
+
+La classe gère l\textquotesingle{}affichage de l\textquotesingle{}ensemble des éléments qu\textquotesingle{}auront besoin les joueurs pour la phase d\textquotesingle{}initialisation 
+
+\subsection{Member Function Documentation}
+\index{Affichage\+Init@{Affichage\+Init}!get\+B1@{get\+B1}}
+\index{get\+B1@{get\+B1}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{get\+B1()}{getB1()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button $\ast$ Affichage\+Init\+::get\+B1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a79cbb21d4b8b84ad87f13ec7f7fb5224}{}\label{class_affichage_init_a79cbb21d4b8b84ad87f13ec7f7fb5224}
+
+
+Retourne le radiobouton cliqué 
+
+Methode qui permet de retourner si le bouton représentant le bateau de taille 1 est cliqué
+
+\begin{DoxyReturn}{Returns}
+le bouton sur lequel on a cliqué 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!get\+B2@{get\+B2}}
+\index{get\+B2@{get\+B2}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{get\+B2()}{getB2()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button $\ast$ Affichage\+Init\+::get\+B2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a6f5a1714feffff2e93cb7d80509576ff}{}\label{class_affichage_init_a6f5a1714feffff2e93cb7d80509576ff}
+
+
+Retourne le radiobouton cliqué 
+
+Methode qui permet de retourner si le bouton représentant le bateau de taille 2 est cliqué
+
+\begin{DoxyReturn}{Returns}
+le bouton sur lequel on a cliqué 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!get\+B3@{get\+B3}}
+\index{get\+B3@{get\+B3}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{get\+B3()}{getB3()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button $\ast$ Affichage\+Init\+::get\+B3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_acb11d9f4409fabf79a63b0a3362ffdbb}{}\label{class_affichage_init_acb11d9f4409fabf79a63b0a3362ffdbb}
+
+
+Retourne le radiobouton cliqué 
+
+Methode qui permet de retourner si le bouton représentant le bateau de taille 3 est cliqué
+
+\begin{DoxyReturn}{Returns}
+le bouton sur lequel on a cliqué 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!get\+B4@{get\+B4}}
+\index{get\+B4@{get\+B4}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{get\+B4()}{getB4()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button $\ast$ Affichage\+Init\+::get\+B4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a5c268472841e36e713ea27c1675c6e11}{}\label{class_affichage_init_a5c268472841e36e713ea27c1675c6e11}
+
+
+Retourne le radiobouton cliqué 
+
+Methode qui permet de retourner si le bouton représentant le bateau de taille 4 est cliqué
+
+\begin{DoxyReturn}{Returns}
+le bouton sur lequel on a cliqué 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!get\+Bateau\+Select@{get\+Bateau\+Select}}
+\index{get\+Bateau\+Select@{get\+Bateau\+Select}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{get\+Bateau\+Select()}{getBateauSelect()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button $\ast$ Affichage\+Init\+::get\+Bateau\+Select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a9334010a1147906ffd45dbb48a63ad6e}{}\label{class_affichage_init_a9334010a1147906ffd45dbb48a63ad6e}
+
+
+Retourne le radiobouton cliqué 
+
+Methode qui permet de retourner directement sur quel radiobouton, concernant les bateaux, on a cliqué
+
+\begin{DoxyReturn}{Returns}
+le bouton sur lequel on a cliqué 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!h\+Checked@{h\+Checked}}
+\index{h\+Checked@{h\+Checked}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{h\+Checked()}{hChecked()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Affichage\+Init\+::h\+Checked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a2cc64639534b8088912c64d733937508}{}\label{class_affichage_init_a2cc64639534b8088912c64d733937508}
+
+
+\hyperlink{class_case}{Case} pour bateau horizontal cochée ? 
+
+Methode qui permet de tester si la case, pour savoir si le bateau que l\textquotesingle{}on veut placer sera horizontal, est cochée
+
+\begin{DoxyReturn}{Returns}
+true si le bateau sera horizontal, false sinon 
+\end{DoxyReturn}
+\index{Affichage\+Init@{Affichage\+Init}!reset\+Bouton@{reset\+Bouton}}
+\index{reset\+Bouton@{reset\+Bouton}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{reset\+Bouton()}{resetBouton()}}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Init\+::reset\+Bouton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_a55b47fb580a1eb29aa79475453c6936b}{}\label{class_affichage_init_a55b47fb580a1eb29aa79475453c6936b}
+
+
+Permet de remettre à zéro la carte. 
+
+Methode qui permet de reset l\textquotesingle{}ensemble des bateaux présent sur la carte \index{Affichage\+Init@{Affichage\+Init}!update\+Elements@{update\+Elements}}
+\index{update\+Elements@{update\+Elements}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{update\+Elements(std\+::string txt\+Bt)}{updateElements(std::string txtBt)}}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Init\+::update\+Elements (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{txt\+Bt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_affichage_init_ad8af1158fc6b73fa42817d3f610a82c5}{}\label{class_affichage_init_ad8af1158fc6b73fa42817d3f610a82c5}
+
+
+Ajout de tous les éléments pour l\textquotesingle{}affichage. 
+
+Methode qui permet d\textquotesingle{}ajouter l\textquotesingle{}ensemble des éléments pour l\textquotesingle{}affichage
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt\+Bt} & \+: le texte sur la bouton \char`\"{}\+Pret\char`\"{} (on indique \char`\"{}suivant\char`\"{}, \char`\"{}jeu\char`\"{}, ...) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Affichage\+Init@{Affichage\+Init}!b1\+\_\+@{b1\+\_\+}}
+\index{b1\+\_\+@{b1\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{b1\+\_\+}{b1_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button$\ast$ Affichage\+Init\+::b1\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a705aa3459121ac5b4ef60520fb0b509f}{}\label{class_affichage_init_a705aa3459121ac5b4ef60520fb0b509f}
+Bouton pour pouvoir placer les bateaux de taille 1 \index{Affichage\+Init@{Affichage\+Init}!b2\+\_\+@{b2\+\_\+}}
+\index{b2\+\_\+@{b2\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{b2\+\_\+}{b2_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button$\ast$ Affichage\+Init\+::b2\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_ac8c97eaabcc52302156b5d0fb2dd4b7f}{}\label{class_affichage_init_ac8c97eaabcc52302156b5d0fb2dd4b7f}
+Bouton pour pouvoir placer les bateaux de taille 2 \index{Affichage\+Init@{Affichage\+Init}!b3\+\_\+@{b3\+\_\+}}
+\index{b3\+\_\+@{b3\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{b3\+\_\+}{b3_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button$\ast$ Affichage\+Init\+::b3\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_afc2ce79e46033da8e7949f69fee1811c}{}\label{class_affichage_init_afc2ce79e46033da8e7949f69fee1811c}
+Bouton pour pouvoir placer les bateaux de taille 3 \index{Affichage\+Init@{Affichage\+Init}!b4\+\_\+@{b4\+\_\+}}
+\index{b4\+\_\+@{b4\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{b4\+\_\+}{b4_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Radio\+Button$\ast$ Affichage\+Init\+::b4\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a364a79854751059ea883f4f111416e27}{}\label{class_affichage_init_a364a79854751059ea883f4f111416e27}
+Bouton pour pouvoir placer le bateau de taille 4 \index{Affichage\+Init@{Affichage\+Init}!bouton\+Suivant\+\_\+@{bouton\+Suivant\+\_\+}}
+\index{bouton\+Suivant\+\_\+@{bouton\+Suivant\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{bouton\+Suivant\+\_\+}{boutonSuivant_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Push\+Button$\ast$ Affichage\+Init\+::bouton\+Suivant\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a2d5808b5c427d934c16b6ffb1046ea1a}{}\label{class_affichage_init_a2d5808b5c427d934c16b6ffb1046ea1a}
+Bouton \char`\"{}\+Pret\char`\"{} une fois que tout est OK \index{Affichage\+Init@{Affichage\+Init}!carte\+Init\+\_\+@{carte\+Init\+\_\+}}
+\index{carte\+Init\+\_\+@{carte\+Init\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{carte\+Init\+\_\+}{carteInit_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Carte}$>$ Affichage\+Init\+::carte\+Init\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_ae64aeadaa88e3d7b62c9b8edb77f4bc1}{}\label{class_affichage_init_ae64aeadaa88e3d7b62c9b8edb77f4bc1}
+La carte d\textquotesingle{}initialisation \index{Affichage\+Init@{Affichage\+Init}!g\+Layout\+Central\+\_\+@{g\+Layout\+Central\+\_\+}}
+\index{g\+Layout\+Central\+\_\+@{g\+Layout\+Central\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{g\+Layout\+Central\+\_\+}{gLayoutCentral_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Grid\+Layout$\ast$ Affichage\+Init\+::g\+Layout\+Central\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a6cfa8eefd38ed8397269da4b472d7ad5}{}\label{class_affichage_init_a6cfa8eefd38ed8397269da4b472d7ad5}
+Layout central \index{Affichage\+Init@{Affichage\+Init}!g\+Layout\+Droite\+\_\+@{g\+Layout\+Droite\+\_\+}}
+\index{g\+Layout\+Droite\+\_\+@{g\+Layout\+Droite\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{g\+Layout\+Droite\+\_\+}{gLayoutDroite_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Grid\+Layout$\ast$ Affichage\+Init\+::g\+Layout\+Droite\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a30c6eb873576eb8c416091b3fe54d46a}{}\label{class_affichage_init_a30c6eb873576eb8c416091b3fe54d46a}
+Layout contenant les bateaux à placer \index{Affichage\+Init@{Affichage\+Init}!g\+Layout\+Gauche\+\_\+@{g\+Layout\+Gauche\+\_\+}}
+\index{g\+Layout\+Gauche\+\_\+@{g\+Layout\+Gauche\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{g\+Layout\+Gauche\+\_\+}{gLayoutGauche_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Grid\+Layout$\ast$ Affichage\+Init\+::g\+Layout\+Gauche\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a7e46084cc3c86b029ac04b59f3e70d5e}{}\label{class_affichage_init_a7e46084cc3c86b029ac04b59f3e70d5e}
+Layout contenant la carte \index{Affichage\+Init@{Affichage\+Init}!horizontal\+\_\+@{horizontal\+\_\+}}
+\index{horizontal\+\_\+@{horizontal\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{horizontal\+\_\+}{horizontal_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Check\+Box$\ast$ Affichage\+Init\+::horizontal\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_ad3535a45425dc7a11b8f0ed8c4b07f4c}{}\label{class_affichage_init_ad3535a45425dc7a11b8f0ed8c4b07f4c}
+\hyperlink{class_case}{Case} à cocher pour indiquer si on souhaite un bateau horizontal ou vertical \index{Affichage\+Init@{Affichage\+Init}!pseudo\+\_\+@{pseudo\+\_\+}}
+\index{pseudo\+\_\+@{pseudo\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{pseudo\+\_\+}{pseudo_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Line\+Edit$\ast$ Affichage\+Init\+::pseudo\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a5327093a0df1060ada2be6678a3d2c2e}{}\label{class_affichage_init_a5327093a0df1060ada2be6678a3d2c2e}
+Champs pour indiquer son pseudo \index{Affichage\+Init@{Affichage\+Init}!reset\+\_\+@{reset\+\_\+}}
+\index{reset\+\_\+@{reset\+\_\+}!Affichage\+Init@{Affichage\+Init}}
+\subsubsection[{\texorpdfstring{reset\+\_\+}{reset_}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Push\+Button$\ast$ Affichage\+Init\+::reset\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_affichage_init_a057a07eb4c76bde07bf75eb0d7a45f73}{}\label{class_affichage_init_a057a07eb4c76bde07bf75eb0d7a45f73}
+Bouton pour reset le placement des bateaux sur la carte 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+affichageinit.\+h\item 
+affichageinit.\+cpp\end{DoxyCompactItemize}

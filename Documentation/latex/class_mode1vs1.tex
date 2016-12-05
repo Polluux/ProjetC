@@ -1,0 +1,192 @@
+\hypertarget{class_mode1vs1}{}\section{Mode1vs1 Class Reference}
+\label{class_mode1vs1}\index{Mode1vs1@{Mode1vs1}}
+
+
+classe representant le mode de jeu 1\+V\+S1  
+
+
+
+
+{\ttfamily \#include $<$mode1vs1.\+h$>$}
+
+
+
+Inheritance diagram for Mode1vs1\+:
+% FIG 0
+
+
+Collaboration diagram for Mode1vs1\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mode1vs1_aea3b243976c6b47ecaf1b2fd6181cd83}{Mode1vs1} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a7e38b115b83c63fe95a0fd96594c6fd9}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Décrit le mode dans lequel on est. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a96b5ffac518dc015717e361248715e78}{initialiser} ()
+\begin{DoxyCompactList}\small\item\em Initialiser la carte d\textquotesingle{}initialisation. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a4b62821aec55d3a01257eb9cf3d4fd28}{lancer} ()
+\begin{DoxyCompactList}\small\item\em Indiquer lorsque le J2 a fini d\textquotesingle{}initialiser sa carte. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a21a9f0c6705700943538ce86ec252ad6}{fin\+Init\+J1} ()
+\begin{DoxyCompactList}\small\item\em Indiquer lorsque le J1 a fini d\textquotesingle{}initialiser sa carte. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_ac79db87b0b4a3c72ebf6300ed708c40d}{jouer} ()
+\begin{DoxyCompactList}\small\item\em Jouer pour le mode 1\+V\+S1. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_ac94642f3b6ca6b835ded37ed3e2fbf79}{touche} ()
+\begin{DoxyCompactList}\small\item\em Action produit après avoir touché un bateau. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a24bb0744c4614af97c4e983b943a0360}{set\+Affichage} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_i_affichage}{I\+Affichage} $>$ aff)
+\begin{DoxyCompactList}\small\item\em Permet de changer l\textquotesingle{}affichage actif. \end{DoxyCompactList}\item 
+void \hyperlink{class_mode1vs1_a031055c6d9efcc1dd3249c9396f9b496}{choix\+Pour\+J2} ()
+\begin{DoxyCompactList}\small\item\em Action produit pour le J2. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mode1vs1_abee442099dbc7bbaba244498e8e3406f}{$\sim$\+Mode1vs1} ()\hypertarget{class_mode1vs1_abee442099dbc7bbaba244498e8e3406f}{}\label{class_mode1vs1_abee442099dbc7bbaba244498e8e3406f}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{class_mode1vs1}{Mode1vs1}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe representant le mode de jeu 1\+V\+S1 
+
+La classe décrit les comportements pour le mode de jeu 1\+V\+S1 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mode1vs1@{Mode1vs1}!Mode1vs1@{Mode1vs1}}
+\index{Mode1vs1@{Mode1vs1}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{Mode1vs1()}{Mode1vs1()}}]{\setlength{\rightskip}{0pt plus 5cm}Mode1vs1\+::\+Mode1vs1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mode1vs1_aea3b243976c6b47ecaf1b2fd6181cd83}{}\label{class_mode1vs1_aea3b243976c6b47ecaf1b2fd6181cd83}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{class_mode1vs1}{Mode1vs1} 
+
+\subsection{Member Function Documentation}
+\index{Mode1vs1@{Mode1vs1}!choix\+Pour\+J2@{choix\+Pour\+J2}}
+\index{choix\+Pour\+J2@{choix\+Pour\+J2}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{choix\+Pour\+J2()}{choixPourJ2()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::choix\+Pour\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a031055c6d9efcc1dd3249c9396f9b496}{}\label{class_mode1vs1_a031055c6d9efcc1dd3249c9396f9b496}
+
+
+Action produit pour le J2. 
+
+Méthode permettant de choisir l\textquotesingle{}action à effectuer pour le J2 Pour ce mode, il s\textquotesingle{}agit d\textquotesingle{}afficher l\textquotesingle{}initialisation 
+
+Implements \hyperlink{class_comp_mode_a537f7077c642a62627ab008bc85642df}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!fin\+Init\+J1@{fin\+Init\+J1}}
+\index{fin\+Init\+J1@{fin\+Init\+J1}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{fin\+Init\+J1()}{finInitJ1()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::fin\+Init\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a21a9f0c6705700943538ce86ec252ad6}{}\label{class_mode1vs1_a21a9f0c6705700943538ce86ec252ad6}
+
+
+Indiquer lorsque le J1 a fini d\textquotesingle{}initialiser sa carte. 
+
+Méthode permettant de passer à la phase d\textquotesingle{}initialisation pour le J2 
+
+Implements \hyperlink{class_comp_mode_a1e3c25af2e4e655d8ab55b77854069d7}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{get\+Mode()}{getMode()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a7e38b115b83c63fe95a0fd96594c6fd9}{}\label{class_mode1vs1_a7e38b115b83c63fe95a0fd96594c6fd9}
+
+
+Décrit le mode dans lequel on est. 
+
+Méthode permettant décrire le mode 1\+V1 
+
+Implements \hyperlink{class_comp_mode_a897f6f474d86453c91ab83ab61c6f031}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{initialiser()}{initialiser()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::initialiser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a96b5ffac518dc015717e361248715e78}{}\label{class_mode1vs1_a96b5ffac518dc015717e361248715e78}
+
+
+Initialiser la carte d\textquotesingle{}initialisation. 
+
+Méthode permettant d\textquotesingle{}initialiser la carte Pas implémenté pour cette classe 
+
+Implements \hyperlink{class_comp_mode_a3559cd952b7f3c6f8e7f22f6f3dc23ae}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!jouer@{jouer}}
+\index{jouer@{jouer}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{jouer()}{jouer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::jouer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_ac79db87b0b4a3c72ebf6300ed708c40d}{}\label{class_mode1vs1_ac79db87b0b4a3c72ebf6300ed708c40d}
+
+
+Jouer pour le mode 1\+V\+S1. 
+
+Méthode permettant de décrire les actions produits pendant un tour de jeu 
+
+Implements \hyperlink{class_comp_mode_a81615504b7d72e0255b7fc09a991e0b5}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!lancer@{lancer}}
+\index{lancer@{lancer}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{lancer()}{lancer()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::lancer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a4b62821aec55d3a01257eb9cf3d4fd28}{}\label{class_mode1vs1_a4b62821aec55d3a01257eb9cf3d4fd28}
+
+
+Indiquer lorsque le J2 a fini d\textquotesingle{}initialiser sa carte. 
+
+Méthode permettant de passer à la phase de jeu 
+
+Implements \hyperlink{class_comp_mode_a311cf95ec88795dfb14dbed569a7d54f}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!set\+Affichage@{set\+Affichage}}
+\index{set\+Affichage@{set\+Affichage}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{set\+Affichage(std\+::shared\+\_\+ptr$<$ I\+Affichage $>$ aff)}{setAffichage(std::shared_ptr< IAffichage > aff)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::set\+Affichage (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Affichage} $>$}]{aff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_a24bb0744c4614af97c4e983b943a0360}{}\label{class_mode1vs1_a24bb0744c4614af97c4e983b943a0360}
+
+
+Permet de changer l\textquotesingle{}affichage actif. 
+
+Méthode permettant changer l\textquotesingle{}affichage actif pour pouvoir effectuer les actions nécessaires 
+
+Implements \hyperlink{class_comp_mode_a94119b30f5d6704464023e97b5656e9d}{Comp\+Mode}.
+
+\index{Mode1vs1@{Mode1vs1}!touche@{touche}}
+\index{touche@{touche}!Mode1vs1@{Mode1vs1}}
+\subsubsection[{\texorpdfstring{touche()}{touche()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs1\+::touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mode1vs1_ac94642f3b6ca6b835ded37ed3e2fbf79}{}\label{class_mode1vs1_ac94642f3b6ca6b835ded37ed3e2fbf79}
+
+
+Action produit après avoir touché un bateau. 
+
+Méthode permettant de décrire les actions à faire après avoir touché un bateau pour les 2 joueurs 
+
+Implements \hyperlink{class_comp_mode_a6b26d4c754fe0cc104d24d79f472b24d}{Comp\+Mode}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mode1vs1.\+h\item 
+mode1vs1.\+cpp\end{DoxyCompactItemize}

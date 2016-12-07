@@ -1,0 +1,205 @@
+\hypertarget{classMode1vsIA}{\section{Mode1vs\+I\+A Class Reference}
+\label{classMode1vsIA}\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+}
+
+
+classe representant le mode de jeu 1\+V\+S\+I\+A  
+
+
+
+
+{\ttfamily \#include $<$mode1vsia.\+h$>$}
+
+
+
+Inheritance diagram for Mode1vs\+I\+A\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classMode1vsIA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mode1vs\+I\+A\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classMode1vsIA__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMode1vsIA_af8c73f16906279a89df6e9d150dfb1a2}{Mode1vs\+I\+A} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a8853a5c4bd43685f2232929f9d9d8732}{get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Décrit le mode dans lequel on est. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a2e92031d0b7626da4f87ecc856a4ae94}{initialiser} ()
+\begin{DoxyCompactList}\small\item\em Initialiser la carte d'initialisation. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_ab6aa884defaf26231ede82d689b80d60}{lancer} ()
+\begin{DoxyCompactList}\small\item\em Indiquer lorsque le J2 a fini d'initialiser sa carte. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_ab50fb645a214d5cfab5fdb7a2b98673c}{fin\+Init\+J1} ()
+\begin{DoxyCompactList}\small\item\em Indiquer lorsque le J1 a fini d'initialiser sa carte. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a7f7ab3fae5995ab12d6ce508c3d7dbca}{jouer} ()
+\begin{DoxyCompactList}\small\item\em Jouer pour le mode 1\+V\+S\+I\+A. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a1da5810e6d744e2cbeae3ceebe6df521}{touche} ()
+\begin{DoxyCompactList}\small\item\em Action produit après avoir touché un bateau. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a6c4e65dc4d95046165ce46b01cee6fad}{set\+Affichage} (std\+::shared\+\_\+ptr$<$ \hyperlink{classIAffichage}{I\+Affichage} $>$ aff)
+\begin{DoxyCompactList}\small\item\em Permet de changer l'affichage actif. \end{DoxyCompactList}\item 
+void \hyperlink{classMode1vsIA_a3dce01c56c0c5008f0e7a4dcb4d9834a}{choix\+Pour\+J2} ()
+\begin{DoxyCompactList}\small\item\em Action produit pour le J2. \end{DoxyCompactList}\item 
+\hypertarget{classMode1vsIA_a5dfd66257c3b315dda1a3d0a03670991}{virtual \hyperlink{classMode1vsIA_a5dfd66257c3b315dda1a3d0a03670991}{$\sim$\+Mode1vs\+I\+A} ()}\label{classMode1vsIA_a5dfd66257c3b315dda1a3d0a03670991}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{classMode1vs1}{Mode1vs1}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe representant le mode de jeu 1\+V\+S\+I\+A 
+
+La classe décrit les comportements pour le mode de jeu 1\+V\+S\+I\+A 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMode1vsIA_af8c73f16906279a89df6e9d150dfb1a2}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{Mode1vs\+I\+A}]{\setlength{\rightskip}{0pt plus 5cm}Mode1vs\+I\+A\+::\+Mode1vs\+I\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMode1vsIA_af8c73f16906279a89df6e9d150dfb1a2}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{classMode1vsIA}{Mode1vs\+I\+A} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMode1vsIA_a3dce01c56c0c5008f0e7a4dcb4d9834a}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!choix\+Pour\+J2@{choix\+Pour\+J2}}
+\index{choix\+Pour\+J2@{choix\+Pour\+J2}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{choix\+Pour\+J2}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::choix\+Pour\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a3dce01c56c0c5008f0e7a4dcb4d9834a}
+
+
+Action produit pour le J2. 
+
+Méthode permettant de choisir l'action à effectuer pour le J2 Pour ce mode, on initialise l'I\+A puis on lance le jeu 
+
+Implements \hyperlink{classCompMode_a537f7077c642a62627ab008bc85642df}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_ab50fb645a214d5cfab5fdb7a2b98673c}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!fin\+Init\+J1@{fin\+Init\+J1}}
+\index{fin\+Init\+J1@{fin\+Init\+J1}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{fin\+Init\+J1}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::fin\+Init\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_ab50fb645a214d5cfab5fdb7a2b98673c}
+
+
+Indiquer lorsque le J1 a fini d'initialiser sa carte. 
+
+Méthode permettant de passer à la phase d'initialisation pour le J2 
+
+Implements \hyperlink{classCompMode_a1e3c25af2e4e655d8ab55b77854069d7}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_a8853a5c4bd43685f2232929f9d9d8732}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{get\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a8853a5c4bd43685f2232929f9d9d8732}
+
+
+Décrit le mode dans lequel on est. 
+
+Méthode permettant décrire le mode 1\+V\+I\+A 
+
+Implements \hyperlink{classCompMode_a897f6f474d86453c91ab83ab61c6f031}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_a2e92031d0b7626da4f87ecc856a4ae94}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{initialiser}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::initialiser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a2e92031d0b7626da4f87ecc856a4ae94}
+
+
+Initialiser la carte d'initialisation. 
+
+Méthode permettant d'initialiser la carte Initialise de manière aléatoire les bateaux de l'I\+A 
+
+Implements \hyperlink{classCompMode_a3559cd952b7f3c6f8e7f22f6f3dc23ae}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_a7f7ab3fae5995ab12d6ce508c3d7dbca}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!jouer@{jouer}}
+\index{jouer@{jouer}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{jouer}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::jouer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a7f7ab3fae5995ab12d6ce508c3d7dbca}
+
+
+Jouer pour le mode 1\+V\+S\+I\+A. 
+
+Méthode permettant de décrire les actions produits pendant un tour de jeu On gère aussi lorsque l'I\+A touche des bateaux du J1 
+
+Implements \hyperlink{classCompMode_a81615504b7d72e0255b7fc09a991e0b5}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_ab6aa884defaf26231ede82d689b80d60}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!lancer@{lancer}}
+\index{lancer@{lancer}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{lancer}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::lancer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_ab6aa884defaf26231ede82d689b80d60}
+
+
+Indiquer lorsque le J2 a fini d'initialiser sa carte. 
+
+Méthode permettant de passer à la phase de jeu 
+
+Implements \hyperlink{classCompMode_a311cf95ec88795dfb14dbed569a7d54f}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_a6c4e65dc4d95046165ce46b01cee6fad}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!set\+Affichage@{set\+Affichage}}
+\index{set\+Affichage@{set\+Affichage}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{set\+Affichage}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::set\+Affichage (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Affichage} $>$}]{aff}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a6c4e65dc4d95046165ce46b01cee6fad}
+
+
+Permet de changer l'affichage actif. 
+
+Méthode permettant changer l'affichage actif pour pouvoir effectuer les actions nécessaires 
+
+Implements \hyperlink{classCompMode_a94119b30f5d6704464023e97b5656e9d}{Comp\+Mode}.
+
+\hypertarget{classMode1vsIA_a1da5810e6d744e2cbeae3ceebe6df521}{\index{Mode1vs\+I\+A@{Mode1vs\+I\+A}!touche@{touche}}
+\index{touche@{touche}!Mode1vs\+I\+A@{Mode1vs\+I\+A}}
+\subsubsection[{touche}]{\setlength{\rightskip}{0pt plus 5cm}void Mode1vs\+I\+A\+::touche (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMode1vsIA_a1da5810e6d744e2cbeae3ceebe6df521}
+
+
+Action produit après avoir touché un bateau. 
+
+Méthode permettant de décrire les actions à faire après avoir touché un bateau de l'I\+A 
+
+Implements \hyperlink{classCompMode_a6b26d4c754fe0cc104d24d79f472b24d}{Comp\+Mode}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mode1vsia.\+h\item 
+mode1vsia.\+cpp\end{DoxyCompactItemize}

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mer',['Mer',['../class_mer.html',1,'']]],
-  ['mode1vs1',['Mode1vs1',['../class_mode1vs1.html',1,'']]],
-  ['mode1vsia',['Mode1vsIA',['../class_mode1vs_i_a.html',1,'']]]
+  ['mer',['Mer',['../classMer.html',1,'']]],
+  ['mode1vs1',['Mode1vs1',['../classMode1vs1.html',1,'']]],
+  ['mode1vsia',['Mode1vsIA',['../classMode1vsIA.html',1,'']]]
 ];

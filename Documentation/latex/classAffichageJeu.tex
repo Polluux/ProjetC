@@ -1,0 +1,246 @@
+\hypertarget{classAffichageJeu}{\section{Affichage\+Jeu Class Reference}
+\label{classAffichageJeu}\index{Affichage\+Jeu@{Affichage\+Jeu}}
+}
+
+
+classe representant l'affichage du jeu  
+
+
+
+
+{\ttfamily \#include $<$affichagejeu.\+h$>$}
+
+
+
+Inheritance diagram for Affichage\+Jeu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classAffichageJeu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Affichage\+Jeu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classAffichageJeu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAffichageJeu_a2aadf21ada8d8a8d2af275842e9fbda2}{Affichage\+Jeu} (\hyperlink{classCore}{Core} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_a29d9ad7ef0161faa698bd0850efbb1fc}{afficher} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_ad17e5eea2e70c327f085b6e0ed9330e4}{update\+Elements} ()
+\begin{DoxyCompactList}\small\item\em Ajout de tous les éléments pour l'affichage. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_aa0fe30f907b9c0c2007466d287c701fd}{change\+To\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le menu. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_a4e8693c20861bc9e79e0c0037ba4ffa8}{change\+To\+Initialisation\+J1} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J1. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_a62db45f512fb855b096bcfd19e379429}{change\+To\+Initialisation\+J2} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J2. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_aec00eea36f08e0bd187832d17ec32680}{change\+To\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le jeu. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_aa04e21a18ec82b601605a6ca974ea6d7}{add\+Content} (Q\+Widget $\ast$c, int x, int y)
+\begin{DoxyCompactList}\small\item\em Ajouter des widgets à l'affichage. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageJeu_aacb8b0c827d1b623e082546a7a461e11}{set\+Image\+Chgmt\+Tour} ()
+\begin{DoxyCompactList}\small\item\em Changer le sens de l'image du tour du joueur. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCarte}{Carte} $>$ \hyperlink{classAffichageJeu_a28cf87eb40e06577ce095413ab1933cf}{get\+Carte\+Jeu\+T1} ()
+\begin{DoxyCompactList}\small\item\em Récupère la carte d'initialisation du J1. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCarte}{Carte} $>$ \hyperlink{classAffichageJeu_a8604b85fd85bca4fd7ec1bce8c012d93}{get\+Carte\+Jeu\+T2} ()
+\begin{DoxyCompactList}\small\item\em Récupère la carte d'initialisation du J2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe representant l'affichage du jeu 
+
+La classe gère l'affichage du jeu avec les deux cartes et les autres éléments 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAffichageJeu_a2aadf21ada8d8a8d2af275842e9fbda2}{\index{Affichage\+Jeu@{Affichage\+Jeu}!Affichage\+Jeu@{Affichage\+Jeu}}
+\index{Affichage\+Jeu@{Affichage\+Jeu}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{Affichage\+Jeu}]{\setlength{\rightskip}{0pt plus 5cm}Affichage\+Jeu\+::\+Affichage\+Jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf Core} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_a2aadf21ada8d8a8d2af275842e9fbda2}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{classAffichageJeu}{Affichage\+Jeu}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: le \hyperlink{classCore}{Core} de l'application \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAffichageJeu_aa04e21a18ec82b601605a6ca974ea6d7}{\index{Affichage\+Jeu@{Affichage\+Jeu}!add\+Content@{add\+Content}}
+\index{add\+Content@{add\+Content}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{add\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::add\+Content (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{c, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_aa04e21a18ec82b601605a6ca974ea6d7}
+
+
+Ajouter des widgets à l'affichage. 
+
+Méthode permettant d'ajouter les cartes à l'affichages on peut ajouter n'importe quel élément
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: l'élément à ajouter \\
+\hline
+{\em x} & \+: le n° ligne dans le layout \\
+\hline
+{\em y} & \+: le n° colonne dans le layout \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAffichageJeu_a29d9ad7ef0161faa698bd0850efbb1fc}{\index{Affichage\+Jeu@{Affichage\+Jeu}!afficher@{afficher}}
+\index{afficher@{afficher}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageJeu_a29d9ad7ef0161faa698bd0850efbb1fc}
+
+
+Affiche la fenêtre. 
+
+Méthode pour afficher la fenêtre concernant le jeu 
+
+Implements \hyperlink{classIAffichage_a87e168995340186305675343d4b769fe}{I\+Affichage}.
+
+\hypertarget{classAffichageJeu_a4e8693c20861bc9e79e0c0037ba4ffa8}{\index{Affichage\+Jeu@{Affichage\+Jeu}!change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}}
+\index{change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{change\+To\+Initialisation\+J1}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::change\+To\+Initialisation\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageJeu_a4e8693c20861bc9e79e0c0037ba4ffa8}
+
+
+Change la fenêtre vers l'initialisation pour le J1. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J1 Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_ac03c56ab489b760b1e42af15ac421039}{I\+Affichage}.
+
+\hypertarget{classAffichageJeu_a62db45f512fb855b096bcfd19e379429}{\index{Affichage\+Jeu@{Affichage\+Jeu}!change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}}
+\index{change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{change\+To\+Initialisation\+J2}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::change\+To\+Initialisation\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageJeu_a62db45f512fb855b096bcfd19e379429}
+
+
+Change la fenêtre vers l'initialisation pour le J2. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J2 Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a425bcafe36ba332f2cbc4badc99e19c2}{I\+Affichage}.
+
+\hypertarget{classAffichageJeu_aec00eea36f08e0bd187832d17ec32680}{\index{Affichage\+Jeu@{Affichage\+Jeu}!change\+To\+Jeu@{change\+To\+Jeu}}
+\index{change\+To\+Jeu@{change\+To\+Jeu}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{change\+To\+Jeu}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::change\+To\+Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageJeu_aec00eea36f08e0bd187832d17ec32680}
+
+
+Change la fenêtre vers le jeu. 
+
+Méthode pour switcher la fenêtre courante avec celle du jeu Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a52e20907ed94e272c592429d95fa5165}{I\+Affichage}.
+
+\hypertarget{classAffichageJeu_aa0fe30f907b9c0c2007466d287c701fd}{\index{Affichage\+Jeu@{Affichage\+Jeu}!change\+To\+Menu@{change\+To\+Menu}}
+\index{change\+To\+Menu@{change\+To\+Menu}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{change\+To\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::change\+To\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageJeu_aa0fe30f907b9c0c2007466d287c701fd}
+
+
+Change la fenêtre vers le menu. 
+
+Méthode pour switcher la fenêtre courante avec celle du menu Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a147a42f3068b7dc51d5a196252e53a39}{I\+Affichage}.
+
+\hypertarget{classAffichageJeu_a28cf87eb40e06577ce095413ab1933cf}{\index{Affichage\+Jeu@{Affichage\+Jeu}!get\+Carte\+Jeu\+T1@{get\+Carte\+Jeu\+T1}}
+\index{get\+Carte\+Jeu\+T1@{get\+Carte\+Jeu\+T1}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{get\+Carte\+Jeu\+T1}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Carte} $>$ Affichage\+Jeu\+::get\+Carte\+Jeu\+T1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_a28cf87eb40e06577ce095413ab1933cf}
+
+
+Récupère la carte d'initialisation du J1. 
+
+Methode qui permet de retourner la carte d'initialisation du J1 avec tous ses bateaux
+
+\begin{DoxyReturn}{Returns}
+la carte d'initialisation du J1 
+\end{DoxyReturn}
+\hypertarget{classAffichageJeu_a8604b85fd85bca4fd7ec1bce8c012d93}{\index{Affichage\+Jeu@{Affichage\+Jeu}!get\+Carte\+Jeu\+T2@{get\+Carte\+Jeu\+T2}}
+\index{get\+Carte\+Jeu\+T2@{get\+Carte\+Jeu\+T2}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{get\+Carte\+Jeu\+T2}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Carte} $>$ Affichage\+Jeu\+::get\+Carte\+Jeu\+T2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_a8604b85fd85bca4fd7ec1bce8c012d93}
+
+
+Récupère la carte d'initialisation du J2. 
+
+Methode qui permet de retourner la carte d'initialisation du J2 avec tous ses bateaux
+
+\begin{DoxyReturn}{Returns}
+la carte d'initialisation du J2 
+\end{DoxyReturn}
+\hypertarget{classAffichageJeu_aacb8b0c827d1b623e082546a7a461e11}{\index{Affichage\+Jeu@{Affichage\+Jeu}!set\+Image\+Chgmt\+Tour@{set\+Image\+Chgmt\+Tour}}
+\index{set\+Image\+Chgmt\+Tour@{set\+Image\+Chgmt\+Tour}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{set\+Image\+Chgmt\+Tour}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::set\+Image\+Chgmt\+Tour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_aacb8b0c827d1b623e082546a7a461e11}
+
+
+Changer le sens de l'image du tour du joueur. 
+
+Méthode permettant de tourner de 180° le triangle indiquant à quel joueur est le tour \hypertarget{classAffichageJeu_ad17e5eea2e70c327f085b6e0ed9330e4}{\index{Affichage\+Jeu@{Affichage\+Jeu}!update\+Elements@{update\+Elements}}
+\index{update\+Elements@{update\+Elements}!Affichage\+Jeu@{Affichage\+Jeu}}
+\subsubsection[{update\+Elements}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Jeu\+::update\+Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAffichageJeu_ad17e5eea2e70c327f085b6e0ed9330e4}
+
+
+Ajout de tous les éléments pour l'affichage. 
+
+Methode qui permet d'ajouter l'ensemble des éléments pour l'affichage du jeu (la carte et les pseudos) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+affichagejeu.\+h\item 
+affichagejeu.\+cpp\end{DoxyCompactItemize}

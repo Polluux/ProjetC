@@ -1,0 +1,6 @@
+<map id="BateauFactory" name="BateauFactory">
+<area shape="rect" id="node2" href="$classFactoryCanard.html" title="classe representant une usine à Canard " alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$classFactoryCaneton.html" title="classe representant une usine à Caneton " alt="" coords="137,80,252,107"/>
+<area shape="rect" id="node4" href="$classFactoryCygne.html" title="classe representant une usine à Cygne " alt="" coords="276,80,380,107"/>
+<area shape="rect" id="node5" href="$classFactoryOie.html" title="classe representant une usine à Oie " alt="" coords="405,80,491,107"/>
+</map>

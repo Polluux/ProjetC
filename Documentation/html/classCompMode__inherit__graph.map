@@ -1,0 +1,4 @@
+<map id="CompMode" name="CompMode">
+<area shape="rect" id="node2" href="$classMode1vs1.html" title="classe representant le mode de jeu 1VS1 " alt="" coords="5,80,87,107"/>
+<area shape="rect" id="node3" href="$classMode1vsIA.html" title="classe representant le mode de jeu 1VSIA " alt="" coords="112,80,200,107"/>
+</map>

@@ -21,10 +21,10 @@ class AffichageJeu;
 class AffichageInitJ1;
 class AffichageInitJ2;
 
-/*! \class Bateau
-* \brief classe representant un Bateau
+/*! \class Core
+* \brief classe representant le coeur de l'application
 *
-*  La classe gère l'ensemble des actions émises ou impactant un Bateau
+*  La classe gère l'ensemble des actions entre les classes
 */
 
 class Core

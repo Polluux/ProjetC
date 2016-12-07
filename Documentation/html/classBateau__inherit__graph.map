@@ -1,0 +1,7 @@
+<map id="Bateau" name="Bateau">
+<area shape="rect" id="node3" href="$classCanard.html" title="classe representant un Canard " alt="" coords="5,155,69,181"/>
+<area shape="rect" id="node4" href="$classCaneton.html" title="classe representant un Caneton " alt="" coords="94,155,164,181"/>
+<area shape="rect" id="node5" href="$classCygne.html" title="classe representant un Cygne " alt="" coords="189,155,248,181"/>
+<area shape="rect" id="node6" href="$classOie.html" title="classe representant un Oie " alt="" coords="273,155,316,181"/>
+<area shape="rect" id="node2" href="$classContenu.html" title="classe representant un Contenu " alt="" coords="138,5,208,32"/>
+</map>

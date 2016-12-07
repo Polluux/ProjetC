@@ -1,0 +1,4 @@
+<map id="AffichageInitJ1" name="AffichageInitJ1">
+<area shape="rect" id="node2" href="$classIAffichage.html" title="classe representant les comportements des affichages " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node4" href="$classAffichageInit.html" title="classe representant l&#39;affichage des éléments communs pour l&#39;initialisation des deux joueurs ..." alt="" coords="110,80,204,107"/>
+</map>

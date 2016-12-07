@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classBateauFactory.html" title="classe representant un &quot;Chantier Naval&quot; " alt="" coords="5,81,112,108"/>
+<area shape="rect" id="node2" href="$classFactoryCanard.html" title="classe representant une usine à Canard " alt="" coords="163,5,271,32"/>
+<area shape="rect" id="node3" href="$classFactoryCaneton.html" title="classe representant une usine à Caneton " alt="" coords="160,56,275,83"/>
+<area shape="rect" id="node4" href="$classFactoryCygne.html" title="classe representant une usine à Cygne " alt="" coords="165,107,269,133"/>
+<area shape="rect" id="node5" href="$classFactoryOie.html" title="classe representant une usine à Oie " alt="" coords="174,157,261,184"/>
+</map>

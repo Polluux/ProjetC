@@ -1,0 +1,6 @@
+<map id="IAffichage" name="IAffichage">
+<area shape="rect" id="node3" href="$classAffichageInitJ1.html" title="classe representant l&#39;affichage de la phase d&#39;initialisation du J1 " alt="" coords="5,155,115,181"/>
+<area shape="rect" id="node4" href="$classAffichageInitJ2.html" title="classe representant l&#39;affichage de la phase d&#39;initialisation du J2 " alt="" coords="139,155,248,181"/>
+<area shape="rect" id="node5" href="$classAffichageJeu.html" title="classe representant l&#39;affichage du jeu " alt="" coords="272,155,371,181"/>
+<area shape="rect" id="node6" href="$classAffichageMenu.html" title="classe representant l&#39;affichage du menu " alt="" coords="395,155,504,181"/>
+</map>

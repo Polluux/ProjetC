@@ -1,0 +1,4 @@
+<map id="Canard" name="Canard">
+<area shape="rect" id="node2" href="$classBateau.html" title="classe representant un Bateau " alt="" coords="9,80,71,107"/>
+<area shape="rect" id="node3" href="$classContenu.html" title="classe representant un Contenu " alt="" coords="5,5,75,32"/>
+</map>

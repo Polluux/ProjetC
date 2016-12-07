@@ -1,0 +1,202 @@
+\hypertarget{classAffichageMenu}{\section{Affichage\+Menu Class Reference}
+\label{classAffichageMenu}\index{Affichage\+Menu@{Affichage\+Menu}}
+}
+
+
+classe representant l'affichage du menu  
+
+
+
+
+{\ttfamily \#include $<$affichagemenu.\+h$>$}
+
+
+
+Inheritance diagram for Affichage\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classAffichageMenu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Affichage\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classAffichageMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAffichageMenu_ae62a39124cc5bb46805c464f23cd0ea0}{clic\+Mode1vs1} ()
+\begin{DoxyCompactList}\small\item\em Action pour le mode 1\+V1. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_a737cc4c685ddd031cad5286d513e9002}{clic\+Mode1vs\+I\+A} ()
+\begin{DoxyCompactList}\small\item\em Action pour le mode 1\+V1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAffichageMenu_a68e70ec71422f3cb651299f08c85987e}{Affichage\+Menu} (\hyperlink{classCore}{Core} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_abec0adf6db92df26a937ff702a5a87fc}{afficher} ()
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_a5f825906a1c5afccfbb03b007906bd28}{change\+To\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le menu. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_ab7df249dc5db82d25613b80c28ba1ed4}{change\+To\+Initialisation\+J1} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J1. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_a1980bc54a6156938cc3b737972facd32}{change\+To\+Initialisation\+J2} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J2. \end{DoxyCompactList}\item 
+void \hyperlink{classAffichageMenu_a878a89a1ce7e138695e3e5fde5e020af}{change\+To\+Jeu} ()
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+V\+Box\+Layout $\ast$ \hyperlink{classAffichageMenu_a190c22c6af2b9d0f5f45b727a1f60838}{b\+Layout\+\_\+}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{classAffichageMenu_a33ee17880f8d6d985c19eebf0e5f121b}{g\+Layout\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant l'affichage du menu 
+
+La classe gère l'affichage des boutons de choix de jeu au sein du menu 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAffichageMenu_a68e70ec71422f3cb651299f08c85987e}{\index{Affichage\+Menu@{Affichage\+Menu}!Affichage\+Menu@{Affichage\+Menu}}
+\index{Affichage\+Menu@{Affichage\+Menu}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{Affichage\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Affichage\+Menu\+::\+Affichage\+Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Core} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classAffichageMenu_a68e70ec71422f3cb651299f08c85987e}
+
+
+Constructeur. 
+
+Constructeur de la classe \hyperlink{classAffichageMenu}{Affichage\+Menu}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \+: le \hyperlink{classCore}{Core} de l'application \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAffichageMenu_abec0adf6db92df26a937ff702a5a87fc}{\index{Affichage\+Menu@{Affichage\+Menu}!afficher@{afficher}}
+\index{afficher@{afficher}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageMenu_abec0adf6db92df26a937ff702a5a87fc}
+
+
+Affiche la fenêtre. 
+
+Méthode pour afficher la fenêtre concernant le jeu 
+
+Implements \hyperlink{classIAffichage_a87e168995340186305675343d4b769fe}{I\+Affichage}.
+
+\hypertarget{classAffichageMenu_ab7df249dc5db82d25613b80c28ba1ed4}{\index{Affichage\+Menu@{Affichage\+Menu}!change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}}
+\index{change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{change\+To\+Initialisation\+J1}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::change\+To\+Initialisation\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageMenu_ab7df249dc5db82d25613b80c28ba1ed4}
+
+
+Change la fenêtre vers l'initialisation pour le J1. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J1 
+
+Implements \hyperlink{classIAffichage_ac03c56ab489b760b1e42af15ac421039}{I\+Affichage}.
+
+\hypertarget{classAffichageMenu_a1980bc54a6156938cc3b737972facd32}{\index{Affichage\+Menu@{Affichage\+Menu}!change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}}
+\index{change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{change\+To\+Initialisation\+J2}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::change\+To\+Initialisation\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageMenu_a1980bc54a6156938cc3b737972facd32}
+
+
+Change la fenêtre vers l'initialisation pour le J2. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J2 Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a425bcafe36ba332f2cbc4badc99e19c2}{I\+Affichage}.
+
+\hypertarget{classAffichageMenu_a878a89a1ce7e138695e3e5fde5e020af}{\index{Affichage\+Menu@{Affichage\+Menu}!change\+To\+Jeu@{change\+To\+Jeu}}
+\index{change\+To\+Jeu@{change\+To\+Jeu}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{change\+To\+Jeu}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::change\+To\+Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageMenu_a878a89a1ce7e138695e3e5fde5e020af}
+
+
+Change la fenêtre vers le jeu. 
+
+Méthode pour switcher la fenêtre courante avec celle du jeu Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a52e20907ed94e272c592429d95fa5165}{I\+Affichage}.
+
+\hypertarget{classAffichageMenu_a5f825906a1c5afccfbb03b007906bd28}{\index{Affichage\+Menu@{Affichage\+Menu}!change\+To\+Menu@{change\+To\+Menu}}
+\index{change\+To\+Menu@{change\+To\+Menu}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{change\+To\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::change\+To\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAffichageMenu_a5f825906a1c5afccfbb03b007906bd28}
+
+
+Change la fenêtre vers le menu. 
+
+Méthode pour switcher la fenêtre courante avec celle du menu Pas implémenté pour cette classe 
+
+Implements \hyperlink{classIAffichage_a147a42f3068b7dc51d5a196252e53a39}{I\+Affichage}.
+
+\hypertarget{classAffichageMenu_ae62a39124cc5bb46805c464f23cd0ea0}{\index{Affichage\+Menu@{Affichage\+Menu}!clic\+Mode1vs1@{clic\+Mode1vs1}}
+\index{clic\+Mode1vs1@{clic\+Mode1vs1}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{clic\+Mode1vs1}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::clic\+Mode1vs1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classAffichageMenu_ae62a39124cc5bb46805c464f23cd0ea0}
+
+
+Action pour le mode 1\+V1. 
+
+Méthode pour lancer le jeu avec le mode 1\+V1 \hypertarget{classAffichageMenu_a737cc4c685ddd031cad5286d513e9002}{\index{Affichage\+Menu@{Affichage\+Menu}!clic\+Mode1vs\+I\+A@{clic\+Mode1vs\+I\+A}}
+\index{clic\+Mode1vs\+I\+A@{clic\+Mode1vs\+I\+A}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{clic\+Mode1vs\+I\+A}]{\setlength{\rightskip}{0pt plus 5cm}void Affichage\+Menu\+::clic\+Mode1vs\+I\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classAffichageMenu_a737cc4c685ddd031cad5286d513e9002}
+
+
+Action pour le mode 1\+V1. 
+
+Méthode pour lancer le jeu avec le mode 1\+V\+I\+A 
+
+\subsection{Member Data Documentation}
+\hypertarget{classAffichageMenu_a190c22c6af2b9d0f5f45b727a1f60838}{\index{Affichage\+Menu@{Affichage\+Menu}!b\+Layout\+\_\+@{b\+Layout\+\_\+}}
+\index{b\+Layout\+\_\+@{b\+Layout\+\_\+}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{b\+Layout\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}Q\+V\+Box\+Layout$\ast$ Affichage\+Menu\+::b\+Layout\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}}\label{classAffichageMenu_a190c22c6af2b9d0f5f45b727a1f60838}
+layout contenant les boutons \hypertarget{classAffichageMenu_a33ee17880f8d6d985c19eebf0e5f121b}{\index{Affichage\+Menu@{Affichage\+Menu}!g\+Layout\+\_\+@{g\+Layout\+\_\+}}
+\index{g\+Layout\+\_\+@{g\+Layout\+\_\+}!Affichage\+Menu@{Affichage\+Menu}}
+\subsubsection[{g\+Layout\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Grid\+Layout$\ast$ Affichage\+Menu\+::g\+Layout\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}}\label{classAffichageMenu_a33ee17880f8d6d985c19eebf0e5f121b}
+Layout principal 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+affichagemenu.\+h\item 
+affichagemenu.\+cpp\end{DoxyCompactItemize}

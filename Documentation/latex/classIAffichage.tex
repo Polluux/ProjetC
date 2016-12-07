@@ -1,0 +1,169 @@
+\hypertarget{classIAffichage}{\section{I\+Affichage Interface Reference}
+\label{classIAffichage}\index{I\+Affichage@{I\+Affichage}}
+}
+
+
+classe representant les comportements des affichages  
+
+
+
+
+{\ttfamily \#include $<$iaffichage.\+h$>$}
+
+
+
+Inheritance diagram for I\+Affichage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIAffichage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+Affichage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{classIAffichage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIAffichage_a0bc54bcf0afae03db411636834b372fe}{\hyperlink{classIAffichage_a0bc54bcf0afae03db411636834b372fe}{I\+Affichage} ()}\label{classIAffichage_a0bc54bcf0afae03db411636834b372fe}
+
+\begin{DoxyCompactList}\small\item\em Constructeur Constructeur de la classe \hyperlink{classIAffichage}{I\+Affichage}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classIAffichage_a87e168995340186305675343d4b769fe}{afficher} ()=0
+\begin{DoxyCompactList}\small\item\em Affiche la fenêtre. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classIAffichage_a147a42f3068b7dc51d5a196252e53a39}{change\+To\+Menu} ()=0
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le menu. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classIAffichage_ac03c56ab489b760b1e42af15ac421039}{change\+To\+Initialisation\+J1} ()=0
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J1. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classIAffichage_a425bcafe36ba332f2cbc4badc99e19c2}{change\+To\+Initialisation\+J2} ()=0
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers l'initialisation pour le J2. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classIAffichage_a52e20907ed94e272c592429d95fa5165}{change\+To\+Jeu} ()=0
+\begin{DoxyCompactList}\small\item\em Change la fenêtre vers le jeu. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCore}{Core} $>$ \hyperlink{classIAffichage_a7245173f805ffb6a17b4fbda887bcfd6}{get\+Core} ()
+\begin{DoxyCompactList}\small\item\em Récupère le core de l'application. \end{DoxyCompactList}\item 
+\hypertarget{classIAffichage_a2b22d88915d1a8951ba3cd027bbaed0f}{virtual \hyperlink{classIAffichage_a2b22d88915d1a8951ba3cd027bbaed0f}{$\sim$\+I\+Affichage} ()}\label{classIAffichage_a2b22d88915d1a8951ba3cd027bbaed0f}
+
+\begin{DoxyCompactList}\small\item\em Destructeur Destructeur de la classe \hyperlink{classIAffichage}{I\+Affichage}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCore}{Core} $>$ \hyperlink{classIAffichage_ad1ae8f669e8aec4035c383bd640c5a81}{core\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe representant les comportements des affichages 
+
+La classe modélise les comportements des affichages de jeu, des initialisations, ... 
+
+\subsection{Member Function Documentation}
+\hypertarget{classIAffichage_a87e168995340186305675343d4b769fe}{\index{I\+Affichage@{I\+Affichage}!afficher@{afficher}}
+\index{afficher@{afficher}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Affichage\+::afficher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIAffichage_a87e168995340186305675343d4b769fe}
+
+
+Affiche la fenêtre. 
+
+Méthode pour afficher la fenêtre 
+
+Implemented in \hyperlink{classAffichageMenu_abec0adf6db92df26a937ff702a5a87fc}{Affichage\+Menu}, \hyperlink{classAffichageJeu_a29d9ad7ef0161faa698bd0850efbb1fc}{Affichage\+Jeu}, \hyperlink{classAffichageInitJ1_a469000a4072c712f88ee75ed6cc03d3b}{Affichage\+Init\+J1}, and \hyperlink{classAffichageInitJ2_a4b5dbe3833780c14aaaf946a7542e085}{Affichage\+Init\+J2}.
+
+\hypertarget{classIAffichage_ac03c56ab489b760b1e42af15ac421039}{\index{I\+Affichage@{I\+Affichage}!change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}}
+\index{change\+To\+Initialisation\+J1@{change\+To\+Initialisation\+J1}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{change\+To\+Initialisation\+J1}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Affichage\+::change\+To\+Initialisation\+J1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIAffichage_ac03c56ab489b760b1e42af15ac421039}
+
+
+Change la fenêtre vers l'initialisation pour le J1. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J1 
+
+Implemented in \hyperlink{classAffichageJeu_a4e8693c20861bc9e79e0c0037ba4ffa8}{Affichage\+Jeu}, \hyperlink{classAffichageMenu_ab7df249dc5db82d25613b80c28ba1ed4}{Affichage\+Menu}, \hyperlink{classAffichageInitJ1_a07ee576320b2bd22733ac142fd10b14c}{Affichage\+Init\+J1}, and \hyperlink{classAffichageInitJ2_a355056fd45cd18a199801eaf20181edc}{Affichage\+Init\+J2}.
+
+\hypertarget{classIAffichage_a425bcafe36ba332f2cbc4badc99e19c2}{\index{I\+Affichage@{I\+Affichage}!change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}}
+\index{change\+To\+Initialisation\+J2@{change\+To\+Initialisation\+J2}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{change\+To\+Initialisation\+J2}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Affichage\+::change\+To\+Initialisation\+J2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIAffichage_a425bcafe36ba332f2cbc4badc99e19c2}
+
+
+Change la fenêtre vers l'initialisation pour le J2. 
+
+Méthode pour switcher la fenêtre courante avec celle de l'initialisation du J2 
+
+Implemented in \hyperlink{classAffichageJeu_a62db45f512fb855b096bcfd19e379429}{Affichage\+Jeu}, \hyperlink{classAffichageMenu_a1980bc54a6156938cc3b737972facd32}{Affichage\+Menu}, \hyperlink{classAffichageInitJ2_a7f861d5e94c8ff21aae5b05601678292}{Affichage\+Init\+J2}, and \hyperlink{classAffichageInitJ1_ad1f6286f0aa162fec476d69049a2c1a8}{Affichage\+Init\+J1}.
+
+\hypertarget{classIAffichage_a52e20907ed94e272c592429d95fa5165}{\index{I\+Affichage@{I\+Affichage}!change\+To\+Jeu@{change\+To\+Jeu}}
+\index{change\+To\+Jeu@{change\+To\+Jeu}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{change\+To\+Jeu}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Affichage\+::change\+To\+Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIAffichage_a52e20907ed94e272c592429d95fa5165}
+
+
+Change la fenêtre vers le jeu. 
+
+Méthode pour switcher la fenêtre courante avec celle du jeu 
+
+Implemented in \hyperlink{classAffichageJeu_aec00eea36f08e0bd187832d17ec32680}{Affichage\+Jeu}, \hyperlink{classAffichageMenu_a878a89a1ce7e138695e3e5fde5e020af}{Affichage\+Menu}, \hyperlink{classAffichageInitJ1_a4fcbe1401407498fc32e5cedf797a9e4}{Affichage\+Init\+J1}, and \hyperlink{classAffichageInitJ2_ab2af503532ad81094f890d887bdb4f23}{Affichage\+Init\+J2}.
+
+\hypertarget{classIAffichage_a147a42f3068b7dc51d5a196252e53a39}{\index{I\+Affichage@{I\+Affichage}!change\+To\+Menu@{change\+To\+Menu}}
+\index{change\+To\+Menu@{change\+To\+Menu}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{change\+To\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Affichage\+::change\+To\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIAffichage_a147a42f3068b7dc51d5a196252e53a39}
+
+
+Change la fenêtre vers le menu. 
+
+Méthode pour switcher la fenêtre courante avec celle du menu 
+
+Implemented in \hyperlink{classAffichageJeu_aa0fe30f907b9c0c2007466d287c701fd}{Affichage\+Jeu}, \hyperlink{classAffichageMenu_a5f825906a1c5afccfbb03b007906bd28}{Affichage\+Menu}, \hyperlink{classAffichageInitJ1_ac579f8933a11bc3e49923d414b20acab}{Affichage\+Init\+J1}, and \hyperlink{classAffichageInitJ2_a7266e6ce2188930080dc3ede1322d14d}{Affichage\+Init\+J2}.
+
+\hypertarget{classIAffichage_a7245173f805ffb6a17b4fbda887bcfd6}{\index{I\+Affichage@{I\+Affichage}!get\+Core@{get\+Core}}
+\index{get\+Core@{get\+Core}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{get\+Core}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Core} $>$ I\+Affichage\+::get\+Core (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classIAffichage_a7245173f805ffb6a17b4fbda887bcfd6}
+
+
+Récupère le core de l'application. 
+
+Méthode pour récupérer le core de l'application
+
+\begin{DoxyReturn}{Returns}
+le core de l'application 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classIAffichage_ad1ae8f669e8aec4035c383bd640c5a81}{\index{I\+Affichage@{I\+Affichage}!core\+\_\+@{core\+\_\+}}
+\index{core\+\_\+@{core\+\_\+}!I\+Affichage@{I\+Affichage}}
+\subsubsection[{core\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Core}$>$ I\+Affichage\+::core\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}}\label{classIAffichage_ad1ae8f669e8aec4035c383bd640c5a81}
+le core de l'application 
+
+The documentation for this interface was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iaffichage.\+h\item 
+iaffichage.\+cpp\end{DoxyCompactItemize}
